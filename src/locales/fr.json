@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "features": "Fonctionnalités",
+    "security": "Sécurité",
+    "download": "Télécharger",
+    "open_menu": "Ouvrir le menu",
+    "close_menu": "Fermer le menu",
+    "main_label": "Navigation principale"
+  },
+  "hero": {
+    "headline_start": "La première application qui",
+    "headline_highlight": "libère l'esprit",
+    "headline_end": "des infirmiers à domicile.",
+    "subtext": "Gérez vos tournées, automatisez vos calculs de cotations et collaborez avec vos collègues en toute sérénité. Conçu en Belgique et en France pour le quotidien des IDEL.",
+    "cta_appstore": "App Store",
+    "cta_appstore_aria": "Télécharger sur l'App Store (iOS)",
+    "cta_playstore": "Google Play",
+    "cta_playstore_aria": "Télécharger sur Google Play (Android)",
+    "social_proof": "+2 500 infirmiers nous font confiance",
+    "mockup_alt": "Aperçu de l'application Nursy sur iPhone",
+    "badge_status": "ROUTE TERMINÉE",
+    "badge_label": "Tournée Matin OK"
+  },
+  "features": {
+    "eyebrow": "PILIERS DE L'APP",
+    "title": "L'excellence clinique, simplifiée.",
+    "subtitle": "Chaque détail a été pensé avec des infirmiers de terrain pour répondre aux réalités de la pratique à domicile.",
+    "market": {
+      "title": "Marché des remplaçants",
+      "text": "Publiez ou trouvez des annonces de remplacement en quelques clics au sein d'une communauté vérifiée."
+    },
+    "katz": {
+      "title": "Échelle de Katz & Cotation",
+      "text": "Calcul automatique des honoraires (A, B, C, T2, T7) basé sur l'évaluation réelle du patient."
+    },
+    "dossiers": {
+      "title": "Dossiers Intelligents",
+      "text": "Gestion BIM, soins palliatifs et plaies complexes avec suivi photographique sécurisé."
+    },
+    "models": {
+      "title": "Modèles de Tournées",
+      "text": "Créez des modèles réutilisables pour gagner du temps chaque matin sur l'optimisation de vos trajets."
+    }
+  },
+  "security": {
+    "eyebrow": "SÉCURITÉ & CONFIANCE",
+    "title": "Sécurité HDS & Fiabilité Professionnelle",
+    "visual_aria": "Illustration des fonctionnalités de sécurité de Nursy",
+    "biometry": {
+      "title": "Biométrie Avancée",
+      "text": "Accès instantané par FaceID ou empreinte digitale pour une sécurité maximale sans perte de temps."
+    },
+    "health_data": {
+      "label": "Données Santé Chiffrées"
+    },
+    "recommendation": {
+      "label": "Système de recommandation entre pairs"
+    },
+    "messaging": {
+      "title": "Messagerie Professionnelle",
+      "text": "Chat sécurisé, notes vocales et envoi de documents cliniques conformes RGPD/HDS."
+    },
+    "verified": {
+      "title": "Profils Vérifiés",
+      "text": "Chaque membre de la communauté est vérifié par son numéro INAMI ou RPPS."
+    },
+    "sync": {
+      "title": "Synchronisation Temps-Réel",
+      "text": "Toutes vos données sont synchronisées entre vos appareils instantanément."
+    }
+  },
+  "cta": {
+    "title": "Prêt à transformer votre quotidien ?",
+    "subtitle": "Rejoignez la communauté Nursy aujourd'hui et redécouvrez le plaisir de soigner sans la charge mentale administrative.",
+    "button": "Essayer gratuitement 30 jours",
+    "platforms": "Disponible sur iOS 15+ et Android 10+"
+  },
+  "footer": {
+    "nav_aria": "Liens du pied de page",
+    "legal": "Conditions Générales",
+    "privacy": "Confidentialité",
+    "contact": "Contact",
+    "support": "Support",
+    "tiktok_aria": "Nursy sur TikTok (ouverture dans un nouvel onglet)",
+    "instagram_aria": "Nursy sur Instagram (ouverture dans un nouvel onglet)",
+    "copyright": "© 2024 Nursy. La première application qui libère l'esprit des infirmiers à domicile."
+  },
+  "lang": {
+    "fr": "FR",
+    "nl": "NL",
+    "switcher_aria": "Sélection de la langue"
+  }
+}

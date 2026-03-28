@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "features": "Functies",
+    "security": "Beveiliging",
+    "download": "Downloaden",
+    "open_menu": "Menu openen",
+    "close_menu": "Menu sluiten",
+    "main_label": "Hoofdnavigatie"
+  },
+  "hero": {
+    "headline_start": "De eerste app die",
+    "headline_highlight": "de geest bevrijdt",
+    "headline_end": "van thuisverpleegkundigen.",
+    "subtext": "Beheer uw rondes, automatiseer uw honorariaberekeningen en werk samen met uw collega's in alle rust. Ontworpen in België en Frankrijk voor de dagelijkse praktijk van thuisverpleegkundigen.",
+    "cta_appstore": "App Store",
+    "cta_appstore_aria": "Downloaden in de App Store (iOS)",
+    "cta_playstore": "Google Play",
+    "cta_playstore_aria": "Downloaden in Google Play (Android)",
+    "social_proof": "+2 500 verpleegkundigen vertrouwen ons",
+    "mockup_alt": "Voorbeeld van de Nursy-app op iPhone",
+    "badge_status": "ROUTE VOLTOOID",
+    "badge_label": "Ochtendronde OK"
+  },
+  "features": {
+    "eyebrow": "PIJLERS VAN DE APP",
+    "title": "Klinische excellentie, vereenvoudigd.",
+    "subtitle": "Elk detail is bedacht met verpleegkundigen uit het veld om tegemoet te komen aan de realiteit van de thuispraktijk.",
+    "market": {
+      "title": "Vervangingsmarkt",
+      "text": "Publiceer of vind vervangingsadvertenties in enkele klikken binnen een geverifieerde gemeenschap."
+    },
+    "katz": {
+      "title": "Katz-schaal & Codering",
+      "text": "Automatische berekening van honoraria (A, B, C, T2, T7) op basis van de werkelijke evaluatie van de patiënt."
+    },
+    "dossiers": {
+      "title": "Slimme Dossiers",
+      "text": "BIM-beheer, palliatieve zorg en complexe wonden met beveiligde fotografische opvolging."
+    },
+    "models": {
+      "title": "Rondemodellen",
+      "text": "Maak herbruikbare modellen om elke ochtend tijd te besparen bij de routeoptimalisatie."
+    }
+  },
+  "security": {
+    "eyebrow": "BEVEILIGING & VERTROUWEN",
+    "title": "HDS-beveiliging & Professionele Betrouwbaarheid",
+    "visual_aria": "Illustratie van de beveiligingsfuncties van Nursy",
+    "biometry": {
+      "title": "Geavanceerde Biometrie",
+      "text": "Directe toegang via FaceID of vingerafdruk voor maximale beveiliging zonder tijdverlies."
+    },
+    "health_data": {
+      "label": "Versleutelde Gezondheidsgegevens"
+    },
+    "recommendation": {
+      "label": "Peer-aanbevelingssysteem"
+    },
+    "messaging": {
+      "title": "Professionele Berichtenservice",
+      "text": "Beveiligd chatten, spraaknotities en verzending van klinische documenten conform AVG/HDS."
+    },
+    "verified": {
+      "title": "Geverifieerde Profielen",
+      "text": "Elk lid van de gemeenschap wordt geverifieerd via zijn RIZIV- of RPPS-nummer."
+    },
+    "sync": {
+      "title": "Real-time Synchronisatie",
+      "text": "Al uw gegevens worden onmiddellijk gesynchroniseerd tussen uw apparaten."
+    }
+  },
+  "cta": {
+    "title": "Klaar om uw dagelijkse praktijk te transformeren?",
+    "subtitle": "Sluit u vandaag aan bij de Nursy-gemeenschap en herontdek het plezier van zorgen zonder administratieve last.",
+    "button": "Gratis uitproberen gedurende 30 dagen",
+    "platforms": "Beschikbaar op iOS 15+ en Android 10+"
+  },
+  "footer": {
+    "nav_aria": "Paginavoet-navigatie",
+    "legal": "Algemene Voorwaarden",
+    "privacy": "Privacybeleid",
+    "contact": "Contact",
+    "support": "Ondersteuning",
+    "tiktok_aria": "Nursy op TikTok (opent in nieuw tabblad)",
+    "instagram_aria": "Nursy op Instagram (opent in nieuw tabblad)",
+    "copyright": "© 2024 Nursy. De eerste app die de geest van thuisverpleegkundigen bevrijdt."
+  },
+  "lang": {
+    "fr": "FR",
+    "nl": "NL",
+    "switcher_aria": "Taalselectie"
+  }
+}
