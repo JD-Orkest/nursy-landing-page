@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "features": "Functies",
+    "security": "Beveiliging",
+    "download": "Downloaden",
+    "open_menu": "Menu openen",
+    "close_menu": "Menu sluiten",
+    "main_label": "Hoofdnavigatie"
+  },
+  "hero": {
+    "headline_start": "De eerste app die",
+    "headline_highlight": "de geest bevrijdt",
+    "headline_end": "van thuisverpleegkundigen.",
+    "subtext": "Thuisverpleging vervanging België vinden of aanbieden, burn-out voorkomen en patiënten veilig delen. RIZIV verificatie, veilig alternatief voor WhatsApp voor thuiszorg in België.",
+    "cta_appstore": "App Store",
+    "cta_appstore_aria": "NURSY downloaden in de App Store (iOS) — thuisverpleging vervanging België",
+    "cta_playstore": "Google Play",
+    "cta_playstore_aria": "NURSY downloaden in Google Play (Android) — thuiszorg België",
+    "social_proof": "+2 500 verpleegkundigen vertrouwen ons",
+    "mockup_alt": "Voorbeeld van de NURSY-app op iPhone — zelfstandige verpleegkundige ronde beheer",
+    "badge_status": "ROUTE VOLTOOID",
+    "badge_label": "Ochtendronde OK"
+  },
+  "features": {
+    "eyebrow": "PIJLERS VAN DE APP",
+    "title": "Klinische excellentie, vereenvoudigd.",
+    "subtitle": "Elk detail is bedacht met verpleegkundigen uit het veld om tegemoet te komen aan de realiteit van de thuispraktijk in België.",
+    "market": {
+      "title": "Vervangingsmarkt",
+      "text": "Dringend vervanging zoeken of uw beschikbaarheid publiceren in enkele klikken binnen een RIZIV-geverifieerde gemeenschap."
+    },
+    "katz": {
+      "title": "Katz-schaal & Codering",
+      "text": "Automatische berekening van honoraria (A, B, C, T2, T7) op basis van de werkelijke evaluatie van de patiënt. Nul verlies van codering."
+    },
+    "dossiers": {
+      "title": "Slimme Dossiers",
+      "text": "BIM-beheer, palliatieve zorg en complexe wonden met beveiligde fotografische opvolging conform GDPR/HDS."
+    },
+    "models": {
+      "title": "Rondemodellen",
+      "text": "Maak herbruikbare modellen voor uw zelfstandige verpleegkundige ronde en bespaar elke ochtend tijd."
+    }
+  },
+  "security": {
+    "eyebrow": "BEVEILIGING & VERTROUWEN",
+    "title": "HDS-beveiliging & Professionele Betrouwbaarheid",
+    "visual_aria": "Illustratie van de beveiligingsfuncties van NURSY",
+    "biometry": {
+      "title": "Geavanceerde Biometrie",
+      "text": "Directe toegang via FaceID of vingerafdruk voor maximale beveiliging zonder tijdverlies."
+    },
+    "health_data": {
+      "label": "Versleutelde Gezondheidsgegevens"
+    },
+    "recommendation": {
+      "label": "Peer-aanbevelingssysteem"
+    },
+    "messaging": {
+      "title": "Professionele Berichtenservice",
+      "text": "Veilig alternatief voor WhatsApp voor verpleegkundigen: beveiligde chat, spraaknotities en klinische documenten conform GDPR/HDS."
+    },
+    "verified": {
+      "title": "Geverifieerde RIZIV-profielen",
+      "text": "Elk lid wordt geverifieerd via zijn RIZIV-nummer (België) of RPPS-nummer (Frankrijk). 100% veilig patiënten delen."
+    },
+    "sync": {
+      "title": "Real-time Synchronisatie",
+      "text": "Al uw gegevens worden onmiddellijk gesynchroniseerd tussen uw apparaten."
+    }
+  },
+  "faq": {
+    "eyebrow": "VEELGESTELDE VRAGEN",
+    "title": "Alles wat u moet weten over NURSY",
+    "subtitle": "Duidelijke antwoorden op de essentiële vragen van thuisverpleegkundigen in België.",
+    "q1": {
+      "question": "Hoe garandeert NURSY de veiligheid van patiëntengegevens?",
+      "answer": "NURSY versleutelt alle gezondheidsgegevens conform de HDS-normen (Hébergeur de Données de Santé). Toegang tot patiëntinformatie is strikt beperkt tot de duur van de vervanging. Biometrie via FaceID of vingerafdruk zorgt voor een dubbele beschermingslaag voor uw account."
+    },
+    "q2": {
+      "question": "Hoe worden de profielen van vervangers geverifieerd?",
+      "answer": "Elk profiel wordt systematisch geverifieerd via het RIZIV-nummer (België) of RPPS-nummer (Frankrijk), gekoppeld aan de officiële databank. Geen enkele niet-geverifieerde vervanger heeft toegang tot patiëntendossiers. Dit is ons engagement voor veilig patiënten delen."
+    },
+    "q3": {
+      "question": "Is het NURSY-abonnement fiscaal aftrekbaar?",
+      "answer": "Ja, het NURSY-abonnement is 100% fiscaal aftrekbaar als beroepskosten voor alle zelfstandige verpleegkundigen in België. Bewaar eenvoudig uw jaarfactuur voor uw boekhouder."
+    },
+    "q4": {
+      "question": "Kan ik slechts een deel van mijn ronde delen?",
+      "answer": "Ja, NURSY is ontworpen op basis van volledige modulariteit. U kiest om patiënt per patiënt of bezoek per bezoek te delen, naargelang uw behoeften. U blijft te allen tijde meester over uw zelfstandige verpleegkundige ronde en kunt burn-out voorkomen door progressief te delegeren."
+    }
+  },
+  "cta": {
+    "title": "Klaar om uw dagelijkse praktijk te transformeren?",
+    "subtitle": "Sluit u vandaag aan bij de NURSY-gemeenschap en herontdek het plezier van zorgen zonder administratieve last.",
+    "button": "Gratis uitproberen gedurende 30 dagen",
+    "platforms": "Beschikbaar op iOS 15+ en Android 10+"
+  },
+  "footer": {
+    "nav_aria": "Paginavoet-navigatie",
+    "legal": "Algemene Voorwaarden",
+    "privacy": "Privacybeleid",
+    "contact": "Contact",
+    "support": "Ondersteuning",
+    "tiktok_aria": "NURSY op TikTok (opent in nieuw tabblad)",
+    "instagram_aria": "NURSY op Instagram (opent in nieuw tabblad)",
+    "copyright": "© 2024 NURSY. De eerste app voor thuisverpleging vervanging in België."
+  },
+  "lang": {
+    "fr": "FR",
+    "nl": "NL",
+    "switcher_aria": "Taalselectie"
+  }
+}

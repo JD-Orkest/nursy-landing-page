@@ -1,0 +1,8 @@
+{
+  // Ce fichier est requis pour que VS Code et TypeScript reconnaissent
+  // les auto-imports Nuxt (useI18n, useSeoMeta, computed, ref, etc.)
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "types": ["node"]
+  }
+}

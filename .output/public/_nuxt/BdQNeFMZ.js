@@ -1,0 +1,1 @@
+import{_ as r,f as e,z as a,A as c,D as o,N as _}from"./Ep7VvSrF.js";const f={},l={class:"min-h-screen bg-surface"};function d(t,m){const s=e("TheNavbar"),n=e("TheFooter");return a(),c("div",l,[o(s),_(t.$slots,"default"),o(n)])}const p=r(f,[["render",d]]);export{p as default};

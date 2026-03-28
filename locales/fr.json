@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "features": "Fonctionnalités",
+    "security": "Sécurité",
+    "download": "Télécharger",
+    "open_menu": "Ouvrir le menu",
+    "close_menu": "Fermer le menu",
+    "main_label": "Navigation principale"
+  },
+  "hero": {
+    "headline_start": "La première application qui",
+    "headline_highlight": "libère l'esprit",
+    "headline_end": "des infirmiers à domicile.",
+    "subtext": "Trouvez un remplacement infirmier domicile Belgique, évitez le burn-out infirmier et partagez vos patients en toute sécurité. Vérification INAMI, alternative sécurisée à WhatsApp pour les soins à domicile.",
+    "cta_appstore": "App Store",
+    "cta_appstore_aria": "Télécharger NURSY sur l'App Store (iOS) — remplacement infirmier domicile Belgique",
+    "cta_playstore": "Google Play",
+    "cta_playstore_aria": "Télécharger NURSY sur Google Play (Android) — soins à domicile Belgique",
+    "social_proof": "+2 500 infirmiers nous font confiance",
+    "mockup_alt": "Aperçu de l'application NURSY sur iPhone — gestion de tournée infirmier indépendante",
+    "badge_status": "ROUTE TERMINÉE",
+    "badge_label": "Tournée Matin OK"
+  },
+  "features": {
+    "eyebrow": "PILIERS DE L'APP",
+    "title": "L'excellence clinique, simplifiée.",
+    "subtitle": "Chaque détail a été pensé avec des infirmiers de terrain pour répondre aux réalités de la pratique à domicile en Belgique.",
+    "market": {
+      "title": "Marché des remplaçants",
+      "text": "Trouvez une remplaçante urgence ou publiez vos disponibilités en quelques clics au sein d'une communauté vérifiée INAMI."
+    },
+    "katz": {
+      "title": "Échelle de Katz & Cotation",
+      "text": "Calcul automatique des honoraires (A, B, C, T2, T7) basé sur l'évaluation réelle du patient. Zéro perte de cotation."
+    },
+    "dossiers": {
+      "title": "Dossiers Intelligents",
+      "text": "Gestion BIM, soins palliatifs et plaies complexes avec suivi photographique sécurisé conforme RGPD/HDS."
+    },
+    "models": {
+      "title": "Modèles de Tournées",
+      "text": "Créez des modèles réutilisables pour votre tournée infirmier indépendante et gagnez du temps chaque matin."
+    }
+  },
+  "security": {
+    "eyebrow": "SÉCURITÉ & CONFIANCE",
+    "title": "Sécurité HDS & Fiabilité Professionnelle",
+    "visual_aria": "Illustration des fonctionnalités de sécurité de NURSY",
+    "biometry": {
+      "title": "Biométrie Avancée",
+      "text": "Accès instantané par FaceID ou empreinte digitale pour une sécurité maximale sans perte de temps."
+    },
+    "health_data": {
+      "label": "Données Santé Chiffrées"
+    },
+    "recommendation": {
+      "label": "Recommandation entre pairs"
+    },
+    "messaging": {
+      "title": "Messagerie Professionnelle",
+      "text": "Alternative sécurisée à WhatsApp pour infirmières : chat, notes vocales et documents cliniques conformes RGPD/HDS."
+    },
+    "verified": {
+      "title": "Profils Vérifiés INAMI",
+      "text": "Chaque membre est vérifié par son numéro INAMI (Belgique) ou RPPS (France). Partage de patients 100 % sécurisé."
+    },
+    "sync": {
+      "title": "Synchronisation Temps-Réel",
+      "text": "Toutes vos données sont synchronisées entre vos appareils instantanément."
+    }
+  },
+  "faq": {
+    "eyebrow": "QUESTIONS FRÉQUENTES",
+    "title": "Tout ce que vous devez savoir sur NURSY",
+    "subtitle": "Des réponses claires aux questions essentielles des infirmiers à domicile en Belgique.",
+    "q1": {
+      "question": "Comment NURSY garantit-elle la sécurité des données patients ?",
+      "answer": "NURSY chiffre l'intégralité des données de santé selon les normes HDS (Hébergeur de Données de Santé). L'accès aux informations des patients est strictement limité à la durée du remplacement. La biométrie FaceID ou empreinte digitale assure une double couche de protection de votre compte."
+    },
+    "q2": {
+      "question": "Comment les profils des remplaçants sont-ils vérifiés ?",
+      "answer": "Chaque profil est vérifié systématiquement via le numéro INAMI (Belgique) ou RPPS (France) connecté à la base de données officielle. Aucun remplaçant non vérifié ne peut accéder aux dossiers patients. C'est notre engagement envers la sécurité du partage de patients."
+    },
+    "q3": {
+      "question": "L'abonnement NURSY est-il fiscalement déductible ?",
+      "answer": "Oui, l'abonnement NURSY est 100 % déductible fiscalement en tant que charge professionnelle pour tous les infirmiers indépendants belges. Conservez simplement votre facture annuelle pour votre comptable."
+    },
+    "q4": {
+      "question": "Puis-je partager seulement une partie de ma tournée ?",
+      "answer": "Oui, NURSY est conçu sur un modèle de modularité totale. Vous choisissez de partager patient par patient ou visite par visite, selon vos besoins du moment. Vous restez maître de votre tournée infirmier indépendante à tout moment et pouvez éviter le burn-out en déléguant progressivement."
+    }
+  },
+  "cta": {
+    "title": "Prêt à transformer votre quotidien ?",
+    "subtitle": "Rejoignez la communauté NURSY aujourd'hui et redécouvrez le plaisir de soigner sans la charge mentale administrative.",
+    "button": "Essayer gratuitement 30 jours",
+    "platforms": "Disponible sur iOS 15+ et Android 10+"
+  },
+  "footer": {
+    "nav_aria": "Liens du pied de page",
+    "legal": "Conditions Générales",
+    "privacy": "Confidentialité",
+    "contact": "Contact",
+    "support": "Support",
+    "tiktok_aria": "NURSY sur TikTok (ouverture dans un nouvel onglet)",
+    "instagram_aria": "NURSY sur Instagram (ouverture dans un nouvel onglet)",
+    "copyright": "© 2024 NURSY. La première application de remplacement infirmier à domicile en Belgique."
+  },
+  "lang": {
+    "fr": "FR",
+    "nl": "NL",
+    "switcher_aria": "Sélection de la langue"
+  }
+}
