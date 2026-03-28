@@ -6,6 +6,8 @@ const switchLocalePath = useSwitchLocalePath()
 const isMenuOpen = ref(false)
 
 const navLinks = [
+  { key: 'nav.profiles', href: '#profiles' },
+  { key: 'nav.modularity', href: '#modularity' },
   { key: 'nav.features', href: '#features' },
   { key: 'nav.security', href: '#security' },
 ]

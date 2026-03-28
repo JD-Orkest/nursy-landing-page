@@ -23,6 +23,8 @@ interface _GlobalComponents {
   FaqSection: typeof import("../../components/organisms/FaqSection.vue")['default']
   FeaturesSection: typeof import("../../components/organisms/FeaturesSection.vue")['default']
   HeroSection: typeof import("../../components/organisms/HeroSection.vue")['default']
+  ModularitySection: typeof import("../../components/organisms/ModularitySection.vue")['default']
+  ProfilesSection: typeof import("../../components/organisms/ProfilesSection.vue")['default']
   SecuritySection: typeof import("../../components/organisms/SecuritySection.vue")['default']
   TheFooter: typeof import("../../components/organisms/TheFooter.vue")['default']
   TheNavbar: typeof import("../../components/organisms/TheNavbar.vue")['default']
@@ -60,6 +62,8 @@ interface _GlobalComponents {
   LazyFaqSection: LazyComponent<typeof import("../../components/organisms/FaqSection.vue")['default']>
   LazyFeaturesSection: LazyComponent<typeof import("../../components/organisms/FeaturesSection.vue")['default']>
   LazyHeroSection: LazyComponent<typeof import("../../components/organisms/HeroSection.vue")['default']>
+  LazyModularitySection: LazyComponent<typeof import("../../components/organisms/ModularitySection.vue")['default']>
+  LazyProfilesSection: LazyComponent<typeof import("../../components/organisms/ProfilesSection.vue")['default']>
   LazySecuritySection: LazyComponent<typeof import("../../components/organisms/SecuritySection.vue")['default']>
   LazyTheFooter: LazyComponent<typeof import("../../components/organisms/TheFooter.vue")['default']>
   LazyTheNavbar: LazyComponent<typeof import("../../components/organisms/TheNavbar.vue")['default']>

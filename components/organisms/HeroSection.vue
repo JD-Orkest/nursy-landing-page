@@ -23,6 +23,11 @@ const { t } = useI18n()
             {{ t('hero.headline_end') }}
           </h1>
 
+          <!-- Tagline accroche -->
+          <p class="font-manrope font-bold text-xl md:text-2xl text-primary -mt-2">
+            {{ t('hero.tagline') }}
+          </p>
+
           <p class="font-jakarta text-base md:text-lg text-info leading-relaxed max-w-lg">
             {{ t('hero.subtext') }}
           </p>

@@ -9,11 +9,11 @@ const seoData = computed(() => {
       ? 'NURSY — Remplacement infirmier à domicile Belgique | Vérification INAMI'
       : 'NURSY — Thuisverpleging vervanging België | RIZIV verificatie',
     description: isFr
-      ? 'Trouvez ou proposez un remplacement infirmier à domicile en Belgique. Évitez le burn-out, partagez vos patients en toute sécurité. Vérification INAMI, alternative sécurisée à WhatsApp pour soins à domicile.'
-      : 'Vind of bied thuisverpleging vervanging in België. Voorkom burn-out verpleegkundige, deel patiënten veilig. RIZIV verificatie, veilig alternatief voor WhatsApp, dringend vervanging zoeken.',
+      ? 'NURSY est la plateforme modulaire de remplacement infirmier à domicile en Belgique. Partagez votre tournée patient par patient, naviguez avec Waze intégré et retrouvez la sérénité professionnelle. Vérification INAMI garantie.'
+      : 'NURSY is het modulaire vervangingsplatform voor thuisverpleegkundigen in België. Deel uw ronde patiënt per patiënt, navigeer met geïntegreerde Waze en vind de professionele sereniteit terug. RIZIV verificatie gegarandeerd.',
     keywords: isFr
-      ? 'remplacement infirmier domicile Belgique, vérification INAMI, tournée infirmier indépendante, éviter burn-out infirmier, partage de patients, alternative sécurisée WhatsApp infirmière, soins à domicile Belgique, trouver remplaçante urgence'
-      : 'thuisverpleging vervanging België, RIZIV verificatie, zelfstandige verpleegkundige ronde, burn-out voorkomen, patiënten delen, veilig alternatief voor WhatsApp, thuiszorg België, dringend vervanging zoeken',
+      ? 'remplacement infirmier domicile Belgique, vérification INAMI, panier de soins infirmier, modularité remplacement, tournée infirmier indépendante, partage de patients sécurisé, navigation tournée Waze, Katz automatique INAMI, sérénité infirmière'
+      : 'thuisverpleging vervanging België, RIZIV verificatie, zorgmand verpleegkundige, modulariteit vervanging, zelfstandige verpleegkundige ronde, patiënten veilig delen, navigatie ronde Waze, automatische Katz RIZIV, sereniteit verpleegkundige',
     ogImageAlt: isFr
       ? 'NURSY — Application pour infirmiers à domicile en Belgique'
       : 'NURSY — App voor thuisverpleegkundigen in België',
@@ -110,6 +110,8 @@ useHead(
 <template>
   <main id="main-content">
     <HeroSection />
+    <ProfilesSection />
+    <ModularitySection />
     <FeaturesSection />
     <SecuritySection />
     <FaqSection />
