@@ -4,6 +4,7 @@
     "modularity": "Modulariteit",
     "features": "Functies",
     "security": "Beveiliging",
+    "pricing": "Tarieven",
     "download": "Downloaden",
     "open_menu": "Menu openen",
     "close_menu": "Menu sluiten",
@@ -135,12 +136,62 @@
       "answer": "Elk profiel wordt gevalideerd via de officiële RIZIV-databank (België) of het RPPS (Frankrijk). Inschrijven en toegang tot patiëntendossiers is onmogelijk zonder een actief en geldig RIZIV-nummer. De verificatie is automatisch en systematisch."
     },
     "q3": {
-      "question": "Wat kost NURSY?",
-      "answer": "NURSY is gratis tijdens de testfase. De uiteindelijke prijs bedraagt circa 15 €/maand. Het abonnement is 100% fiscaal aftrekbaar als beroepskost voor zelfstandige Belgische verpleegkundigen. Bewaar eenvoudig uw jaarfactuur voor uw boekhouder."
+      "question": "Hoe kan ik starten met NURSY?",
+      "answer": "Download de app in de App Store of Google Play, maak een account aan en voer uw RIZIV-nummer in. De verificatie verloopt automatisch — u heeft toegang tot alle functies binnen enkele minuten, zonder engagement of bankkaart vereist tijdens de testfase."
     },
     "q4": {
       "question": "Kan ik slechts een deel van mijn ronde delen?",
       "answer": "Ja, dat is precies de innovatie van NURSY. Dankzij het 'zorgmand'-systeem kiest u exact welke patiënten of welke bezoeken u wilt delegeren. Verpleegkundige A neemt 2 patiënten, verpleegkundige B neemt er 3. U bepaalt de regels, patiënt per patiënt, op elk moment."
+    }
+  },
+  "pricing": {
+    "eyebrow": "TARIEVEN",
+    "title": "Een transparante prijs, zonder verrassingen.",
+    "subtitle": "Prijs abonnement verpleegkundige België duidelijk en fiscaal aftrekbaar. Kies de formule die bij uw situatie past.",
+    "plan_test": {
+      "badge": "LANCERINGSFASE",
+      "name": "Testtoegang",
+      "price": "Gratis",
+      "duration": "",
+      "description": "Volledige toegang tot alle functies tijdens de lanceringsperiode. Zonder engagement, zonder bankkaart.",
+      "cta": "Gratis starten",
+      "features": [
+        "Alle functies ontgrendeld",
+        "Zonder engagement of bankkaart",
+        "Community & support inbegrepen"
+      ]
+    },
+    "plan_indie": {
+      "badge": "MEEST POPULAIR",
+      "name": "Zelfstandige Verpleegkundige",
+      "price": "15 €",
+      "duration": "/ maand",
+      "description": "De ideale formule voor zelfstandige Belgische verpleegkundigen — software rondebeheer verpleegkundige, fiscaal aftrekbaar.",
+      "cta": "Nu starten",
+      "tax_note": "100% fiscaal aftrekbaar als beroepskost voor Belgische zelfstandigen",
+      "features": [
+        "Onbeperkt rondes publiceren",
+        "Volledige modulariteit — zorgmand",
+        "Automatische Katz-schaal (A, B, C, T2, T7)",
+        "Herbruikbare rondemodellen",
+        "Beveiligde berichten GDPR/HDS",
+        "Geïntegreerde navigatie Waze & Google Maps"
+      ]
+    },
+    "plan_group": {
+      "badge": "GROEPEN & BUREAUS",
+      "name": "Oplossing Op Maat",
+      "price": "Op aanvraag",
+      "duration": "",
+      "description": "Software verpleegkundige groep en team thuiszorgbeheer: een oplossing op maat voor uw specifieke behoeften.",
+      "cta": "Contacteer ons",
+      "features": [
+        "Toegewijde beheerdersinterface",
+        "Gecentraliseerd teambeheer — vervangingen in één klik",
+        "Toegang tot profielen en beschikbaarheden van elk teamlid",
+        "Prioritaire support & gepersonaliseerde onboarding",
+        "Configuratie op maat"
+      ]
     }
   },
   "cta": {

@@ -4,6 +4,7 @@
     "modularity": "Modularité",
     "features": "Fonctionnalités",
     "security": "Sécurité",
+    "pricing": "Tarifs",
     "download": "Télécharger",
     "open_menu": "Ouvrir le menu",
     "close_menu": "Fermer le menu",
@@ -135,12 +136,62 @@
       "answer": "Chaque profil est validé via la base de données officielle de l'INAMI (Belgique) ou du RPPS (France). Il est impossible de s'inscrire et d'accéder aux dossiers patients sans un numéro INAMI actif et valide. La vérification est automatique et systématique."
     },
     "q3": {
-      "question": "Quel est le tarif de NURSY ?",
-      "answer": "NURSY est gratuit pendant la phase de test. Le tarif final sera d'environ 15 €/mois. L'abonnement est 100 % déductible fiscalement en tant que charge professionnelle pour les infirmiers indépendants belges. Conservez simplement votre facture annuelle pour votre comptable."
+      "question": "Comment démarrer sur NURSY ?",
+      "answer": "Téléchargez l'application sur l'App Store ou Google Play, créez votre compte et renseignez votre numéro INAMI. La vérification est automatique — vous accédez à l'ensemble des fonctionnalités en quelques minutes, sans engagement ni carte bancaire requise pendant la phase de test."
     },
     "q4": {
       "question": "Puis-je partager seulement une partie de ma tournée ?",
       "answer": "Oui, c'est précisément l'innovation de NURSY. Grâce au système de « panier de soins », vous choisissez exactement quels patients ou quelles visites vous souhaitez déléguer. L'infirmière A peut reprendre 2 patients, l'infirmière B en reprend 3. Vous définissez les règles, patient par patient, à tout moment."
+    }
+  },
+  "pricing": {
+    "eyebrow": "TARIFS",
+    "title": "Un prix transparent, sans surprise.",
+    "subtitle": "Prix abonnement infirmier Belgique clair et déductible fiscalement. Choisissez la formule adaptée à votre situation.",
+    "plan_test": {
+      "badge": "PHASE DE LANCEMENT",
+      "name": "Accès Test",
+      "price": "Gratuit",
+      "duration": "",
+      "description": "Accès complet à toutes les fonctionnalités pendant la durée du lancement. Sans engagement, sans carte bancaire.",
+      "cta": "Commencer gratuitement",
+      "features": [
+        "Toutes les fonctionnalités débloquées",
+        "Sans engagement ni carte bancaire",
+        "Communauté & support inclus"
+      ]
+    },
+    "plan_indie": {
+      "badge": "LE PLUS POPULAIRE",
+      "name": "Infirmière Indépendante",
+      "price": "15 €",
+      "duration": "/ mois",
+      "description": "L'offre idéale pour les infirmiers indépendants belges — logiciel gestion tournée infirmière déductible fiscalement.",
+      "cta": "Commencer maintenant",
+      "tax_note": "100 % déductible fiscalement pour les indépendants belges",
+      "features": [
+        "Publication de tournées illimitée",
+        "Modularité totale — panier de soins",
+        "Échelle de Katz automatique (A, B, C, T2, T7)",
+        "Modèles de tournées réutilisables",
+        "Messagerie sécurisée RGPD/HDS",
+        "Navigation intégrée Waze & Google Maps"
+      ]
+    },
+    "plan_group": {
+      "badge": "GROUPEMENTS & BUREAUX",
+      "name": "Solution Sur Mesure",
+      "price": "Sur devis",
+      "duration": "",
+      "description": "Logiciel groupement infirmier et gestion d'équipe soins à domicile : une solution sur mesure pour vos besoins spécifiques.",
+      "cta": "Nous contacter",
+      "features": [
+        "Interface Administrateur dédiée",
+        "Gestion centralisée de l'équipe — remplacements en un clic",
+        "Accès aux profils et disponibilités de chaque membre",
+        "Support prioritaire & onboarding personnalisé",
+        "Configuration sur mesure"
+      ]
     }
   },
   "cta": {

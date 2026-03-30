@@ -115,6 +115,7 @@ useHead(
     <FeaturesSection />
     <SecuritySection />
     <FaqSection />
+    <PricingSection />
     <CtaSection />
   </main>
 </template>

@@ -10,6 +10,7 @@ const navLinks = [
   { key: 'nav.modularity', href: '#modularity' },
   { key: 'nav.features', href: '#features' },
   { key: 'nav.security', href: '#security' },
+  { key: 'nav.pricing', href: '#pricing' },
 ]
 
 function toggleMenu() {
