@@ -2,7 +2,7 @@
 const { t, locale } = useI18n()
 
 const illustrationSrc = computed(() =>
-  locale.value === 'nl' ? '/illustration-nl.PNG' : '/illustration-fr.PNG'
+  locale.value === 'nl' ? '/illustration-nl.png' : '/illustration-fr.png'
 )
 </script>
 
