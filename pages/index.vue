@@ -28,7 +28,7 @@ useSeoMeta({
   keywords: () => seoData.value.keywords,
   ogType: 'website',
   ogSiteName: 'NURSY',
-  ogImage: 'https://nursy.app/og-image.png',
+  ogImage: 'https://nursy.be/og-image.png',
   ogImageWidth: '1200',
   ogImageHeight: '630',
   ogImageAlt: () => seoData.value.ogImageAlt,
@@ -36,7 +36,7 @@ useSeoMeta({
   twitterSite: '@NursyApp',
   twitterTitle: () => seoData.value.title,
   twitterDescription: () => seoData.value.description,
-  twitterImage: 'https://nursy.app/og-image.png',
+  twitterImage: 'https://nursy.be/og-image.png',
 })
 
 // ── Schema.org JSON-LD ─────────────────────────────────────────────────────

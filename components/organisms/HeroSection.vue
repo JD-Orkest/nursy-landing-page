@@ -1,5 +1,9 @@
 <script setup>
-const { t } = useI18n()
+const { t, locale } = useI18n()
+
+const illustrationSrc = computed(() =>
+  locale.value === 'nl' ? '/illustration-nl.PNG' : '/illustration-fr.PNG'
+)
 </script>
 
 <template>
@@ -82,22 +86,14 @@ const { t } = useI18n()
         <div class="relative flex items-center justify-center lg:justify-end">
           <div class="relative w-full max-w-[300px] mx-auto lg:max-w-none lg:w-[360px] xl:w-[420px]">
 
-            <!--
-              TODO: Remplacer par :
-              <NuxtImg
-                src="/images/mockup-iphone.webp"
-                :alt="t('hero.mockup_alt')"
-                class="w-full drop-shadow-2xl"
-                width="420" height="860"
-                loading="eager"
-                fetchpriority="high"
-                format="webp"
-              />
-            -->
-            <div
-              class="w-full aspect-[9/19] bg-gradient-to-b from-secondary/30 to-primary/10 rounded-[3rem] shadow-2xl flex items-center justify-center"
-              role="img"
-              :aria-label="t('hero.mockup_alt')"
+            <img
+              :src="illustrationSrc"
+              :alt="t('hero.mockup_alt')"
+              class="w-full drop-shadow-2xl rounded-[3rem]"
+              width="420"
+              height="860"
+              loading="eager"
+              fetchpriority="high"
             />
 
             <div class="absolute -bottom-4 -left-2 sm:-left-6 hidden sm:block">
