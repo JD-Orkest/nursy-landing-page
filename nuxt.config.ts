@@ -65,8 +65,9 @@ export default defineNuxtConfig({
 
   // ── Head par défaut (complété par useSeoMeta dans chaque page) ─────────────
   app: {
-    // Pour GitHub Pages dans un sous-dossier, décommentez :
-    // baseURL: process.env.NUXT_APP_BASE_URL || '/',
+    // Sur GitHub Pages (sous-dossier), NUXT_APP_BASE_URL = /nursy-landing-page/
+    // Sur nursy.be (domaine racine), laisser vide → valeur par défaut '/'
+    baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
