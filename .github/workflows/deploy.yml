@@ -34,7 +34,7 @@ jobs:
         run: npm run generate
         env:
           NUXT_PUBLIC_SITE_URL: ${{ vars.NUXT_PUBLIC_SITE_URL || 'https://nursy.be' }}
-          NUXT_APP_BASE_URL: /nursy-landing-page/
+          
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
