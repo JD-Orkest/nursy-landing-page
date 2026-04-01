@@ -24,19 +24,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Generate static site
         run: npm run generate
         env:
-          # Remplacer par votre domaine ou laisser vide pour GitHub Pages
-          NUXT_PUBLIC_SITE_URL: ${{ vars.NUXT_PUBLIC_SITE_URL || 'https://nursy.app' }}
-          # Décommenter si déployé dans un sous-dossier GitHub Pages :
-          # NUXT_APP_BASE_URL: /nursy-landing/
+          NUXT_PUBLIC_SITE_URL: ${{ vars.NUXT_PUBLIC_SITE_URL || 'https://nursy.be' }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

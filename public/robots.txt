@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Bloquer les dossiers de test / staging
+Disallow: /test/
+Disallow: /tests/
+Disallow: /staging/
+
+# Sitemap
+Sitemap: https://nursy.be/sitemap.xml

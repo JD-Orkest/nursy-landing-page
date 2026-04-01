@@ -15,6 +15,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/sitemap',
   ],
 
   // ── Composants : désactive le préfixe de sous-dossier ─────────────────────
@@ -53,7 +54,7 @@ export default defineNuxtConfig({
       alwaysRedirect: false,
     },
     // Les balises hreflang sont gérées via useLocaleHead() dans layouts/default.vue
-    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://nursy.app',
+    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://nursy.be',
     bundle: {
       optimizeTranslationDirective: false,
     },
@@ -99,8 +100,21 @@ export default defineNuxtConfig({
     },
   },
 
-  // ── i18n : désactiver l'avertissement optimizeTranslationDirective ─────────
-  // (sera supprimé en v10, on le désactive explicitement)
+  // ── Sitemap ────────────────────────────────────────────────────────────────
+  site: {
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://nursy.be',
+    name: 'NURSY',
+  },
+
+  sitemap: {
+    // @nuxtjs/i18n est détecté automatiquement → génère /sitemap.xml
+    // avec les routes FR (/) et NL (/nl/) et les alternates hreflang
+    urls: [
+      { loc: '/', priority: 1.0, changefreq: 'weekly' },
+      { loc: '/nl/', priority: 0.9, changefreq: 'weekly' },
+    ],
+  },
+
   // ── En-têtes de sécurité (OWASP) ──────────────────────────────────────────
   routeRules: {
     '/**': {
