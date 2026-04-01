@@ -36,6 +36,9 @@ jobs:
           NUXT_PUBLIC_SITE_URL: ${{ vars.NUXT_PUBLIC_SITE_URL || 'https://nursy.be' }}
           
 
+      - name: Disable Jekyll processing
+        run: touch .output/public/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
