@@ -84,11 +84,11 @@
       "text": "Publiez ou consultez des annonces de remplacement au sein d'une communauté où chaque profil est validé via la base de données officielle de l'INAMI."
     },
     "score": {
-      "title": "Tri et filtres intelligents",
-      "text": "Gagnez en efficacité grâce à notre algorithme de pertinence. Il classe les annonces selon votre secteur et vos critères, tout en vous offrant des filtres précis pour affiner votre recherche et trouver instantanément le remplacement idéal."
+      "title": "Annonces intelligentes",
+      "text": "Les opportunités les plus pertinentes selon votre secteur et vos dates s'affichent en priorité. Filtrez, trouvez, validez : votre prochaine mission est déjà en haut de la pile."
     },
     "katz": {
-      "title": "Échelle de Katz automatique",
+      "title": "Échelle de Katz",
       "text": "Liez une échelle de Katz à chaque patient. L'application calcule automatiquement les scores et détermine la tarification exacte (forfaits INAMI A, B, C, T2, T7). Un gain de temps majeur sur chaque dossier."
     },
     "models": {
