@@ -15,53 +15,53 @@
     "headline_highlight": "infirmiers à domicile",
     "headline_end": "de Belgique.",
     "tagline": "Soignez, partagez, respirez.",
-    "subtext": "NURSY est la première plateforme de remplacement modulaire pour infirmiers indépendants. Déléguez votre tournée en toute sérénité, développez votre activité à votre rythme et retrouvez l'équilibre entre vie professionnelle et personnelle.",
+    "subtext": "Nursy est la première plateforme de remplacement modulaire pour infirmiers indépendants. Déléguez votre tournée en toute sérénité, développez votre activité à votre rythme et retrouvez l'équilibre entre vie professionnelle et personnelle.",
     "cta_appstore": "App Store",
-    "cta_appstore_aria": "Télécharger NURSY sur l'App Store (iOS) — remplacement infirmier domicile Belgique",
+    "cta_appstore_aria": "Télécharger Nursy sur l'App Store (iOS) — remplacement infirmier domicile Belgique",
     "cta_playstore": "Google Play",
-    "cta_playstore_aria": "Télécharger NURSY sur Google Play (Android) — soins à domicile Belgique",
+    "cta_playstore_aria": "Télécharger Nursy sur Google Play (Android) — soins à domicile Belgique",
     "social_proof": "+2 500 infirmiers nous font confiance",
-    "mockup_alt": "Aperçu de l'application NURSY sur iPhone — gestion de tournée infirmière en Belgique",
+    "mockup_alt": "Aperçu de l'application Nursy sur iPhone — gestion de tournée infirmière en Belgique",
     "badge_status": "TOURNÉE PARTAGÉE",
     "badge_label": "3 patients repris"
   },
   "profiles": {
     "eyebrow": "DEUX PROFILS, UNE SEULE PLATEFORME",
     "title": "Conçu pour vous, quel que soit votre statut.",
-    "subtitle": "Que vous souhaitiez déléguer votre tournée ou développer votre activité, NURSY s'adapte à votre réalité professionnelle.",
+    "subtitle": "Que vous souhaitiez déléguer votre tournée ou développer votre activité, Nursy s'adapte à votre réalité professionnelle.",
     "titulaire": {
       "badge": "INFIRMIÈRE TITULAIRE",
       "title": "Déléguez en toute sérénité",
-      "text": "Planifiez vos absences, partagez votre tournée patient par patient et choisissez vos remplaçants parmi des profils vérifiés INAMI. Vous gardez le contrôle total de votre patientèle, même à distance.",
+      "text": "Planifiez vos absences, partagez votre tournée patient par patient et choisissez vos remplaçants parmi des profils vérifiés. Vous choisissez à qui vous déléguez.",
       "cta": "Je veux déléguer",
       "items": [
-        "Publiez votre tournée en un clic à partir de vos modèles",
-        "Choisissez vos remplaçants dans une communauté vérifiée INAMI",
-        "Suivez l'avancement des soins en temps réel",
+        "Publiez votre tournée en un clic ",
+        "Choisissez vos remplaçants dans une communauté vérifiée ",
+        "Collaborez et partagez des informations de manière sécurisée",
         "Reprenez vos patients sereinement à votre retour"
       ]
     },
     "replacant": {
-      "badge": "REMPLAÇANTE / DÉBUTANTE",
-      "title": "Lancez-vous sans patientèle",
+      "badge": "REMPLAÇANTE",
+      "title": "Complétez vos tournées",
       "text": "Trouvez des missions adaptées à vos disponibilités, développez votre expertise clinique et construisez votre réputation au sein d'une communauté professionnelle bienveillante.",
       "cta": "Je cherche des missions",
       "items": [
         "Accédez aux tournées disponibles dans votre secteur",
         "Recevez les dossiers patients sécurisés avant chaque prise en charge",
         "Naviguez avec les adresses intégrées à Waze et Google Maps",
-        "Développez votre réseau et obtenez des recommandations"
+        "Développez votre réseau"
       ]
     }
   },
   "modularity": {
     "eyebrow": "MODULARITÉ UNIQUE",
     "title": "Votre tournée, vos règles.",
-    "subtitle": "NURSY introduit le premier système de « panier de soins » pour infirmiers indépendants en Belgique. Fini la rigidité du remplacement bloc : place à la liberté organisationnelle.",
+    "subtitle": "Nursy introduit le premier système de « panier de soins » pour infirmiers indépendants en Belgique. Fini la rigidité du remplacement bloc : place à la liberté organisationnelle.",
     "step1": {
       "number": "01",
       "title": "Créez votre tournée une fois",
-      "text": "Enregistrez vos patients, leurs soins et leurs horaires. NURSY génère automatiquement un modèle de tournée réutilisable."
+      "text": "Enregistrez vos patients, leurs soins et leurs horaires. Nursy génère automatiquement un modèle de tournée réutilisable."
     },
     "step2": {
       "number": "02",
@@ -99,7 +99,7 @@
   "security": {
     "eyebrow": "SÉCURITÉ & CONFIANCE",
     "title": "La confidentialité des données au cœur du système.",
-    "visual_aria": "Illustration des fonctionnalités de sécurité de NURSY",
+    "visual_aria": "Illustration des fonctionnalités de sécurité de Nursy",
     "biometry": {
       "title": "Accès biométrique",
       "text": "Déverrouillez l'application via FaceID ou empreinte digitale. Personne d'autre ne peut accéder à vos données patients, même en cas de perte du téléphone."
@@ -125,10 +125,10 @@
   },
   "faq": {
     "eyebrow": "QUESTIONS FRÉQUENTES",
-    "title": "Tout ce que vous devez savoir sur NURSY",
+    "title": "Tout ce que vous devez savoir sur Nursy",
     "subtitle": "Des réponses transparentes aux questions essentielles des infirmiers à domicile en Belgique.",
     "q1": {
-      "question": "Comment NURSY garantit-elle la sécurité des données patients ?",
+      "question": "Comment Nursy garantit-elle la sécurité des données patients ?",
       "answer": "Les données de santé sont chiffrées selon les normes HDS (Hébergeur de Données de Santé). L'accès aux informations d'un patient est strictement limité à la durée du remplacement : dès la mission terminée, toutes les données transmises au remplaçant sont automatiquement révoquées. La biométrie (FaceID ou empreinte digitale) protège l'accès à l'application."
     },
     "q2": {
@@ -136,12 +136,12 @@
       "answer": "Chaque profil est validé via la base de données officielle de l'INAMI (Belgique) ou du RPPS (France). Il est impossible de s'inscrire et d'accéder aux dossiers patients sans un numéro INAMI actif et valide. La vérification est automatique et systématique."
     },
     "q3": {
-      "question": "Comment démarrer sur NURSY ?",
+      "question": "Comment démarrer sur Nursy ?",
       "answer": "Téléchargez l'application sur l'App Store ou Google Play, créez votre compte et renseignez votre numéro INAMI. La vérification est automatique — vous accédez à l'ensemble des fonctionnalités en quelques minutes, sans engagement ni carte bancaire requise pendant la phase de test."
     },
     "q4": {
       "question": "Puis-je partager seulement une partie de ma tournée ?",
-      "answer": "Oui, c'est précisément l'innovation de NURSY. Grâce au système de « panier de soins », vous choisissez exactement quels patients ou quelles visites vous souhaitez déléguer. L'infirmière A peut reprendre 2 patients, l'infirmière B en reprend 3. Vous définissez les règles, patient par patient, à tout moment."
+      "answer": "Oui, c'est précisément l'innovation de Nursy. Grâce au système de « panier de soins », vous choisissez exactement quels patients ou quelles visites vous souhaitez déléguer. L'infirmière A peut reprendre 2 patients, l'infirmière B en reprend 3. Vous définissez les règles, patient par patient, à tout moment."
     }
   },
   "pricing": {
@@ -196,7 +196,7 @@
   },
   "cta": {
     "title": "Prêt à retrouver la sérénité ?",
-    "subtitle": "Rejoignez NURSY dès aujourd'hui. Déléguez sereinement, soignez librement et prenez enfin du temps pour vous.",
+    "subtitle": "Rejoignez Nursy dès aujourd'hui. Déléguez sereinement, soignez librement et prenez enfin du temps pour vous.",
     "button": "Démarrer gratuitement",
     "platforms": "Disponible sur iOS 15+ et Android 10+"
   },
@@ -206,9 +206,9 @@
     "privacy": "Confidentialité",
     "contact": "Contact",
     "support": "Support",
-    "tiktok_aria": "NURSY sur TikTok (ouverture dans un nouvel onglet)",
-    "instagram_aria": "NURSY sur Instagram (ouverture dans un nouvel onglet)",
-    "copyright": "© 2024 NURSY. La plateforme de remplacement modulaire pour infirmiers à domicile en Belgique."
+    "tiktok_aria": "Nursy sur TikTok (ouverture dans un nouvel onglet)",
+    "instagram_aria": "Nursy sur Instagram (ouverture dans un nouvel onglet)",
+    "copyright": "© 2026 Nursy. La plateforme de remplacement modulaire pour infirmiers à domicile en Belgique."
   },
   "lang": {
     "fr": "FR",

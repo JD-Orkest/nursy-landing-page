@@ -3,6 +3,7 @@
 const { t, locale } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 
+const router = useRouter()
 const isMenuOpen = ref(false)
 
 const navLinks = [
@@ -19,6 +20,16 @@ function toggleMenu() {
 
 function closeMenu() {
   isMenuOpen.value = false
+}
+
+// Supprime le hash de l'URL et scroll en haut lors du changement de langue
+function switchLang(lang) {
+  const path = switchLocalePath(lang)
+  const cleanPath = path.split('#')[0] || '/'
+  router.push(cleanPath).then(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  })
+  closeMenu()
 }
 </script>
 
@@ -60,16 +71,15 @@ function closeMenu() {
 
       <!-- ─── Desktop : sélecteur de langue + CTA ─── -->
       <div class="hidden md:flex items-center gap-4">
-        <!-- NuxtLink génère un <a href="/nl/"> réel → meilleur SEO et accessibilité -->
         <div
           class="flex items-center rounded-lg overflow-hidden"
           role="group"
           :aria-label="t('lang.switcher_aria')"
         >
-          <NuxtLink
+          <button
             v-for="lang in ['fr', 'nl']"
             :key="lang"
-            :to="switchLocalePath(lang)"
+            type="button"
             class="px-3 min-h-[36px] flex items-center text-xs font-semibold font-manrope uppercase transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-inset"
             :class="
               locale === lang
@@ -77,9 +87,10 @@ function closeMenu() {
                 : 'text-info hover:text-primary hover:bg-secondary/20'
             "
             :aria-current="locale === lang ? 'true' : undefined"
+            @click="switchLang(lang)"
           >
             {{ t(`lang.${lang}`) }}
-          </NuxtLink>
+          </button>
         </div>
 
         <BaseButton href="#download" variant="primary">
@@ -153,10 +164,10 @@ function closeMenu() {
             role="group"
             :aria-label="t('lang.switcher_aria')"
           >
-            <NuxtLink
+            <button
               v-for="lang in ['fr', 'nl']"
               :key="lang"
-              :to="switchLocalePath(lang)"
+              type="button"
               class="px-5 min-h-[48px] flex items-center text-sm font-semibold font-manrope uppercase rounded-xl transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
               :class="
                 locale === lang
@@ -164,10 +175,10 @@ function closeMenu() {
                   : 'bg-secondary/20 text-info hover:text-primary'
               "
               :aria-current="locale === lang ? 'true' : undefined"
-              @click="closeMenu"
+              @click="switchLang(lang)"
             >
               {{ t(`lang.${lang}`) }}
-            </NuxtLink>
+            </button>
           </div>
 
           <BaseButton href="#download" variant="primary" class="mt-1 w-full" @click="closeMenu">

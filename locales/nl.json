@@ -15,53 +15,53 @@
     "headline_highlight": "thuisverpleegkundigen",
     "headline_end": "in België verbindt.",
     "tagline": "Verzorg, deel, adem.",
-    "subtext": "NURSY is het eerste modulaire vervangingsplatform voor zelfstandige verpleegkundigen in België. Delegeer uw ronde in alle sereniteit, bouw uw activiteit op uw eigen tempo op en vind opnieuw de balans tussen werk en privéleven.",
+    "subtext": "Nursy is het eerste modulaire vervangingsplatform voor zelfstandige verpleegkundigen in België. Delegeer uw ronde in alle sereniteit, bouw uw activiteit op uw eigen tempo op en vind opnieuw de balans tussen werk en privéleven.",
     "cta_appstore": "App Store",
-    "cta_appstore_aria": "NURSY downloaden in de App Store (iOS) — thuisverpleging vervanging België",
+    "cta_appstore_aria": "Nursy downloaden in de App Store (iOS) — thuisverpleging vervanging België",
     "cta_playstore": "Google Play",
-    "cta_playstore_aria": "NURSY downloaden in Google Play (Android) — thuiszorg België",
+    "cta_playstore_aria": "Nursy downloaden in Google Play (Android) — thuiszorg België",
     "social_proof": "+2 500 verpleegkundigen vertrouwen ons",
-    "mockup_alt": "Voorbeeld van de NURSY-app op iPhone — planning verpleegkundige thuiszorg België",
+    "mockup_alt": "Voorbeeld van de Nursy-app op iPhone — planning verpleegkundige thuiszorg België",
     "badge_status": "RONDE GEDEELD",
     "badge_label": "3 patiënten overgenomen"
   },
   "profiles": {
     "eyebrow": "TWEE PROFIELEN, ÉÉN PLATFORM",
     "title": "Ontworpen voor u, ongeacht uw statuut.",
-    "subtitle": "Of u nu uw ronde wilt delegeren of uw activiteit wilt uitbouwen, NURSY past zich aan uw professionele realiteit aan.",
+    "subtitle": "Of u nu uw ronde wilt delegeren of uw activiteit wilt uitbouwen, Nursy past zich aan uw professionele realiteit aan.",
     "titulaire": {
       "badge": "VASTE VERPLEEGKUNDIGE",
       "title": "Delegeer in alle sereniteit",
-      "text": "Plan uw afwezigheid, deel uw ronde patiënt per patiënt en kies uw vervangers uit RIZIV-geverifieerde profielen. U behoudt de volledige controle over uw patiëntenbestand, ook op afstand.",
+      "text": "Plan uw afwezigheden, deel uw ronde patiënt per patiënt en kies uw vervangers uit geverifieerde profielen. U kiest zelf aan wie u delegeert.",
       "cta": "Ik wil delegeren",
       "items": [
-        "Publiceer uw ronde in één klik vanuit uw modellen",
-        "Kies uw vervangers uit een RIZIV-geverifieerde gemeenschap",
-        "Volg de voortgang van de zorg in real time op",
+        "Publiceer uw ronde in één klik",
+        "Kies uw vervangers uit een geverifieerde community",
+        "Werk samen en deel informatie op een veilige manier",
         "Neem uw patiënten rustig terug bij uw terugkomst"
       ]
     },
     "replacant": {
-      "badge": "VERVANGER / STARTER",
-      "title": "Start zonder patiëntenlijst",
+      "badge": "VERVANGER",
+      "title": "Vul uw rondes aan",
       "text": "Vind opdrachten die passen bij uw beschikbaarheid, bouw uw klinische expertise uit en ontwikkel uw professionele reputatie binnen een ondersteunende gemeenschap.",
       "cta": "Ik zoek opdrachten",
       "items": [
         "Bekijk beschikbare rondes in uw regio",
         "Ontvang beveiligde patiëntendossiers vóór elke opdracht",
         "Navigeer eenvoudig met geïntegreerde adressen (Waze / Maps)",
-        "Bouw uw netwerk en aanbevelingen uit"
+        "Breid uw netwerk uit"
       ]
     }
   },
   "modularity": {
     "eyebrow": "UNIEKE MODULARITEIT",
     "title": "Uw ronde, uw regels.",
-    "subtitle": "NURSY introduceert het eerste systeem van 'zorgmand' voor zelfstandige verpleegkundigen in België. Geen starheid meer, maar organisatorische vrijheid.",
+    "subtitle": "Nursy introduceert het eerste systeem van 'zorgmand' voor zelfstandige verpleegkundigen in België. Geen starheid meer, maar organisatorische vrijheid.",
     "step1": {
       "number": "01",
       "title": "Stel uw ronde eenmalig samen",
-      "text": "Registreer uw patiënten, hun zorg en hun tijdschema. NURSY genereert automatisch een herbruikbaar rondemodel."
+      "text": "Registreer uw patiënten, hun zorg en hun tijdschema. Nursy genereert automatisch een herbruikbaar rondemodel."
     },
     "step2": {
       "number": "02",
@@ -99,7 +99,7 @@
   "security": {
     "eyebrow": "BEVEILIGING & VERTROUWEN",
     "title": "Gegevensvertrouwelijkheid als kern van het systeem.",
-    "visual_aria": "Illustratie van de beveiligingsfuncties van NURSY",
+    "visual_aria": "Illustratie van de beveiligingsfuncties van Nursy",
     "biometry": {
       "title": "Biometrische toegang",
       "text": "Ontgrendel de app via FaceID of vingerafdruk. Niemand anders heeft toegang tot uw patiëntengegevens, zelfs niet bij verlies van uw telefoon."
@@ -125,10 +125,10 @@
   },
   "faq": {
     "eyebrow": "VEELGESTELDE VRAGEN",
-    "title": "Alles wat u moet weten over NURSY",
+    "title": "Alles wat u moet weten over Nursy",
     "subtitle": "Transparante antwoorden op de essentiële vragen van thuisverpleegkundigen in België.",
     "q1": {
-      "question": "Hoe garandeert NURSY de veiligheid van patiëntengegevens?",
+      "question": "Hoe garandeert Nursy de veiligheid van patiëntengegevens?",
       "answer": "Gezondheidsgegevens worden versleuteld volgens HDS-normen (Hébergeur de Données de Santé). Toegang tot patiëntinformatie is strikt beperkt tot de duur van de vervanging: zodra de opdracht is afgerond, worden alle aan de vervanger doorgegeven gegevens automatisch ingetrokken. Biometrie (FaceID of vingerafdruk) beschermt de toegang tot de app."
     },
     "q2": {
@@ -136,12 +136,12 @@
       "answer": "Elk profiel wordt gevalideerd via de officiële RIZIV-databank (België) of het RPPS (Frankrijk). Inschrijven en toegang tot patiëntendossiers is onmogelijk zonder een actief en geldig RIZIV-nummer. De verificatie is automatisch en systematisch."
     },
     "q3": {
-      "question": "Hoe kan ik starten met NURSY?",
+      "question": "Hoe kan ik starten met Nursy?",
       "answer": "Download de app in de App Store of Google Play, maak een account aan en voer uw RIZIV-nummer in. De verificatie verloopt automatisch — u heeft toegang tot alle functies binnen enkele minuten, zonder engagement of bankkaart vereist tijdens de testfase."
     },
     "q4": {
       "question": "Kan ik slechts een deel van mijn ronde delen?",
-      "answer": "Ja, dat is precies de innovatie van NURSY. Dankzij het 'zorgmand'-systeem kiest u exact welke patiënten of welke bezoeken u wilt delegeren. Verpleegkundige A neemt 2 patiënten, verpleegkundige B neemt er 3. U bepaalt de regels, patiënt per patiënt, op elk moment."
+      "answer": "Ja, dat is precies de innovatie van Nursy. Dankzij het 'zorgmand'-systeem kiest u exact welke patiënten of welke bezoeken u wilt delegeren. Verpleegkundige A neemt 2 patiënten, verpleegkundige B neemt er 3. U bepaalt de regels, patiënt per patiënt, op elk moment."
     }
   },
   "pricing": {
@@ -196,7 +196,7 @@
   },
   "cta": {
     "title": "Klaar om opnieuw te ademen?",
-    "subtitle": "Word vandaag lid van NURSY. Delegeer met sereniteit, verzorg met vrijheid en neem eindelijk tijd voor uzelf.",
+    "subtitle": "Word vandaag lid van Nursy. Delegeer met sereniteit, verzorg met vrijheid en neem eindelijk tijd voor uzelf.",
     "button": "Gratis starten",
     "platforms": "Beschikbaar op iOS 15+ en Android 10+"
   },
@@ -206,9 +206,9 @@
     "privacy": "Privacybeleid",
     "contact": "Contact",
     "support": "Ondersteuning",
-    "tiktok_aria": "NURSY op TikTok (opent in nieuw tabblad)",
-    "instagram_aria": "NURSY op Instagram (opent in nieuw tabblad)",
-    "copyright": "© 2024 NURSY. Het modulaire vervangingsplatform voor thuisverpleegkundigen in België."
+    "tiktok_aria": "Nursy op TikTok (opent in nieuw tabblad)",
+    "instagram_aria": "Nursy op Instagram (opent in nieuw tabblad)",
+    "copyright": "© 2026 Nursy. Het modulaire vervangingsplatform voor thuisverpleegkundigen in België."
   },
   "lang": {
     "fr": "FR",

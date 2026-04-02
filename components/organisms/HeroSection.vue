@@ -68,7 +68,7 @@ const illustrationSrc = computed(() =>
           </div>
 
           <!-- Preuve sociale -->
-          <div class="flex items-center gap-3">
+          <!-- <div class="flex items-center gap-3">
             <div class="flex -space-x-2 shrink-0" aria-hidden="true">
               <div
                 v-for="i in 3"
@@ -79,7 +79,7 @@ const illustrationSrc = computed(() =>
             <p class="font-jakarta text-sm font-medium text-info">
               {{ t('hero.social_proof') }}
             </p>
-          </div>
+          </div> -->
         </div>
 
         <!-- ─── Colonne droite : mockup iPhone ─── -->
