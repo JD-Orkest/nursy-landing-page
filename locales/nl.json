@@ -96,6 +96,33 @@
       "text": "Stel uw ronde één keer samen — patiënten, zorgen, tijdstippen. Sla deze op: in de toekomst selecteert u gewoon uw sjabloon en publiceert u deze met één klik."
     }
   },
+  "replacement": {
+    "eyebrow": "VOOR VERVANGENDE VERPLEEGKUNDIGEN",
+    "title": "Onafhankelijkheid met een sterk netwerk.",
+    "subtitle": "Vul uw planning aan op basis van uw beschikbaarheid en krijg toegang tot geverifieerde verpleegkundige verstrekkingen in België zonder prospectie-inspanning.",
+    "cta": "Opdrachten zoeken",
+    "items": {
+      "select": {
+        "title": "Selecteer uw bezoeken",
+        "text": "Vind gesoleerde zorgverstrekkingen of deelrondes die passen in uw agenda. Reageer op advertenties in uw geografische regio."
+      },
+      "agenda": {
+        "title": "Beheer uw agenda",
+        "text": "Geen exclusiviteit of langetermijnverbintenis. Zelfstandige verpleegkundige vervanging: u aanvaardt alleen een verstrekking wanneer u echt beschikbaar bent."
+      },
+      "data": {
+        "title": "Raadpleeg de zorggegevens",
+        "text": "Krijg tijdens de volledige duur van de opdracht op beveiligde wijze toegang tot de onmisbare informatie (Katz-schaal, protocollen, toegangen) voor thuiszorgplanning."
+      }
+    },
+    "card": {
+      "title": "Zonder beperkingen",
+      "badge1": "Geen verbintenis of exclusiviteit",
+      "badge2": "Voorkeurstoeg per sector",
+      "badge3": "Beveiligde klinische fiches",
+      "note": "Nursy verifieert elk profiel via het RIZIV nummer"
+    }
+  },
   "security": {
     "eyebrow": "BEVEILIGING & VERTROUWEN",
     "title": "Gegevensvertrouwelijkheid als kern van het systeem.",

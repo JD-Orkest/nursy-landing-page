@@ -112,6 +112,7 @@ useHead(
     <HeroSection />
     <ProfilesSection />
     <ModularitySection />
+    <ReplacementSection />
     <FeaturesSection />
     <SecuritySection />
     <PricingSection />

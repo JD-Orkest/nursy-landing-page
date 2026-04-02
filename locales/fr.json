@@ -96,6 +96,33 @@
       "text": "Constituez votre tournée une seule fois — patients, soins, horaires. Enregistrez-la: à l'avenir, sélectionnez simplement votre modèle et publiez-le en un clic."
     }
   },
+  "replacement": {
+    "eyebrow": "POUR LES INFIRMIÈRES REMPLAÇANTES",
+    "title": "L'indépendance, le réseau en plus.",
+    "subtitle": "Complétez votre planning selon vos disponibilités et accédez à des prestations infirmières vérifiées en Belgique sans aucune démarche de prospection.",
+    "cta": "Trouver des missions",
+    "items": {
+      "select": {
+        "title": "Sélectionnez vos visites",
+        "text": "Trouvez des soins isolés ou des tournées partielles qui s'insèrent dans votre emploi du temps. Répondez aux annonces du réseau en fonction de votre secteur géographique."
+      },
+      "agenda": {
+        "title": "Maîtrisez votre agenda",
+        "text": "Aucune exclusivité ni engagement long terme. Remplacement infirmier indépendant : vous choisissez d'accepter une prestation uniquement quand vous êtes réellement disponible."
+      },
+      "data": {
+        "title": "Consultez les données de soins",
+        "text": "Accédez aux informations indispensables (échelle de Katz, protocoles, accès) planification soins à domicile de manière sécurisée durant toute la durée de la mission."
+      }
+    },
+    "card": {
+      "title": "Sans contraintes",
+      "badge1": "Zéro engagement ni exclusivité",
+      "badge2": "Accès préférentiel par secteur",
+      "badge3": "Fiches cliniques sécurisées",
+      "note": "Nursy vérifie chaque profil via le numéro INAMI"
+    }
+  },
   "security": {
     "eyebrow": "SÉCURITÉ & CONFIANCE",
     "title": "La confidentialité des données au cœur du système.",
