@@ -4,22 +4,22 @@ const { showToast } = useToast()
 const { t } = useI18n()
 const { gtag } = useGtag()
 
-const form = reactive({ prenom: '', nom: '', telephone: '', email: '', message: '' })
-const errors = reactive({ prenom: '', nom: '', telephone: '', email: '', message: '' })
+const form = reactive({ firstname: '', lastname: '', phone: '', email: '', message: '' })
+const errors = reactive({ firstname: '', lastname: '', phone: '', email: '', message: '' })
 const isSubmitting = ref(false)
 const hasError = ref(false)
 const firstInput = ref(null)
 
 function clearErrors() {
-  errors.prenom = errors.nom = errors.telephone = errors.email = errors.message = ''
+  errors.firstname = errors.lastname = errors.phone = errors.email = errors.message = ''
 }
 
 function validate() {
   clearErrors()
   let valid = true
-  if (!form.prenom.trim()) { errors.prenom = t('contact.field_required'); valid = false }
-  if (!form.nom.trim()) { errors.nom = t('contact.field_required'); valid = false }
-  if (!form.telephone.trim()) { errors.telephone = t('contact.field_required'); valid = false }
+  if (!form.firstname.trim()) { errors.firstname = t('contact.field_required'); valid = false }
+  if (!form.lastname.trim()) { errors.lastname = t('contact.field_required'); valid = false }
+  if (!form.phone.trim()) { errors.phone = t('contact.field_required'); valid = false }
   if (!form.email.trim()) {
     errors.email = t('contact.field_required'); valid = false
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
@@ -34,8 +34,13 @@ async function submit() {
   isSubmitting.value = true
   hasError.value = false
   try {
-    await $fetch('http://192.168.1.12/api/web-contact', { method: 'POST', body: { ...form } })
-    form.prenom = form.nom = form.telephone = form.email = form.message = ''
+    await $fetch('https://apocrine-actionably-shelley.ngrok-free.dev/api/web-contact', {
+      method: 'POST',
+      body: {
+        message: `Prénom: ${form.firstname}\nNom de famille: ${form.lastname}\nEmail: ${form.email}\nTéléphone: ${form.phone}\nMessage: ${form.message}`,
+      },
+    })
+    form.firstname = form.lastname = form.phone = form.email = form.message = ''
     clearErrors()
     close()
     gtag('event', 'contact_form_success')
@@ -111,7 +116,7 @@ watch(isOpen, (val) => {
             <!-- Formulaire -->
             <form class="px-6 pb-6 flex flex-col gap-4" novalidate @submit.prevent="submit">
 
-              <!-- Prénom + Nom côte à côte -->
+              <!-- Prélastname + lastname côte à côte -->
               <div class="grid grid-cols-2 gap-3">
                 <div class="flex flex-col gap-1">
                   <label class="text-xs font-semibold text-text-main" style="font-family: 'PT Sans', sans-serif">
@@ -119,30 +124,30 @@ watch(isOpen, (val) => {
                   </label>
                   <input
                     ref="firstInput"
-                    v-model="form.prenom"
+                    v-model="form.firstname"
                     type="text"
                     autocomplete="given-name"
                     class="bg-[#eaefef] px-4 py-3 text-sm text-text-main placeholder:text-[#9BB3B3] focus:outline-none focus:ring-2 focus:ring-primary/20 transition-shadow w-full"
                     style="border-radius: 6px; font-family: 'PT Sans', sans-serif"
-                    :class="{ 'ring-2 ring-red-400/40': errors.prenom }"
+                    :class="{ 'ring-2 ring-red-400/40': errors.firstname }"
                     :placeholder="t('contact.first_name')"
                   />
-                  <span v-if="errors.prenom" class="text-xs text-red-500" style="font-family: 'PT Sans', sans-serif">{{ errors.prenom }}</span>
+                  <span v-if="errors.firstname" class="text-xs text-red-500" style="font-family: 'PT Sans', sans-serif">{{ errors.firstname }}</span>
                 </div>
                 <div class="flex flex-col gap-1">
                   <label class="text-xs font-semibold text-text-main" style="font-family: 'PT Sans', sans-serif">
                     {{ t('contact.last_name') }} *
                   </label>
                   <input
-                    v-model="form.nom"
+                    v-model="form.lastname"
                     type="text"
                     autocomplete="family-name"
                     class="bg-[#eaefef] px-4 py-3 text-sm text-text-main placeholder:text-[#9BB3B3] focus:outline-none focus:ring-2 focus:ring-primary/20 transition-shadow w-full"
                     style="border-radius: 6px; font-family: 'PT Sans', sans-serif"
-                    :class="{ 'ring-2 ring-red-400/40': errors.nom }"
+                    :class="{ 'ring-2 ring-red-400/40': errors.lastname }"
                     :placeholder="t('contact.last_name')"
                   />
-                  <span v-if="errors.nom" class="text-xs text-red-500" style="font-family: 'PT Sans', sans-serif">{{ errors.nom }}</span>
+                  <span v-if="errors.lastname" class="text-xs text-red-500" style="font-family: 'PT Sans', sans-serif">{{ errors.lastname }}</span>
                 </div>
               </div>
 
@@ -152,15 +157,15 @@ watch(isOpen, (val) => {
                   {{ t('contact.phone') }} *
                 </label>
                 <input
-                  v-model="form.telephone"
+                  v-model="form.phone"
                   type="tel"
                   autocomplete="tel"
                   class="bg-[#eaefef] px-4 py-3 text-sm text-text-main placeholder:text-[#9BB3B3] focus:outline-none focus:ring-2 focus:ring-primary/20 transition-shadow w-full"
                   style="border-radius: 6px; font-family: 'PT Sans', sans-serif"
-                  :class="{ 'ring-2 ring-red-400/40': errors.telephone }"
+                  :class="{ 'ring-2 ring-red-400/40': errors.phone }"
                   placeholder="+32 4xx xx xx xx"
                 />
-                <span v-if="errors.telephone" class="text-xs text-red-500" style="font-family: 'PT Sans', sans-serif">{{ errors.telephone }}</span>
+                <span v-if="errors.phone" class="text-xs text-red-500" style="font-family: 'PT Sans', sans-serif">{{ errors.phone }}</span>
               </div>
 
               <!-- E-mail -->
