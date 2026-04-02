@@ -105,22 +105,22 @@
       "text": "Ontgrendel de app via FaceID of vingerafdruk. Niemand anders heeft toegang tot uw patiëntengegevens, zelfs niet bij verlies van uw telefoon."
     },
     "health_data": {
-      "label": "HDS-versleutelde gegevens"
+      "label": "Versleutelde gegevens"
     },
     "recommendation": {
-      "label": "Officiële RIZIV-verificatie"
+      "label": "ISO 27001 gecertificeerd"
     },
     "messaging": {
       "title": "Beveiligde professionele berichten",
       "text": "Communiceer met uw vervangers via versleutelde berichten: tekst, spraakberichten en klinische foto's. Alle communicatie blijft in een GDPR-conforme omgeving."
     },
-    "verified": {
-      "title": "RIZIV-geverifieerde profielen",
-      "text": "Elk profiel wordt systematisch gevalideerd via het officiële RIZIV-nummer. Geen toegang tot patiëntendossiers zonder voorafgaande verificatie."
-    },
     "sync": {
       "title": "Tijdsbeperkte toegang",
       "text": "Patiëntengegevens die aan een vervanger worden doorgegeven, worden automatisch ingetrokken na afloop van de vervangingsperiode. De derde partij bewaart geen enkele gegevens."
+    },
+    "infrastructure": {
+      "title": "Gecertificeerde infrastructuur",
+      "text": "Uw gegevens worden opgeslagen op beveiligde servers in België, met dagelijkse back-ups. Onze infrastructuur voldoet strikt aan de ISO 27001-normen."
     }
   },
   "faq": {

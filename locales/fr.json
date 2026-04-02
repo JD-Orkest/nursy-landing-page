@@ -105,22 +105,22 @@
       "text": "Déverrouillez l'application via FaceID ou empreinte digitale. Personne d'autre ne peut accéder à vos données patients, même en cas de perte du téléphone."
     },
     "health_data": {
-      "label": "Données chiffrées HDS"
+      "label": "Données chiffrées"
     },
     "recommendation": {
-      "label": "Vérification INAMI officielle"
+      "label": "Certifié ISO 27001"
     },
     "messaging": {
       "title": "Messagerie professionnelle sécurisée",
-      "text": "Échangez avec vos remplaçants via une messagerie chiffrée : texte, messages vocaux et photos cliniques. Toutes les communications restent dans un environnement conforme RGPD/HDS."
-    },
-    "verified": {
-      "title": "Profils vérifiés INAMI",
-      "text": "Chaque profil est systématiquement validé via le numéro INAMI officiel. Aucun accès aux dossiers patients sans vérification préalable."
+      "text": "Échangez avec vos remplaçants via une messagerie chiffrée : texte, messages vocaux et photos cliniques. Toutes les communications restent dans un environnement conforme au RGPD."
     },
     "sync": {
       "title": "Accès limité dans le temps",
       "text": "Les données patients transmises à un remplaçant sont automatiquement révoquées à la fin de la période de remplacement. Aucune donnée n'est conservée par le tiers."
+    },
+    "infrastructure": {
+      "title": "Infrastructure certifiée ISO",
+      "text": "Vos données sont stockées sur des serveurs hautement sécurisés situés en Belgique, bénéficiant de sauvegardes quotidiennes. Nos infrastructures respectent rigoureusement les normes ISO 27001."
     }
   },
   "faq": {
