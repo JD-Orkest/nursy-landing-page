@@ -100,7 +100,6 @@
     "eyebrow": "VOOR VERVANGENDE VERPLEEGKUNDIGEN",
     "title": "Onafhankelijkheid met een sterk netwerk.",
     "subtitle": "Vul uw planning aan op basis van uw beschikbaarheid en krijg toegang tot geverifieerde verpleegkundige verstrekkingen in België zonder prospectie-inspanning.",
-    "cta": "Opdrachten zoeken",
     "items": {
       "select": {
         "title": "Selecteer uw bezoeken",
@@ -120,7 +119,7 @@
       "badge1": "Geen verbintenis of exclusiviteit",
       "badge2": "Voorkeurstoeg per sector",
       "badge3": "Beveiligde klinische fiches",
-      "note": "Nursy verifieert elk profiel via het RIZIV nummer"
+      
     }
   },
   "security": {

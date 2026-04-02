@@ -73,11 +73,7 @@ const items = [
             </li>
           </ul>
 
-          <div class="pt-2">
-            <BaseButton href="#download" variant="primary">
-              {{ t('replacement.cta') }}
-            </BaseButton>
-          </div>
+          
         </div>
 
         <!-- ─── Colonne droite : carte réassurance (40%) ─── -->
@@ -105,9 +101,7 @@ const items = [
               </li>
             </ul>
 
-            <p class="font-jakarta text-xs text-info text-center pt-1">
-              {{ t('replacement.card.note') }}
-            </p>
+           
           </div>
         </div>
 
