@@ -1,6 +1,7 @@
 <script setup>
 // ref et useI18n sont auto-importés dans Nuxt 3
 const { t, locale } = useI18n()
+const { open: openContactModal } = useContactModal()
 const switchLocalePath = useSwitchLocalePath()
 const localePath = useLocalePath()
 const router = useRouter()
@@ -85,6 +86,13 @@ function switchLang(lang) {
 
       <!-- ─── Desktop : sélecteur de langue + CTA ─── -->
       <div class="hidden md:flex items-center gap-4">
+        <button
+          type="button"
+          class="font-jakarta text-sm font-medium text-text-main hover:text-primary transition-colors duration-150 rounded py-1 px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+          @click="openContactModal"
+        >
+          {{ t('footer.contact') }}
+        </button>
         <div
           class="flex items-center rounded-lg overflow-hidden"
           role="group"
@@ -107,9 +115,6 @@ function switchLang(lang) {
           </button>
         </div>
 
-        <BaseButton href="#download" variant="primary">
-          {{ t('nav.download') }}
-        </BaseButton>
       </div>
 
       <!-- ─── Mobile : hamburger ─── -->
@@ -195,9 +200,13 @@ function switchLang(lang) {
             </button>
           </div>
 
-          <BaseButton href="#download" variant="primary" class="mt-1 w-full" @click="closeMenu">
-            {{ t('nav.download') }}
-          </BaseButton>
+        <button
+            type="button"
+            class="font-jakarta text-base font-medium text-text-main hover:text-primary min-h-[48px] flex items-center px-3 rounded-xl hover:bg-secondary/20 transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            @click="() => { openContactModal(); closeMenu() }"
+          >
+            {{ t('footer.contact') }}
+          </button>
         </div>
       </div>
     </Transition>
