@@ -3,6 +3,20 @@ const { isOpen, close } = useContactModal()
 const { showToast } = useToast()
 const { t } = useI18n()
 const { gtag } = useGtag()
+const config = useRuntimeConfig()
+
+const RECAPTCHA_SITE_KEY = '6LdjdKMsAAAAAI8_G6M5hNa34wx839RYEI-r_aJ5'
+
+// ── Chargement du script reCAPTCHA (seulement côté client) ────────────────
+useHead({
+  script: [
+    {
+      src: `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`,
+      async: true,
+      defer: true,
+    },
+  ],
+})
 
 const form = reactive({ firstname: '', lastname: '', phone: '', email: '', message: '' })
 const errors = reactive({ firstname: '', lastname: '', phone: '', email: '', message: '' })
@@ -33,24 +47,39 @@ async function submit() {
   if (!validate()) return
   isSubmitting.value = true
   hasError.value = false
-  try {
-    await $fetch('https://apocrine-actionably-shelley.ngrok-free.dev/api/web-contact', {
-      method: 'POST',
-      body: {
-        message: `Prénom: ${form.firstname}\nNom de famille: ${form.lastname}\nEmail: ${form.email}\nTéléphone: ${form.phone}\nMessage: ${form.message}`,
-      },
-    })
-    form.firstname = form.lastname = form.phone = form.email = form.message = ''
-    clearErrors()
-    close()
-    gtag('event', 'contact_form_success')
-    showToast(t('contact.toast_success'))
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  } catch {
-    hasError.value = true
-  } finally {
-    isSubmitting.value = false
-  }
+
+  const messageText = `Prénom: ${form.firstname}\nNom de famille: ${form.lastname}\nEmail: ${form.email}\nTéléphone: ${form.phone}\nMessage: ${form.message}`
+
+  // ── reCAPTCHA v3 ──────────────────────────────────────────────────────────
+  window.grecaptcha.ready(() => {
+    window.grecaptcha
+      .execute(RECAPTCHA_SITE_KEY, { action: 'submit' })
+      .then(async (token) => {
+        try {
+          await $fetch(config.public.apiUrl, {
+            method: 'POST',
+            body: {
+              message: messageText,
+              recaptcha_token: token,
+            },
+          })
+          form.firstname = form.lastname = form.phone = form.email = form.message = ''
+          clearErrors()
+          close()
+          gtag('event', 'contact_form_success')
+          showToast(t('contact.toast_success'))
+          window.scrollTo({ top: 0, behavior: 'smooth' })
+        } catch {
+          hasError.value = true
+        } finally {
+          isSubmitting.value = false
+        }
+      })
+      .catch(() => {
+        hasError.value = true
+        isSubmitting.value = false
+      })
+  })
 }
 
 // Echap ferme le modal
@@ -222,6 +251,15 @@ watch(isOpen, (val) => {
                   {{ t('contact.sending') }}
                 </span>
               </button>
+
+              <!-- Mention légale reCAPTCHA v3 -->
+              <p class="text-center text-[11px] text-[#9BB3B3] leading-relaxed" style="font-family: 'PT Sans', sans-serif">
+                Ce site est protégé par reCAPTCHA.
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="underline hover:text-info transition-colors">Politique de confidentialité</a>
+                et
+                <a href="https://policies.google.com/terms" target="_blank" rel="noopener" class="underline hover:text-info transition-colors">Conditions d'utilisation</a>
+                de Google s'appliquent.
+              </p>
             </form>
           </div>
         </div>
