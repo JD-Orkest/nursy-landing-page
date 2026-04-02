@@ -4,10 +4,10 @@ const { t } = useI18n()
 const openIndex = ref(null)
 
 const faqItems = computed(() => [
-  { q: t('faq.q1.question'), a: t('faq.q1.answer') },
-  { q: t('faq.q2.question'), a: t('faq.q2.answer') },
   { q: t('faq.q3.question'), a: t('faq.q3.answer') },
   { q: t('faq.q4.question'), a: t('faq.q4.answer') },
+  { q: t('faq.q2.question'), a: t('faq.q2.answer') },
+  { q: t('faq.q1.question'), a: t('faq.q1.answer') },
 ])
 
 function toggle(index) {
