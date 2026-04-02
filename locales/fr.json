@@ -57,21 +57,21 @@
   "modularity": {
     "eyebrow": "MODULARITÉ UNIQUE",
     "title": "Votre tournée, vos règles.",
-    "subtitle": "Nursy introduit le premier système de « panier de soins » pour infirmiers indépendants en Belgique. Fini la rigidité du remplacement bloc : place à la liberté organisationnelle.",
+    "subtitle": "Nursy réinvente le remplacement avec le premier système de « panier de soins » en Belgique. Ne subissez plus un planning rigide : composez votre remplacement sur-mesure en choisissant exactement quels patients déléguer, tout en restant maître de votre organisation.",
     "step1": {
       "number": "01",
-      "title": "Créez votre tournée une fois",
-      "text": "Enregistrez vos patients, leurs soins et leurs horaires. Nursy génère automatiquement un modèle de tournée réutilisable."
+      "title": "La liberté totale dès la création",
+       "text": "Sélectionnez vos patients à la carte plutôt que de partager une tournée complète. Définissez vos propres règles pour chaque visite (type de soin, horaire précis, dates) et enregistrez vos configurations en tant que modèles réutilisables pour gagner du temps lors de vos prochaines publications."
     },
     "step2": {
       "number": "02",
-      "title": "Découpez à la carte",
-      "text": "Sélectionnez exactement les patients à déléguer : l'infirmière A prend 2 patients, l'infirmière B en prend 3. Vous définissez les règles, patient par patient."
+      "title": "Validez les profils",
+      "text": "Dès qu'une infirmière répond à votre annonce, engagez la discussion via notre messagerie sécurisée. Étudiez son profil et ses compétences en toute sérénité : vous gardez systématiquement le dernier mot pour accepter ou décliner une remplaçante avant de lui confier vos patients."
     },
     "step3": {
       "number": "03",
-      "title": "Publiez en un clic",
-      "text": "Votre tournée est instantanément visible pour les remplaçantes vérifiées de votre réseau. Confirmation et transmission du dossier : entièrement automatiques."
+      "title": "Déléguez et profitez",
+      "text": "Une fois validées, les visites sont automatiquement transférées dans le planning de la remplaçante avec un accès dossier patient sécurisé et strictement limité à la durée du soin. Profitez enfin de votre temps libre et, une fois la mission terminée, exprimez votre satisfaction pour valoriser les profils de confiance."
     },
     "caption": "Partage de tournée patient par patient : une première dans la gestion de tournée infirmière indépendante en Belgique."
   },
