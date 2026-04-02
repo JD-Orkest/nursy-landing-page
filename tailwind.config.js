@@ -22,6 +22,7 @@ export default {
       fontFamily: {
         manrope: ['Manrope', 'sans-serif'],
         jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
+        ptsans: ['"PT Sans"', 'sans-serif'],
       },
       borderRadius: {
         '2xl': '16px',

@@ -10,5 +10,7 @@ useHead(head)
     <TheNavbar />
     <slot />
     <TheFooter />
+    <ContactModal />
+    <AppToast />
   </div>
 </template>

@@ -236,6 +236,23 @@
     "instagram_aria": "Nursy sur Instagram (ouverture dans un nouvel onglet)",
     "copyright": "© 2026 Nursy. La plateforme de remplacement modulaire pour infirmiers à domicile en Belgique."
   },
+  "contact": {
+    "title": "Nous contacter",
+    "subtitle": "Une question\u00a0? Notre équipe vous répond rapidement.",
+    "first_name": "Prénom",
+    "last_name": "Nom",
+    "phone": "Téléphone",
+    "email": "Adresse e-mail",
+    "message": "Votre message",
+    "placeholder_message": "Décrivez votre projet ou posez votre question\u2026",
+    "submit": "Envoyer le message",
+    "sending": "Envoi en cours\u2026",
+    "close": "Fermer le formulaire",
+    "toast_success": "Message envoyé\u00a0! Nous vous recontacterons très vite.",
+    "field_required": "Ce champ est requis",
+    "invalid_email": "Adresse e-mail invalide",
+    "send_error": "Une erreur est survenue. Veuillez réessayer."
+  },
   "lang": {
     "fr": "FR",
     "nl": "NL",

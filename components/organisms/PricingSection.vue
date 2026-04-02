@@ -1,5 +1,6 @@
 <script setup>
 const { t, tm, rt } = useI18n()
+const { open: openContactModal } = useContactModal()
 
 const testFeatures  = computed(() => tm('pricing.plan_test.features'))
 const indieFeatures = computed(() => tm('pricing.plan_indie.features'))
@@ -180,12 +181,13 @@ const groupFeatures = computed(() => tm('pricing.plan_group.features'))
           </ul>
 
           <!-- CTA -->
-          <a
-            href="#contact"
+          <button
+            type="button"
             class="mt-auto inline-flex items-center justify-center border-2 border-primary text-primary font-manrope font-semibold rounded-xl min-h-[48px] px-6 text-sm hover:bg-primary hover:text-white transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+            @click="openContactModal"
           >
             {{ t('pricing.plan_group.cta') }}
-          </a>
+          </button>
         </div>
 
       </div>

@@ -119,7 +119,7 @@
       "badge1": "Geen verbintenis of exclusiviteit",
       "badge2": "Voorkeurstoeg per sector",
       "badge3": "Beveiligde klinische fiches",
-      
+      "note": "nursy verifieert elk profiel via het RIZIV"
     }
   },
   "security": {
@@ -236,9 +236,26 @@
     "instagram_aria": "Nursy op Instagram (opent in nieuw tabblad)",
     "copyright": "© 2026 Nursy. Het modulaire vervangingsplatform voor thuisverpleegkundigen in België."
   },
+  "contact": {
+    "title": "Neem contact op",
+    "subtitle": "Een vraag? Ons team antwoordt snel.",
+    "first_name": "Voornaam",
+    "last_name": "Naam",
+    "phone": "Telefoonnummer",
+    "email": "E-mailadres",
+    "message": "Uw bericht",
+    "placeholder_message": "Beschrijf uw project of stel uw vraag\u2026",
+    "submit": "Bericht versturen",
+    "sending": "Verzenden\u2026",
+    "close": "Formulier sluiten",
+    "toast_success": "Bericht verzonden! We nemen snel contact met u op.",
+    "field_required": "Dit veld is verplicht",
+    "invalid_email": "Ongeldig e-mailadres",
+    "send_error": "Er is een fout opgetreden. Probeer het opnieuw."
+  },
   "lang": {
     "fr": "FR",
     "nl": "NL",
-    "switcher_aria": "Taalselectie"
+    "switcher_aria": "Taalkeuze"
   }
 }

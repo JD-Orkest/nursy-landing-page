@@ -9,6 +9,11 @@ export default defineNuxtConfig({
     prerender: {
       failOnError: false,
     },
+    // nodemailer ne peut pas être bundlé par Rollup (dépendances natives)
+    // → le marquer external évite le crash IPC en dev
+    externals: {
+      external: ['nodemailer'],
+    },
   },
 
   // ── Modules ────────────────────────────────────────────────────────────────
@@ -60,6 +65,15 @@ export default defineNuxtConfig({
     },
   },
 
+  // ── Runtime Config (SMTP) ────────────────────────────────────────────────
+  runtimeConfig: {
+    smtpHost: process.env.SMTP_HOST ?? '',
+    smtpPort: process.env.SMTP_PORT ?? '587',
+    smtpUser: process.env.SMTP_USER ?? '',
+    smtpPass: process.env.SMTP_PASS ?? '',
+    smtpFrom: process.env.SMTP_FROM ?? 'noreply@nursy.be',
+  },
+
   // ── CSS global ─────────────────────────────────────────────────────────────
   css: ['~/assets/css/tailwind.css'],
 
@@ -82,7 +96,7 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap',
+          href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=PT+Sans:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap',
         },
       ],
     },

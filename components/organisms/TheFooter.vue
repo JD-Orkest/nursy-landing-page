@@ -1,10 +1,11 @@
 <script setup>
 const { t } = useI18n()
+const { open: openContactModal } = useContactModal()
 
 const footerLinks = [
   { key: 'footer.legal', href: '#' },
   { key: 'footer.privacy', href: '#' },
-  { key: 'footer.contact', href: '#' },
+  { key: 'footer.contact', href: '#', isModal: true },
   { key: 'footer.support', href: '#' },
 ]
 </script>
@@ -35,7 +36,16 @@ const footerLinks = [
         <nav :aria-label="t('footer.nav_aria')">
           <ul class="flex flex-wrap justify-center md:justify-start items-center gap-x-6 gap-y-2" role="list">
             <li v-for="link in footerLinks" :key="link.key">
+              <button
+                v-if="link.isModal"
+                type="button"
+                class="font-jakarta text-sm text-info hover:text-primary transition-colors duration-150 min-h-[44px] inline-flex items-center rounded px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                @click="openContactModal"
+              >
+                {{ t(link.key) }}
+              </button>
               <a
+                v-else
                 :href="link.href"
                 class="font-jakarta text-sm text-info hover:text-primary transition-colors duration-150 min-h-[44px] inline-flex items-center rounded px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
               >
