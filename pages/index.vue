@@ -9,14 +9,14 @@ const seoData = computed(() => {
       ? 'Nursy — Remplacement infirmier à domicile Belgique | Vérification INAMI'
       : 'Nursy — Thuisverpleging vervanging België | RIZIV verificatie',
     description: isFr
-      ? 'NURSY est la plateforme modulaire de remplacement infirmier à domicile en Belgique. Partagez votre tournée patient par patient, naviguez avec Waze intégré et retrouvez la sérénité professionnelle. Vérification INAMI garantie.'
-      : 'NURSY is het modulaire vervangingsplatform voor thuisverpleegkundigen in België. Deel uw ronde patiënt per patiënt, navigeer met geïntegreerde Waze en vind de professionele sereniteit terug. RIZIV verificatie gegarandeerd.',
+      ? 'Nursy est la plateforme modulaire de remplacement infirmier à domicile en Belgique. Partagez votre tournée patient par patient, naviguez avec Waze intégré et retrouvez la sérénité professionnelle. Vérification INAMI garantie.'
+      : 'Nursy is het modulaire vervangingsplatform voor thuisverpleegkundigen in België. Deel uw ronde patiënt per patiënt, navigeer met geïntegreerde Waze en vind de professionele sereniteit terug. RIZIV verificatie gegarandeerd.',
     keywords: isFr
       ? 'remplacement infirmier domicile Belgique, vérification INAMI, panier de soins infirmier, modularité remplacement, tournée infirmier indépendante, partage de patients sécurisé, navigation tournée Waze, Katz automatique INAMI, sérénité infirmière'
       : 'thuisverpleging vervanging België, RIZIV verificatie, zorgmand verpleegkundige, modulariteit vervanging, zelfstandige verpleegkundige ronde, patiënten veilig delen, navigatie ronde Waze, automatische Katz RIZIV, sereniteit verpleegkundige',
     ogImageAlt: isFr
-      ? 'NURSY — Application pour infirmiers à domicile en Belgique'
-      : 'NURSY — App voor thuisverpleegkundigen in België',
+      ? 'Nursy — Application pour infirmiers à domicile en Belgique'
+      : 'Nursy — App voor thuisverpleegkundigen in België',
   }
 })
 
@@ -27,7 +27,7 @@ useSeoMeta({
   ogDescription: () => seoData.value.description,
   keywords: () => seoData.value.keywords,
   ogType: 'website',
-  ogSiteName: 'NURSY',
+  ogSiteName: 'Nursy',
   ogImage: 'https://nursy.be/og-image.png',
   ogImageWidth: '1200',
   ogImageHeight: '630',
@@ -50,7 +50,7 @@ useHead(
         innerHTML: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'SoftwareApplication',
-          name: 'NURSY',
+          name: 'Nursy',
           applicationCategory: 'MedicalApplication',
           operatingSystem: 'iOS, Android',
           offers: {

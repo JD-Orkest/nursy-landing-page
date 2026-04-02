@@ -105,7 +105,7 @@ export default defineNuxtConfig({
   // ── Sitemap ────────────────────────────────────────────────────────────────
   site: {
     url: process.env.NUXT_PUBLIC_SITE_URL || 'https://nursy.be',
-    name: 'NURSY',
+    name: 'Nursy',
   },
 
   sitemap: {

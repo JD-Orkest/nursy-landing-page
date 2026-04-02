@@ -59,7 +59,7 @@ function switchLang(lang) {
         aria-label="Nursy — accueil"
         @click="goHome"
       >
-        <!-- Logo NURSY — path SVG inliné avec fill="currentColor" pour prendre la couleur text-primary -->
+        <!-- Logo Nursy — path SVG inliné avec fill="currentColor" pour prendre la couleur text-primary -->
         <svg
           class="w-7 h-7 text-primary"
           viewBox="0 0 1080 1080"
