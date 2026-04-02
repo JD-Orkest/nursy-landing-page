@@ -6,8 +6,8 @@ const seoData = computed(() => {
   const isFr = locale.value === 'fr'
   return {
     title: isFr
-      ? 'NURSY — Remplacement infirmier à domicile Belgique | Vérification INAMI'
-      : 'NURSY — Thuisverpleging vervanging België | RIZIV verificatie',
+      ? 'Nursy — Remplacement infirmier à domicile Belgique | Vérification INAMI'
+      : 'Nursy — Thuisverpleging vervanging België | RIZIV verificatie',
     description: isFr
       ? 'NURSY est la plateforme modulaire de remplacement infirmier à domicile en Belgique. Partagez votre tournée patient par patient, naviguez avec Waze intégré et retrouvez la sérénité professionnelle. Vérification INAMI garantie.'
       : 'NURSY is het modulaire vervangingsplatform voor thuisverpleegkundigen in België. Deel uw ronde patiënt per patiënt, navigeer met geïntegreerde Waze en vind de professionele sereniteit terug. RIZIV verificatie gegarandeerd.',

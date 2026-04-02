@@ -80,20 +80,20 @@
     "title": "De tools die u nodig hebt, eindelijk samengebracht.",
     "subtitle": "Elke functie is mee ontwikkeld met Belgische zelfstandige verpleegkundigen om tegemoet te komen aan de concrete eisen van de thuispraktijk.",
     "market": {
-      "title": "RIZIV-geverifieerde marktplaats",
-      "text": "Publiceer of bekijk vervangingsadvertenties binnen een gemeenschap waar elk profiel is gevalideerd via de officiële RIZIV-databank. Inclusief hulp bij tariefbepaling."
+      "title": "Geverifieerde marktplaats",
+      "text": "Publiceer of bekijk vervangingsadvertenties binnen een gemeenschap waar elk profiel is gevalideerd via de officiële RIZIV-databank."
+    },
+    "score": {
+      "title": "Slimme sortering van advertenties",
+      "text": "Vind de ideale zorg dankzij onze scoreberekenaar. Advertenties worden weergegeven op prioriteit en afstand binnen uw instelbare zoekradius."
     },
     "katz": {
       "title": "Automatische Katz-schaal",
-      "text": "Koppel een Katz-schaal aan elke patiënt. De app berekent automatisch de scores en helpt u de exacte tariefbepaling te bepalen (RIZIV-forfaits A, B, C, T2, T7). Een grote tijdswinst per dossier."
+      "text": "Koppel een Katz-schaal aan elke patiënt. De app berekent automatisch de scores en bepaalt de exacte tariefbepaling (RIZIV-forfaits A, B, C, T2, T7). Een grote tijdswinst per dossier."
     },
     "models": {
       "title": "Rondemodellen",
-      "text": "Stel uw ronde eenmalig samen — patiënten, zorg, tijdschema. Sla hem op als model en publiceer hem voor een toekomstige vervanging met één klik."
-    },
-    "navigation": {
-      "title": "Geïntegreerde navigatie",
-      "text": "Elk patiëntadres is direct gekoppeld aan Waze of Google Maps. Geen kopiëren-plakken, geen tijdverlies: uw route start met één tik vanuit het dossier."
+      "text": "Stel uw ronde eenmalig samen — patiënten, zorg, tijdschema. Sla hem op als model en publiceer hem voor elke toekomstige vervanging met één klik."
     }
   },
   "security": {

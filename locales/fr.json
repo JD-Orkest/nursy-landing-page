@@ -80,8 +80,12 @@
     "title": "Les outils qu'il vous faut, enfin réunis.",
     "subtitle": "Chaque fonctionnalité a été co-conçue avec des infirmiers indépendants belges pour répondre aux exigences concrètes de la pratique à domicile.",
     "market": {
-      "title": "Marketplace INAMI vérifiée",
-      "text": "Publiez ou consultez des annonces de remplacement au sein d'une communauté où chaque profil est validé via la base de données officielle de l'INAMI. Aide à la tarification infirmière incluse."
+      "title": "Marketplace vérifiée",
+      "text": "Publiez ou consultez des annonces de remplacement au sein d'une communauté où chaque profil est validé via la base de données officielle de l'INAMI."
+    },
+    "score": {
+      "title": "Tri intelligent des annonces",
+      "text": "Trouvez les soins idéaux grâce à notre calcul de score. Les annonces s'affichent par priorité et distance selon votre rayon de recherche paramétrable."
     },
     "katz": {
       "title": "Échelle de Katz automatique",
@@ -90,10 +94,6 @@
     "models": {
       "title": "Modèles de tournées",
       "text": "Constituez votre tournée une seule fois — patients, soins, horaires. Enregistrez-la comme modèle et publiez-la pour tout futur remplacement en un seul clic."
-    },
-    "navigation": {
-      "title": "Navigation intégrée",
-      "text": "Chaque adresse patient est directement connectée à Waze ou Google Maps. Pas de copier-coller, pas de temps perdu : l'itinéraire se lance en un tap depuis le dossier."
     }
   },
   "security": {
