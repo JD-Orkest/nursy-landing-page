@@ -132,16 +132,16 @@
       "answer": "Les données de santé sont chiffrées et nos serveurs respectent les normes ISO 27001. L'accès aux informations d'un patient est strictement limité à la durée du remplacement : dès la mission terminée, toutes les données transmises au remplaçant sont automatiquement révoquées. La biométrie (FaceID ou empreinte digitale) protège l'accès à l'application."
     },
     "q2": {
-      "question": "Comment les profils des remplaçants sont-ils vérifiés ?",
-      "answer": "Chaque profil est validé via la base de données officielle de l'INAMI (Belgique) ou du RPPS (France). Il est impossible de s'inscrire et d'accéder aux dossiers patients sans un numéro INAMI actif et valide. La vérification est automatique et systématique."
+      "question": "Que faire si la proposition d'une remplaçante ne me convient pas ?",
+      "answer": "Nursy favorise le dialogue : l’offre reste modifiable d’un commun accord jusqu’à la validation finale. Via la messagerie, vous pouvez demander à une remplaçante d'ajouter ou de retirer certaines visites de sa sélection pour que l’organisation corresponde parfaitement à vos attentes"
     },
     "q3": {
       "question": "Comment démarrer sur Nursy ?",
-      "answer": "Téléchargez l'application sur l'App Store ou Google Play, créez votre compte et renseignez votre numéro INAMI. La vérification est automatique — vous accédez à l'ensemble des fonctionnalités en quelques minutes, sans engagement ni carte bancaire requise pendant la phase de test."
+      "answer": "Téléchargez l'application sur l'App Store ou Google Play, créez votre compte et renseignez votre numéro INAMI. La vérification est automatique — vous accédez à l'ensemble des fonctionnalités en quelques minutes."
     },
     "q4": {
       "question": "Puis-je partager seulement une partie de ma tournée ?",
-      "answer": "Oui, c'est précisément l'innovation de Nursy. Grâce au système de « panier de soins », vous choisissez exactement quels patients ou quelles visites vous souhaitez déléguer. L'infirmière A peut reprendre 2 patients, l'infirmière B en reprend 3. Vous définissez les règles, patient par patient, à tout moment."
+      "answer": "Oui, c'est précisément l'innovation de Nursy. Grâce au système de « panier de soins », vous choisissez exactement quels patients ou quelles visites vous souhaitez déléguer. L'infirmière A peut reprendre 2 visites, l'infirmière B en reprend 3. Vous définissez les règles, visite par visite, à tout moment."
     }
   },
   "pricing": {

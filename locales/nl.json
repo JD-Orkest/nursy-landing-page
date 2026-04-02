@@ -132,16 +132,16 @@
       "answer": "Gezondheidsgegevens worden versleuteld en onze servers voldoen aan de ISO 27001-normen. De toegang tot patiëntinformatie is strikt beperkt tot de duur van de vervanging: zodra de opdracht is voltooid, wordt de toegang tot alle gedeelde gegevens automatisch ingetrokken. Biometrie (FaceID of vingerafdruk) beveilig de toegang tot de applicatie."
     },
     "q2": {
-      "question": "Hoe worden de profielen van vervangers geverifieerd?",
-      "answer": "Elk profiel wordt gevalideerd via de officiële RIZIV-databank (België) of het RPPS (Frankrijk). Inschrijven en toegang tot patiëntendossiers is onmogelijk zonder een actief en geldig RIZIV-nummer. De verificatie is automatisch en systematisch."
+      "question": "Wat als het voorstel van een vervanger mij niet aanstaat?",
+      "answer": "Nursy stimuleert de dialoog: het voorstel blijft in onderling overleg aanpasbaar tot aan de definitieve validatie. Via de chat kunt u een vervanger vragen om bepaalde bezoeken aan de selectie toe te voegen of te verwijderen, zodat de planning perfect aan uw verwachtingen voldoet."
     },
     "q3": {
-      "question": "Hoe kan ik starten met Nursy?",
-      "answer": "Download de app in de App Store of Google Play, maak een account aan en voer uw RIZIV-nummer in. De verificatie verloopt automatisch — u heeft toegang tot alle functies binnen enkele minuten, zonder engagement of bankkaart vereist tijdens de testfase."
+      "question": "Hoe ga ik aan de slag op Nursy?",
+      "answer": "Download de app in de App Store of via Google Play, maak uw account aan en vul uw RIZIV-nummer in. De verificatie verloopt automatisch — binnen enkele minuten krijgt u toegang tot alle functionaliteiten."
     },
     "q4": {
       "question": "Kan ik slechts een deel van mijn ronde delen?",
-      "answer": "Ja, dat is precies de innovatie van Nursy. Dankzij het 'zorgmand'-systeem kiest u exact welke patiënten of welke bezoeken u wilt delegeren. Verpleegkundige A neemt 2 patiënten, verpleegkundige B neemt er 3. U bepaalt de regels, patiënt per patiënt, op elk moment."
+      "answer": "Ja, dat is precies de innovatie van Nursy. Dankzij het 'zorgmandje'-systeem kiest u exact welke patiënten of welke bezoeken u wilt delegeren. Verpleegkundige A kan 2 bezoeken overnemen, verpleegkundige B neemt er 3 over. U bepaalt op elk moment de regels, bezoek per bezoek."
     }
   },
   "pricing": {
