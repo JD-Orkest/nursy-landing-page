@@ -9,11 +9,6 @@ export default defineNuxtConfig({
     prerender: {
       failOnError: false,
     },
-    // nodemailer ne peut pas être bundlé par Rollup (dépendances natives)
-    // → le marquer external évite le crash IPC en dev
-    externals: {
-      external: ['nodemailer'],
-    },
   },
 
   // ── Modules ────────────────────────────────────────────────────────────────
@@ -63,15 +58,6 @@ export default defineNuxtConfig({
     bundle: {
       optimizeTranslationDirective: false,
     },
-  },
-
-  // ── Runtime Config (SMTP) ────────────────────────────────────────────────
-  runtimeConfig: {
-    smtpHost: process.env.SMTP_HOST ?? '',
-    smtpPort: process.env.SMTP_PORT ?? '587',
-    smtpUser: process.env.SMTP_USER ?? '',
-    smtpPass: process.env.SMTP_PASS ?? '',
-    smtpFrom: process.env.SMTP_FROM ?? 'noreply@nursy.be',
   },
 
   // ── CSS global ─────────────────────────────────────────────────────────────

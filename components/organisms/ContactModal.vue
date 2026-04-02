@@ -33,7 +33,7 @@ async function submit() {
   isSubmitting.value = true
   hasError.value = false
   try {
-    await $fetch('/api/contact', { method: 'POST', body: { ...form } })
+    await $fetch('http://192.168.1.12/api/web-contact', { method: 'POST', body: { ...form } })
     form.prenom = form.nom = form.telephone = form.email = form.message = ''
     clearErrors()
     close()
