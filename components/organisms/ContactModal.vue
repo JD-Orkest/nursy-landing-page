@@ -2,6 +2,7 @@
 const { isOpen, close } = useContactModal()
 const { showToast } = useToast()
 const { t } = useI18n()
+const { gtag } = useGtag()
 
 const form = reactive({ prenom: '', nom: '', telephone: '', email: '', message: '' })
 const errors = reactive({ prenom: '', nom: '', telephone: '', email: '', message: '' })
@@ -37,6 +38,7 @@ async function submit() {
     form.prenom = form.nom = form.telephone = form.email = form.message = ''
     clearErrors()
     close()
+    gtag('event', 'contact_form_success')
     showToast(t('contact.toast_success'))
     window.scrollTo({ top: 0, behavior: 'smooth' })
   } catch {

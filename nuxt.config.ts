@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/sitemap',
+    ['nuxt-gtag', { id: 'GTM-NW6JXRS3' }],
   ],
 
   // ── Composants : désactive le préfixe de sous-dossier ─────────────────────

@@ -1,6 +1,7 @@
 <script setup>
 const { t, tm, rt } = useI18n()
 const { open: openContactModal } = useContactModal()
+const { gtag } = useGtag()
 
 const testFeatures  = computed(() => tm('pricing.plan_test.features'))
 const indieFeatures = computed(() => tm('pricing.plan_indie.features'))
@@ -75,6 +76,7 @@ const groupFeatures = computed(() => tm('pricing.plan_group.features'))
           <a
             href="#download"
             class="mt-auto inline-flex items-center justify-center border-2 border-primary text-primary font-manrope font-semibold rounded-xl min-h-[48px] px-6 text-sm hover:bg-primary hover:text-white transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+            @click="gtag('event', 'pricing_cta_click', { plan: 'test' })"
           >
             {{ t('pricing.plan_test.cta') }}
           </a>
@@ -134,6 +136,7 @@ const groupFeatures = computed(() => tm('pricing.plan_group.features'))
           <a
             href="#download"
             class="mt-auto inline-flex items-center justify-center bg-gradient-to-r from-primary to-primary-dark text-white font-manrope font-semibold rounded-xl min-h-[48px] px-6 text-sm shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+            @click="gtag('event', 'pricing_cta_click', { plan: 'indie' })"
           >
             {{ t('pricing.plan_indie.cta') }}
           </a>
@@ -184,7 +187,7 @@ const groupFeatures = computed(() => tm('pricing.plan_group.features'))
           <button
             type="button"
             class="mt-auto inline-flex items-center justify-center border-2 border-primary text-primary font-manrope font-semibold rounded-xl min-h-[48px] px-6 text-sm hover:bg-primary hover:text-white transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-            @click="openContactModal"
+            @click="() => { openContactModal(); gtag('event', 'pricing_cta_click', { plan: 'group' }) }"
           >
             {{ t('pricing.plan_group.cta') }}
           </button>

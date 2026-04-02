@@ -7,6 +7,7 @@ const localePath = useLocalePath()
 const router = useRouter()
 const route = useRoute()
 const isMenuOpen = ref(false)
+const { gtag } = useGtag()
 
 const navLinks = [
   { key: 'nav.profiles', href: '#profiles' },
@@ -38,6 +39,7 @@ function goHome() {
 
 // Supprime le hash de l'URL et scroll en haut lors du changement de langue
 function switchLang(lang) {
+  gtag('event', 'language_switch', { language: lang })
   const path = switchLocalePath(lang)
   const cleanPath = path.split('#')[0] || '/'
   router.push(cleanPath).then(() => {
