@@ -57,23 +57,23 @@
   "modularity": {
     "eyebrow": "UNIEKE MODULARITEIT",
     "title": "Uw ronde, uw regels.",
-    "subtitle": "Nursy heruitvindt de vervanging met het eerste 'zorgmandje'-systeem in België. Geen rigide planning meer: stel uw vervanging op maat samen door precies te kiezen welke patiënten u delegeert, terwijl u de controle over uw organisatie behoudt.",
-    "step1": {
-      "number": "01",
-      "title": "Totale vrijheid vanaf de start",
-      "text": "Selecteer uw patiënten 'à la carte' in plaats van een volledige ronde te delen. Stel uw eigen regels in voor elk bezoek (type zorg, specifiek tijdstip, data) en sla uw configuraties op als herbruikbare sjablonen om tijd te winnen bij uw volgende publicaties."
-    },
-    "step2": {
-      "number": "02",
-      "title": "Valideer de profielen",
-      "text": "Zodra een verpleegkundige op uw advertentie reageert, kunt u het gesprek aangaan via onze beveiligde chat. Bestudeer het profiel en de vaardigheden in alle rust: u behoudt altijd het laatste woord om een vervanger te aanvaarden of te weigeren voordat u uw patiënten toevertrouwt."
-    },
-    "step3": {
-      "number": "03",
-      "title": "Delegeer en geniet",
-      "text": "Na de validatie worden de bezoeken automatisch overgezet naar de planning van de vervanger, met een beveiligde toegang tot het patiëntendossier die strikt beperkt is tot de duur van de zorg. Geniet eindelijk van uw vrije tijd en geef na afloop van de opdracht uw feedback om betrouwbare profielen extra te waarderen."
-    },
-    "caption": "Patiënt per patiënt ronde delen: een primeur in de planning verpleegkundige in België."
+    "subtitle": "Nursy heruitvindt de vervanging met het eerste 'zorgmandje' in België. Stel een vervanging op maat samen door zelf de patiënten te kiezen die u delegeert, terwijl u de controle over uw organisatie behoudt.",
+  "step1": {
+    "number": "01",
+    "title": "Plaats uw advertentie",
+    "text": "Kies uw patiënten 'à la carte' in plaats van per ronde. Stel uw regels in voor elk bezoek (zorg, tijdstip, data) en sla deze op als herbruikbare sjablonen om tijd te winnen."
+  },
+  "step2": {
+    "number": "02",
+    "title": "Valideer de profielen",
+    "text": "Zodra een verpleegkundige reageert, kunt u overleggen via de beveiligde chat. U behoudt altijd het laatste woord voordat u uw patiënten toevertrouwt."
+  },
+  "step3": {
+    "number": "03",
+    "title": "Delegeer en geniet",
+    "text": "Bezoeken gevalideerd, rondes bijgewerkt, beveiligde en tijdelijke toegang tot patiëntgegevens. Geniet van uw vrije tijd en beoordeel de opdracht na afloop."
+  },
+    "caption": "Flexibel delen van rondes: kies zelf welke bezoeken u delegeert, een primeur in België."
   },
   "features": {
     "eyebrow": "KLINISCHE EXPERTISE",
