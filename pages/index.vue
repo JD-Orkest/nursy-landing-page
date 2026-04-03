@@ -6,20 +6,20 @@ const seoData = computed(() => {
   const isFr = locale.value === 'fr'
   return {
     title: isFr
-      ? 'Nursy — Remplacement infirmier modulaire & soins à domicile'
-      : 'Nursy — Modulaire thuisverpleging vervanging & zorgen aan huis',
+      ? 'Nursy - Application de remplacement pour les infirmières à domicile'
+      : 'Nursy - Vervangingsapp voor thuisverpleegkundigen',
     description: isFr
-      ? 'La plateforme de remplacement modulaire pour infirmiers indépendants en Belgique. Déléguez vos visites sans perdre le contrôle, avec une sécurité certifiée ISO 27001.'
-      : 'Het modulaire vervangingsplatform voor zelfstandige verpleegkundigen in België. Delegeer uw bezoeken zonder controle te verliezen, met ISO 27001-gecertificeerde beveiliging.',
+      ? 'Plateforme de remplacement modulaire pour infirmiers. Déléguez vos tournées sereinement, boostez votre activité et retrouvez un équilibre entre vie pro et perso.'
+      : 'Dé plek voor modulaire vervanging van verpleegkundigen. Delegeer uw ronde in alle rust, groei op eigen tempo en vind de ideale balans tussen werk en privé.',
     keywords: isFr
-      ? 'remplacement infirmier à domicile Belgique, logiciel soins à domicile, calcul échelle de Katz automatique, panier de soins infirmier, planning infirmier indépendant, déductible fiscalement, modularité remplacement infirmier'
-      : 'thuisverpleging vervanging België, software thuiszorg, automatische Katz-schaal berekening, zorgmand verpleegkundige, planning zelfstandige verpleegkundige, fiscaal aftrekbaar, modulaire vervanging verpleegkundige',
+      ? 'remplacement infirmier, remplacement infirmier Belgique, groupe, groupement, équipe, application soins à domicile, remplacement infirmier à domicile Belgique, logiciel soins à domicile, calcul échelle de Katz automatique, panier de soins infirmier, planning infirmier indépendant, déductible fiscalement, modularité remplacement infirmier'
+      : 'vervanging verpleegkundige, vervanging verpleegkundige België, groep, groepering, team, thuiszorg app, thuisverpleging vervanging België, software thuiszorg, automatische Katz-schaal berekening, zorgmand verpleegkundige, planning zelfstandige verpleegkundige, fiscaal aftrekbaar, modulaire vervanging verpleegkundige',
     ogTitle: isFr
-      ? 'Nursy — Déléguez vos tournées à la carte 🏥'
-      : 'Nursy — Delegeer uw rondes op maat 🏥',
+      ? 'Nursy - Application de remplacement pour les infirmières à domicile'
+      : 'Nursy - Vervangingsapp voor thuisverpleegkundigen',
     ogDescription: isFr
-      ? 'La 1ère plateforme de remplacement modulaire pour infirmiers indépendants en Belgique. Panier de soins, calcul Katz automatique, messagerie RGPD.'
-      : 'Het 1e modulaire vervangingsplatform voor zelfstandige verpleegkundigen in België. Zorgmand, automatische Katz-berekening, GDPR-berichten.',
+      ? 'Plateforme de remplacement modulaire pour infirmiers. Déléguez vos tournées sereinement, boostez votre activité et retrouvez un équilibre entre vie pro et perso.'
+      : 'Dé plek voor modulaire vervanging van verpleegkundigen. Delegeer uw ronde in alle rust, groei op eigen tempo en vind de ideale balans tussen werk en privé.',
     ogImageAlt: isFr
       ? 'Nursy — Application de remplacement infirmier modulaire en Belgique'
       : 'Nursy — Modulaire vervangingsapp voor thuisverpleegkundigen in België',
@@ -35,6 +35,8 @@ useSeoMeta({
   keywords: () => seoData.value.keywords,
   ogType: 'website',
   ogSiteName: 'Nursy',
+  ogLocale: () => locale.value === 'fr' ? 'fr_BE' : 'nl_BE',
+  ogLocaleAlternate: () => [locale.value === 'fr' ? 'nl_BE' : 'fr_BE'],
   ogImage: 'https://nursy.be/og-image.png',
   ogImageWidth: '1200',
   ogImageHeight: '630',
@@ -77,7 +79,7 @@ useHead(
             sameAs: 'https://www.wikidata.org/wiki/Q31',
           },
           inLanguage: locale.value === 'fr' ? 'fr-BE' : 'nl-BE',
-          url: 'https://nursy.app',
+          url: 'https://nursy.be',
           featureList:
             locale.value === 'fr'
               ? 'Remplacement modulaire à domicile, Calcul automatique Katz INAMI, Panier de soins infirmier, Planning infirmier indépendant, Messagerie RGPD, Modèles de tournées réutilisables'
@@ -93,16 +95,6 @@ useHead(
           mainEntity: [
             {
               '@type': 'Question',
-              name: t('faq.q1.question'),
-              acceptedAnswer: { '@type': 'Answer', text: t('faq.q1.answer') },
-            },
-            {
-              '@type': 'Question',
-              name: t('faq.q2.question'),
-              acceptedAnswer: { '@type': 'Answer', text: t('faq.q2.answer') },
-            },
-            {
-              '@type': 'Question',
               name: t('faq.q3.question'),
               acceptedAnswer: { '@type': 'Answer', text: t('faq.q3.answer') },
             },
@@ -111,7 +103,45 @@ useHead(
               name: t('faq.q4.question'),
               acceptedAnswer: { '@type': 'Answer', text: t('faq.q4.answer') },
             },
+            {
+              '@type': 'Question',
+              name: t('faq.q2.question'),
+              acceptedAnswer: { '@type': 'Answer', text: t('faq.q2.answer') },
+            },
+            {
+              '@type': 'Question',
+              name: t('faq.q1.question'),
+              acceptedAnswer: { '@type': 'Answer', text: t('faq.q1.answer') },
+            },
           ],
+        }),
+      },
+      {
+        type: 'application/ld+json',
+        key: 'schema-organization',
+        innerHTML: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'Nursy',
+          url: 'https://nursy.be',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://nursy.be/favicon.png',
+          },
+          sameAs: [
+            'https://www.instagram.com/nursy',
+            'https://www.tiktok.com/@nursy',
+          ],
+        }),
+      },
+      {
+        type: 'application/ld+json',
+        key: 'schema-website',
+        innerHTML: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: 'Nursy',
+          url: 'https://nursy.be',
         }),
       },
     ],

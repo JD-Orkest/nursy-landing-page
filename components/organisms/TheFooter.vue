@@ -47,6 +47,7 @@ const footerLinks = [
               <a
                 v-else
                 :href="link.href"
+                rel="nofollow"
                 class="font-jakarta text-sm text-info hover:text-primary transition-colors duration-150 min-h-[44px] inline-flex items-center rounded px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
               >
                 {{ t(link.key) }}
@@ -60,7 +61,7 @@ const footerLinks = [
           <a
             href="#"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             class="w-11 h-11 rounded-xl bg-surface flex items-center justify-center text-info hover:text-primary hover:bg-secondary/20 transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             :aria-label="t('footer.tiktok_aria')"
           >
@@ -71,7 +72,7 @@ const footerLinks = [
           <a
             href="#"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             class="w-11 h-11 rounded-xl bg-surface flex items-center justify-center text-info hover:text-primary hover:bg-secondary/20 transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             :aria-label="t('footer.instagram_aria')"
           >

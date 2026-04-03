@@ -41,6 +41,7 @@ const illustrationSrc = computed(() =>
           <div class="flex flex-col sm:flex-row gap-3 sm:gap-4" role="group">
             <a
               href="#"
+              rel="nofollow"
               class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-primary-dark text-white font-manrope font-semibold rounded-xl min-h-[48px] px-6 text-sm md:text-base shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               :aria-label="t('hero.cta_appstore_aria')"
               @click="gtag('event', 'click_app_store')"
@@ -56,6 +57,7 @@ const illustrationSrc = computed(() =>
 
             <a
               href="#"
+              rel="nofollow"
               class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-primary-dark text-white font-manrope font-semibold rounded-xl min-h-[48px] px-6 text-sm md:text-base shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               :aria-label="t('hero.cta_playstore_aria')"
               @click="gtag('event', 'click_play_store')"
