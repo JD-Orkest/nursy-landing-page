@@ -126,7 +126,7 @@ useHead(
           url: 'https://nursy.be',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://nursy.be/favicon.png',
+            url: 'https://nursy.be/og-image.png',  
           },
           sameAs: [
             'https://www.instagram.com/nursy',
