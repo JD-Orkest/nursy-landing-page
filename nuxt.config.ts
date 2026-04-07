@@ -24,6 +24,7 @@ export default defineNuxtConfig({
         'Plus Jakarta Sans': [400, 500, 600],
       },
       display: 'swap',
+      preload: true,
       download: true,
       inject: true,
       outputDir: 'assets',
@@ -167,6 +168,9 @@ export default defineNuxtConfig({
     },
     // Images statiques et fonts hébergés localement
     '/fonts/**': {
+      headers: { 'Cache-Control': 'public, max-age=31536000, immutable' },
+    },
+    '/assets/**': {
       headers: { 'Cache-Control': 'public, max-age=31536000, immutable' },
     },
     '/_ipx/**': {

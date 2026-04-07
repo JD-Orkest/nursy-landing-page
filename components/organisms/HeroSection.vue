@@ -89,17 +89,18 @@ const illustrationSrc = computed(() =>
 
         <!-- ─── Colonne droite : mockup iPhone ─── -->
         <div class="relative flex items-center justify-center lg:justify-end">
-          <div class="relative w-full max-w-[300px] mx-auto lg:max-w-none lg:w-[360px] xl:w-[420px]">
+          <!-- aspect-ratio réserve l'espace exact AVANT le téléchargement → élimine le CLS -->
+          <div class="relative w-full max-w-[300px] mx-auto lg:max-w-none lg:w-[360px] xl:w-[420px] aspect-[420/913]">
 
             <NuxtImg
               :src="illustrationSrc"
               :alt="t('hero.mockup_alt')"
               format="webp"
               quality="80"
-              width="840"
-              height="1825"
+              width="420"
+              height="913"
               sizes="300px sm:360px lg:420px"
-              class="w-full drop-shadow-2xl rounded-[3rem]"
+              class="w-full h-full object-contain drop-shadow-2xl rounded-[3rem]"
               loading="eager"
               fetchpriority="high"
             />

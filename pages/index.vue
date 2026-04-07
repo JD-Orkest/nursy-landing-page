@@ -151,14 +151,16 @@ useHead(
 
 <template>
   <main id="main-content">
+    <!-- Above the fold : chargé immédiatement -->
     <HeroSection />
-    <ProfilesSection />
-    <ModularitySection />
-    <ReplacementSection />
-    <FeaturesSection />
-    <SecuritySection />
-    <PricingSection />
-    <FaqSection />
-    <CtaSection />
+    <!-- Below the fold : code-split, chargés à la demande -->
+    <LazyProfilesSection />
+    <LazyModularitySection />
+    <LazyReplacementSection />
+    <LazyFeaturesSection />
+    <LazySecuritySection />
+    <LazyPricingSection />
+    <LazyFaqSection />
+    <LazyCtaSection />
   </main>
 </template>
