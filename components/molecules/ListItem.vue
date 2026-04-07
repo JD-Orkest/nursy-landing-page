@@ -16,7 +16,7 @@ defineProps({
       </slot>
     </div>
     <div class="space-y-1 pt-0.5">
-      <h4 class="font-manrope font-bold text-base text-text-main leading-snug">{{ title }}</h4>
+      <h3 class="font-manrope font-bold text-base text-text-main leading-snug">{{ title }}</h3>
       <p class="font-jakarta text-sm text-info leading-relaxed">{{ text }}</p>
     </div>
   </li>

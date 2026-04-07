@@ -16,7 +16,31 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/sitemap',
-    ['nuxt-gtag', { id: 'GTM-NW6JXRS3' }],
+    '@nuxt/image',
+    ['@nuxtjs/google-fonts', {
+      families: {
+        Manrope: [400, 600, 700, 800],
+        'PT Sans': [400, 700],
+        'Plus Jakarta Sans': [400, 500, 600],
+      },
+      display: 'swap',
+      download: true,
+      inject: true,
+      outputDir: 'assets',
+      fontsDir: 'fonts',
+      stylePath: 'css/fonts.css',
+    }],
+    ['@nuxt/image', {
+      quality: 80,
+      formats: ['webp', 'png'],
+      screens: {
+        xs: 320,
+        sm: 640,
+        md: 768,
+        lg: 1024,
+        xl: 1280,
+      },
+    }],
   ],
 
   // ── Composants : désactive le préfixe de sous-dossier ─────────────────────
@@ -84,12 +108,7 @@ export default defineNuxtConfig({
         // Pour iOS : icône d'accueil (recommandé : 180x180 px, fond plein, pas de transparence)
         // ⚠️  Fournissez /public/apple-touch-icon.png redimensionné en 180x180 px
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
-        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=PT+Sans:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap',
-        },
+        // Google Fonts sont désormais hébergées localement via @nuxtjs/google-fonts
       ],
     },
   },
@@ -130,7 +149,7 @@ export default defineNuxtConfig({
     ],
   },
 
-  // ── En-têtes de sécurité (OWASP) ──────────────────────────────────────────
+  // ── En-têtes de sécurité (OWASP) + Cache long terme ─────────────────────
   routeRules: {
     '/**': {
       headers: {
@@ -139,6 +158,19 @@ export default defineNuxtConfig({
         'Referrer-Policy': 'strict-origin-when-cross-origin',
         'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
       },
+    },
+    // Assets Nuxt : hachage dans le nom du fichier → cache 1 an immutable
+    '/_nuxt/**': {
+      headers: {
+        'Cache-Control': 'public, max-age=31536000, immutable',
+      },
+    },
+    // Images statiques et fonts hébergés localement
+    '/fonts/**': {
+      headers: { 'Cache-Control': 'public, max-age=31536000, immutable' },
+    },
+    '/_ipx/**': {
+      headers: { 'Cache-Control': 'public, max-age=31536000, immutable' },
     },
   },
 })

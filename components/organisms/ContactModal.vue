@@ -7,16 +7,16 @@ const config = useRuntimeConfig()
 
 const RECAPTCHA_SITE_KEY = '6LdjdKMsAAAAAI8_G6M5hNa34wx839RYEI-r_aJ5'
 
-// ── Chargement du script reCAPTCHA (seulement côté client) ────────────────
-useHead({
-  script: [
-    {
-      src: `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`,
-      async: true,
-      defer: true,
-    },
-  ],
-})
+// ── Chargement du script reCAPTCHA différé : injecté uniquement à la première
+// ouverture du modal → évite de charger ~1 Mo de JS inutilement au démarrage
+function loadRecaptcha() {
+  if (document.querySelector(`script[src*="recaptcha"]`)) return
+  const script = document.createElement('script')
+  script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`
+  script.async = true
+  script.defer = true
+  document.head.appendChild(script)
+}
 
 const form = reactive({ firstname: '', lastname: '', phone: '', email: '', message: '' })
 const errors = reactive({ firstname: '', lastname: '', phone: '', email: '', message: '' })
@@ -87,10 +87,13 @@ const keydownHandler = (e) => { if (e.key === 'Escape' && isOpen.value) close() 
 onMounted(() => window.addEventListener('keydown', keydownHandler))
 onUnmounted(() => window.removeEventListener('keydown', keydownHandler))
 
-// Scroll lock + autofocus
+// Scroll lock + autofocus + chargement reCAPTCHA au premier open
 watch(isOpen, (val) => {
   document.body.style.overflow = val ? 'hidden' : ''
-  if (val) nextTick(() => firstInput.value?.focus())
+  if (val) {
+    nextTick(() => firstInput.value?.focus())
+    loadRecaptcha()
+  }
 })
 </script>
 

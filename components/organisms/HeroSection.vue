@@ -91,12 +91,15 @@ const illustrationSrc = computed(() =>
         <div class="relative flex items-center justify-center lg:justify-end">
           <div class="relative w-full max-w-[300px] mx-auto lg:max-w-none lg:w-[360px] xl:w-[420px]">
 
-            <img
+            <NuxtImg
               :src="illustrationSrc"
               :alt="t('hero.mockup_alt')"
+              format="webp"
+              quality="80"
+              width="840"
+              height="1825"
+              sizes="300px sm:360px lg:420px"
               class="w-full drop-shadow-2xl rounded-[3rem]"
-              width="420"
-              height="860"
               loading="eager"
               fetchpriority="high"
             />
