@@ -88,7 +88,8 @@ const illustrationSrc = computed(() =>
         </div>
 
         <!-- ─── Colonne droite : mockup iPhone ─── -->
-        <div class="relative flex items-center justify-center lg:justify-end">
+        <!-- min-h verrouille l'espace sur mobile avant le rendu de l'image → élimine le CLS -->
+        <div class="relative flex items-center justify-center lg:justify-end min-h-[500px] sm:min-h-[600px] lg:min-h-0">
           <!-- aspect-ratio réserve l'espace exact AVANT le téléchargement → élimine le CLS -->
           <div class="relative w-full max-w-[300px] mx-auto lg:max-w-none lg:w-[360px] xl:w-[420px] aspect-[420/913]">
 

@@ -25,6 +25,8 @@ export default defineNuxtConfig({
       },
       display: 'swap',
       preload: true,
+      prefetch: false,
+      preconnect: false,
       download: true,
       inject: true,
       outputDir: 'assets',
