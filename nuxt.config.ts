@@ -23,7 +23,7 @@ export default defineNuxtConfig({
         'PT Sans': [400, 700],
         'Plus Jakarta Sans': [400, 500, 600],
       },
-      display: 'swap',
+      display: 'optional',
       preload: true,
       prefetch: false,
       preconnect: false,

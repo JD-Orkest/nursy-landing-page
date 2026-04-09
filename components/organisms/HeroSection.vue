@@ -88,8 +88,7 @@ const illustrationSrc = computed(() =>
         </div>
 
         <!-- ─── Colonne droite : mockup iPhone ─── -->
-        <!-- min-h verrouille l'espace sur mobile avant le rendu de l'image → élimine le CLS -->
-        <div class="relative flex items-center justify-center lg:justify-end min-h-[500px] sm:min-h-[600px] lg:min-h-0">
+        <div class="relative flex items-center justify-center lg:justify-end">
           <!-- aspect-ratio réserve l'espace exact AVANT le téléchargement → élimine le CLS -->
           <div class="relative w-full max-w-[300px] mx-auto lg:max-w-none lg:w-[360px] xl:w-[420px] aspect-[420/913]">
 
@@ -101,7 +100,7 @@ const illustrationSrc = computed(() =>
               width="420"
               height="913"
               sizes="300px sm:360px lg:420px"
-              class="w-full h-full object-contain drop-shadow-2xl rounded-[3rem]"
+              class="w-full h-auto drop-shadow-2xl rounded-[3rem]"
               loading="eager"
               fetchpriority="high"
             />

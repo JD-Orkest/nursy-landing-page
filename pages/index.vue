@@ -151,16 +151,15 @@ useHead(
 
 <template>
   <main id="main-content">
-    <!-- Above the fold : chargé immédiatement -->
+    <!-- Sections principales (SSG/GitHub Pages : pas de lazy-chunking) -->
     <HeroSection />
-    <!-- Below the fold : code-split, chargés à la demande -->
-    <LazyProfilesSection />
-    <LazyModularitySection />
-    <LazyReplacementSection />
-    <LazyFeaturesSection />
-    <LazySecuritySection />
-    <LazyPricingSection />
-    <LazyFaqSection />
-    <LazyCtaSection />
+    <ProfilesSection />
+    <ModularitySection />
+    <ReplacementSection />
+    <FeaturesSection />
+    <SecuritySection />
+    <PricingSection />
+    <FaqSection />
+    <CtaSection />
   </main>
 </template>
