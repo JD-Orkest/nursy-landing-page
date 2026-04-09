@@ -257,5 +257,12 @@
     "fr": "FR",
     "nl": "NL",
     "switcher_aria": "Sélection de la langue"
+  },
+  "cookies": {
+    "banner_aria": "Bandeau de consentement aux cookies",
+    "message": "Nursy utilise des cookies analytiques (Google Analytics) pour améliorer votre expérience. Vous pouvez accepter ou refuser leur utilisation. Pour en savoir plus, consultez notre ",
+    "privacy_link": "politique de confidentialité",
+    "accept": "Accepter",
+    "refuse": "Refuser"
   }
 }

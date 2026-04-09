@@ -12,5 +12,6 @@ useHead(head)
     <TheFooter />
     <ContactModal />
     <AppToast />
+    <CookieBanner />
   </div>
 </template>

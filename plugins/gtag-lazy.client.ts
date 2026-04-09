@@ -1,17 +1,20 @@
-// GTM est chargé uniquement après la première interaction utilisateur
-// (scroll, clic, mouvement de souris, toucher, touche clavier)
-// → évite de bloquer le thread principal au démarrage (TBT)
+// GTM est chargé UNIQUEMENT si l'utilisateur a donné son consentement aux cookies
+// ET après la première interaction (scroll, clic, etc.) → zéro TBT au démarrage
 
 export default defineNuxtPlugin(() => {
   const GTM_ID = 'GTM-NW6JXRS3'
+  const consent = useCookie<boolean | null>('nursy_cookie_consent')
 
-  // Initialise dataLayer + window.gtag AVANT le chargement de GTM
-  // pour que les events envoyés avant le chargement soient mis en queue
+  // Initialise dataLayer + window.gtag immédiatement pour mettre les events en queue
+  // Ils seront traités par GTM uniquement si le script est effectivement chargé
   window.dataLayer = window.dataLayer || []
   window.gtag = function (...args: unknown[]) {
     window.dataLayer.push(args)
   }
   window.gtag('js', new Date())
+
+  // Si pas de consentement explicite, on n'attache même pas les listeners
+  if (consent.value !== true) return
 
   let loaded = false
 

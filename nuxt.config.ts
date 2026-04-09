@@ -106,8 +106,8 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         // Pour Google Search : taille multiple de 48x48 (ex: 96x96 ou 144x144)
-        // ⚠️  Assurez-vous que /public/favicon.png est bien en 96x96 px minimum
-        { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon.png' },
+        // Favicon 144x144 (multiple de 48px) pour affichage dans Google Search
+        { rel: 'icon', type: 'image/png', sizes: '144x144', href: '/favicon.png' },
         // Pour iOS : icône d'accueil (recommandé : 180x180 px, fond plein, pas de transparence)
         // ⚠️  Fournissez /public/apple-touch-icon.png redimensionné en 180x180 px
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
