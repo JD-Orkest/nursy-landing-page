@@ -1,9 +1,10 @@
 <script setup>
 const { t } = useI18n()
 const { open: openContactModal } = useContactModal()
+const { open: openCguModal } = useCguModal()
 
 const footerLinks = [
-  { key: 'footer.legal', href: '#' },
+  { key: 'footer.legal', href: '#', isLegal: true },
   { key: 'footer.privacy', href: '#' },
   { key: 'footer.contact', href: '#', isModal: true },
   { key: 'footer.support', href: '#' },
@@ -37,7 +38,15 @@ const footerLinks = [
           <ul class="flex flex-wrap justify-center md:justify-start items-center gap-x-6 gap-y-2" role="list">
             <li v-for="link in footerLinks" :key="link.key">
               <button
-                v-if="link.isModal"
+                v-if="link.isLegal"
+                type="button"
+                class="font-jakarta text-sm text-info hover:text-primary transition-colors duration-150 min-h-[44px] inline-flex items-center rounded px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                @click="openCguModal"
+              >
+                {{ t(link.key) }}
+              </button>
+              <button
+                v-else-if="link.isModal"
                 type="button"
                 class="font-jakarta text-sm text-info hover:text-primary transition-colors duration-150 min-h-[44px] inline-flex items-center rounded px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                 @click="openContactModal"

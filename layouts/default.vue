@@ -10,6 +10,7 @@ useHead(head)
     <TheNavbar />
     <slot />
     <TheFooter />
+    <CguModal />
     <ContactModal />
     <AppToast />
     <CookieBanner />

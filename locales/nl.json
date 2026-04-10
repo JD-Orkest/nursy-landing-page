@@ -264,5 +264,235 @@
     "privacy_link": "privacybeleid",
     "accept": "Accepteren",
     "refuse": "Weigeren"
+  },
+  
+  "terms": {
+    "h1": "ALGEMENE GEBRUIKS- EN VERKOOPVOORWAARDEN",
+    "dialog_aria": "Dialoogvenster met algemene gebruiks- en verkoopvoorwaarden",
+    "close": "Algemene voorwaarden sluiten",
+    "cgu": {
+      "h2": "I. ALGEMENE GEBRUIKSVOORWAARDEN (AGV)",
+      "sections": {
+        "s1": {
+          "h3": "1. Toepassingsgebied",
+          "text": [
+            "Deze algemene gebruiksvoorwaarden (hierna de \"AGV\") zijn van toepassing op elk bezoek of gebruik van het Platform en de informatie ervan door een internetgebruiker (hierna \"Gebruiker\").",
+            "Door het Platform te bezoeken of te gebruiken, erkent de Gebruiker kennis te hebben genomen van deze AGV en aanvaardt hij uitdrukkelijk de daarin vermelde rechten en plichten.",
+            "Wij behouden ons het recht voor om onze AGV op elk moment en zonder voorafgaande kennisgeving te wijzigen, waarbij de bepalingen van toepassing zijn die van kracht zijn op het moment van gebruik."
+          ]
+        },
+        "s2": {
+          "h3": "2. Platform",
+          "text": [
+            "a. Toegang en navigatie Wij nemen alle redelijke maatregelen om de goede werking, veiligheid en toegankelijkheid van ons Platform te garanderen. Onze aansprakelijkheid is echter beperkt tot een middelenverbintenis; wij kunnen geen absolute garantie op werkbaarheid bieden. Elk gebruik gebeurt op eigen risico van de Gebruiker.",
+            "b. Inhoud Wij besteden grote zorg aan de informatie op het Platform, zodat deze zo volledig en nauwkeurig mogelijk is. Het is echter mogelijk dat bepaalde informatie niet altijd volledig of up-to-date is. De Uitgever kan niet aansprakelijk worden gesteld voor directe of indirecte schade die voortvloeit uit de aanwezige informatie of downloads die via het Platform worden uitgevoerd."
+          ]
+        },
+        "s3": {
+          "h3": "3. Diensten voorbehouden aan geregistreerde Gebruikers",
+          "text": [
+            "1) Registratie De toegang tot de bemiddelingsdiensten is afhankelijk van de registratie van de Gebruiker. De registratie is uitsluitend voorbehouden aan:"
+          ],
+          "list": [
+            "Handelingsbekwame natuurlijke personen.",
+            "Beroepsspecificiteit: Gezondheidsprofessionals die beschikken over een geldig RIZIV-nummer."
+          ],
+          "text_suite": [
+            "De Gebruiker verbindt zich ertoe juiste en waarheidsgetrouwe informatie te verstrekken. Een automatische verificatie van het RIZIV-nummer wordt uitgevoerd tijdens de registratie om de professionele identiteit van de Gebruiker te bevestigen.",
+            "Deze verificatie ontslaat de Gebruiker niet van zijn verantwoordelijkheid met betrekking tot de juistheid van de verstrekte gegevens.",
+            "De Gebruiker moet verplicht een geldig e-mailadres opgeven om de registratiebevestiging te ontvangen.",
+            "Er is slechts één registratie toegestaan per natuurlijke persoon. De gekozen gebruikersnaam en het wachtwoord zijn strikt persoonlijk en vertrouwelijk."
+          ],
+         
+          "text_fin": [
+            "2) Uitschrijving De correct geregistreerde Gebruiker kan op elk moment zijn uitschrijving aanvragen door naar de daarvoor bestemde pagina in zijn Persoonlijke ruimte te gaan.",
+            "Elke uitschrijving van het Platform wordt zo snel mogelijk effectief nadat de Gebruiker het hiervoor voorziene formulier heeft ingevuld."
+          ]
+        },
+        "s4": {
+          "h3": "4. Links naar andere websites",
+          "text": [
+            "Het Platform kan links of hyperlinks bevatten die verwijzen naar externe websites. Dergelijke links betekenen niet automatisch dat er een relatie bestaat tussen de Uitgever en de externe website.",
+            "De Uitgever heeft geen enkele controle over de externe websites en is niet verantwoordelijk voor de veilige en correcte werking van de hyperlinks en hun eindbestemming.",
+            "Zodra de Gebruiker op een hyperlink klikt, verlaat hij het Platform en kan de Uitgever niet aansprakelijk worden gesteld voor eventuele latere schade."
+          ]
+        },
+        "s5": {
+          "h3": "5. Intellectuele eigendom",
+          "text": [
+            "De structuur van het Platform, evenals de teksten, grafieken, afbeeldingen, databanken en computertoepassingen waaruit het bestaat, zijn eigendom van de Uitgever.",
+            "Elke gehele of gedeeltelijke reproductie, aanpassing of exploitatie van de inhoud en diensten die door het Platform worden aangeboden, zonder voorafgaande, uitdrukkelijke en schriftelijke toestemming van de Uitgever, is ten strengste verboden.",
+            "De Gebruiker krijgt een beperkt toegangs- en gebruiksrecht, niet-exclusief en niet-overdraagbaar, uitsluitend voor persoonlijk en professioneel gebruik gekoppeld aan de activiteit van verpleegkundige.",
+            "Het is de Gebruiker verboden gegevens op het Platform in te voeren die de inhoud of het uiterlijk ervan zouden wijzigen of zouden kunnen wijzigen."
+          ]
+        },
+        "s6": {
+          "h3": "6. Bescherming van persoons- en gezondheidsgegevens (Specifiek punt)",
+          "text": [
+            "De door de Gebruiker verstrekte persoonsgegevens worden uitsluitend verzameld en verwerkt voor interne doeleinden om de vervangingsdienst te verzekeren.",
+            "De Uitgever verbindt zich ertoe de toepasselijke wetgeving na te leven, in het bijzonder de Europese Verordening van 27 april 2016 (AVG) en de Belgische wetgeving inzake de bescherming van de persoonlijke levenssfeer.",
+            "Specificiteit \"Gezondheidsgegevens\":"
+          ],
+          "list": [
+            "Aard van de gegevens: De Gebruiker wordt geïnformeerd en aanvaardt dat het gebruik van de applicatie de verwerking van gevoelige gegevens met zich meebrengt, met name de namen van patiënten, zorgplanningen, medische verslagen en overdrachtnotities tussen verpleegkundigen.",
+            "Beroepsgeheim: Het gebruik van het Platform ontslaat de verpleegkundige in geen geval van zijn deontologische verplichtingen. De Gebruiker blijft als enige verantwoordelijk voor de inhoud die hij deelt en voor het naleven van het medisch beroepsgeheim ten aanzien van zijn patiënten.",
+            "Doel: De verwerking van deze gegevens is strikt beperkt tot de organisatie van de vervangingen en de continuïteit van de zorg tussen de betrokken Gebruikers."
+          ]
+        },
+        "s7": {
+          "h3": "7. Sancties en Algemene bepalingen",
+          "text": [
+            "De Uitgever behoudt zich het recht voor om het Platform en de bijbehorende diensten op elk moment, zonder voorafgaande kennisgeving, te wijzigen, uit te breiden, te verwijderen of te onderbreken.",
+            "In geval van schending van de AGV door de Gebruiker, behoudt de Uitgever zich het recht voor om gepaste sanctie- en herstelmaatregelen te nemen. Deze maatregelen kunnen omvatten:"
+          ],
+          "list": [
+            "De tijdelijke of definitieve opschorting van de toegang tot de diensten.",
+            "De eis tot schadevergoeding voor de geleden schade."
+          ],
+          "text_suite": [
+            "Deze acties kunnen worden ondernomen zonder opgave van redenen en zonder voorafgaande kennisgeving, zonder de aansprakelijkheid van de Uitgever in het geding te brengen.",
+            "De onwettigheid of nietigheid van een bepaling van deze voorwaarden heeft geen invloed op de geldigheid van de andere clausules."
+          ]
+        },
+        "s8": {
+          "h3": "8. Professionele verantwoordelijkheid en Ethiek (Specifiek punt)",
+          "text": [
+            "Het Platform treedt uitsluitend op als een technische tussenpersoon die de connectie tussen gezondheidsprofessionals vergemakkelijkt."
+          ],
+          "list": [
+            "Afwezigheid van verantwoordelijkheid in geval van \"No-Show\": De Uitgever kan niet aansprakelijk worden gesteld in geval van afwezigheid, vertraging of afhaken van een vervangende verpleegkundige tijdens een via de applicatie overeengekomen prestatie. De aansprakelijkheid van de Uitgever is strikt beperkt tot een middelenverbintenis met betrekking tot de bemiddeling.",
+            "Afwenden van patiënten: De Gebruiker verbindt zich tot strikte loyaliteit. Het afwenden van patiënten door een vervangende verpleegkundige ten nadele van een titularis die via het Platform is ontmoet, vormt een ernstige inbreuk op de beroepsethiek en op deze AGV."
+          ],
+          "text_suite": [
+            "Een dergelijk gedrag kan de onmiddellijke en definitieve uitsluiting van de in gebreke blijvende Gebruiker rechtvaardigen, onverminderd gerechtelijke stappen tussen de partijen."
+          ]
+        }
+      }
+    },
+    "cgv": {
+      "h2": "II. ALGEMENE VERKOOPVOORWAARDEN (AVV)",
+      "sections": {
+        "s1": {
+          "h3": "1. Toepassingsgebied",
+          "text": [
+            "Deze algemene verkoopvoorwaarden (hierna de \"AVV\") bepalen de wederzijdse rechten en plichten in geval van de aankoop van diensten op het Platform door een Gebruiker (hierna \"Klant\").",
+            "De Klant wordt geacht de AVV zonder voorbehoud te aanvaarden, bij gebreke waarvan zijn bestelling niet zal worden gevalideerd.",
+            "De Uitgever behoudt zich het recht voor om de AVV van tijd tot tijd te wijzigen; de wijzigingen zijn van toepassing zodra ze online staan voor elke latere aankoop."
+          ]
+        },
+        "s2": {
+          "h3": "2. Online diensten",
+          "text": [
+            "Via het Platform verleent de Verkoper de Klant toegang tot zijn bemiddelingsdiensten.",
+            "De diensten worden zo nauwkeurig mogelijk beschreven en gepresenteerd.",
+            "In geval van fouten of weglatingen in de presentatie kan de Verkoper hiervoor echter niet aansprakelijk worden gesteld.",
+            "De diensten worden aangeboden zolang de voorraad strekt."
+          ]
+        },
+        "s3": {
+          "h3": "3. Prijzen",
+          "text": [
+            "De Verkoper behoudt zich het recht voor om zijn prijzen op elk moment te wijzigen door ze online te publiceren.",
+            "Alleen de vermelde tarieven en de van kracht zijnde belastingen op het moment van de bestelling zijn van toepassing, onder voorbehoud van beschikbaarheid op die datum."
+          ],
+          "list": [
+            "Tarief: De prijs van het abonnement op de dienst is vastgesteld op € 15 per maand (incl. btw).",
+            "Valuta: De prijzen zijn uitgedrukt in euro.",
+            "Transparantie: Het totale bedrag van de bestelling, inclusief alle belastingen, wordt vermeld voor de definitieve validatie van de bestelbon."
+          ]
+        },
+        "s4": {
+          "h3": "4. Online bestelling",
+          "text": [
+            "De Klant heeft de mogelijkheid om online een bestelbon in te vullen via een elektronisch formulier.",
+            "Door dit formulier in te vullen, aanvaardt de Klant de prijs en de beschrijving van de geleverde diensten."
+          ],
+          "list": [
+            "Validatie: Om zijn bestelling te valideren, moet de Klant deze AVV accepteren door op de aangegeven plaats te klikken.",
+            "Informatie: De Klant moet een geldig e-mailadres en geldige facturatiegegevens opgeven.",
+            "Communicatie: Alle uitwisselingen met de Verkoper kunnen via dit e-mailadres plaatsvinden."
+          ]
+        },
+        "s5": {
+          "h3": "5. Betaling, Verlenging en Opzegging",
+          "text": [
+            "De Klant voert de betaling uit op het moment van de definitieve validatie van de bestelling met de gekozen betaalmethode.",
+            "Deze validatie geldt als handtekening tussen de partijen."
+          ],
+          "list": [
+            "Betaalmethoden: De betaling verloopt uitsluitend via de geïntegreerde aankoopsystemen (In-App Purchases) van Apple (App Store) of Google (Play Store). Het technische beheer van de abonnementen wordt verzorgd door de tussenpersoon Adapty.",
+            "Verlenging: Het abonnement wordt afgesloten voor een periode van één maand en wordt automatisch en stilzwijgend verlengd op elke maandelijkse vervaldatum via de store die door de Klant wordt gebruikt.",
+            "Opzegging: De Klant kan zijn abonnement op elk gewenst moment opzeggen via de instellingen van zijn Apple- of Google-account. De opzegging wordt van kracht aan het einde van de lopende maandelijkse periode.",
+            "Testfase: De eerste maanden na de lancering van het Platform vormen een gratis testfase, zonder kosten voor de Klant.",
+            "Veiligheid: In geval van weigering van de betalingsautorisatie door de erkende instanties of bij niet-betaling, behoudt de Verkoper zich het recht voor om de bestelling en de toegang tot de dienst op te schorten of te annuleren."
+          ]
+        },
+        "s6": {
+          "h3": "6. Bewijs",
+          "text": [
+            "De communicatie, bestellingen en betalingen tussen de Klant en de Verkoper kunnen worden bewezen door middel van de geautomatiseerde registers, die onder redelijke veiligheidsomstandigheden worden bewaard in de informaticasystemen van de Verkoper.",
+            "De bestelbonnen en facturen worden gearchiveerd op een betrouwbare en duurzame drager die als bewijsmiddel wordt beschouwd."
+          ]
+        },
+        "s7": {
+          "h3": "7. Levering van de dienst",
+          "text": [
+            "Onder \"levering\" in het kader van het Platform wordt verstaan de activering van de toegang tot de abonnementsdiensten na bevestiging van de betaling door de bankinstelling (Apple of Google)."
+          ],
+          "list": [
+            "Termijn: De toegang tot de dienst is onmiddellijk na de validatie van de In-App transactie.",
+            "Verificatie: Bij de activering van de dienst wordt de Klant uitgenodigd om de conformiteit van de toegang tot zijn Persoonlijke ruimte te controleren. Elke afwijking of toegangsfout moet zo snel mogelijk aan de Verkoper worden gemeld via het contact e-mailadres."
+          ]
+        },
+        "s8": {
+          "h3": "8. Garanties",
+          "text": [
+            "De Verkoper staat in voor de conformiteit van de diensten met het contract in overeenstemming met de wet die van kracht is op het moment van de sluiting ervan."
+          ],
+          "list": [
+            "Conformiteitsgarantie: Als de Klant een consument is, beschikt hij over een termijn van twee jaar vanaf de levering van de dienst om de wettelijke conformiteitsgarantie in te roepen.",
+            "Melding: Elk gebrek aan conformiteit moet zo snel mogelijk na de vaststelling ervan aan de Verkoper worden gemeld. Deze garantie dekt toegangsdefecten of grote bugs die het normale gebruik van de applicatie volgens de beschrijving ervan verhinderen."
+          ]
+        },
+        "s9": {
+          "h3": "9. Herroepingsrecht",
+          "text": [
+            "Als de Klant een consument is, beschikt hij normaal gezien over een termijn van 14 dagen om zijn wettelijk herroepingsrecht na de sluiting van het dienstencontract uit te oefenen."
+          ],
+          "list": [
+            "Uitzondering voor digitale inhoud: Aangezien het abonnement echter bestaat uit digitale inhoud die niet op een materiële drager is geleverd, gaat de Klant er bij zijn bestelling uitdrukkelijk mee akkoord om af te zien van zijn herroepingsrecht teneinde onmiddellijk toegang te krijgen tot de dienst."
+          ]
+        },
+        "s10": {
+          "h3": "10. Beperking van aansprakelijkheid en Klantenservice (Specifiek punt)",
+          "list": [
+            "Beperking van aansprakelijkheid: De totale aansprakelijkheid van de Verkoper voor enige schade in verband met het gebruik van de diensten van het Platform is strikt beperkt tot het bedrag van de bedragen die daadwerkelijk door de Klant zijn betaald gedurende de twaalf (12) maanden voorafgaand aan de schadeveroorzakende gebeurtenis. De Verkoper kan in geen geval aansprakelijk worden gesteld voor indirecte schade, zoals het verlies van patiënten, inkomensverlies of de medische gevolgen van een niet-verzekerde vervanging.",
+            "Klantenservice: Voor alle vragen, klachten of technische ondersteuning kan de Klant per e-mail contact opnemen met de klantenservice op het volgende adres: [EMAIL_A_COMPLETER]."
+          ]
+        },
+        "s11": {
+          "h3": "11. Overmacht",
+          "text": [
+            "Indien de Verkoper geheel of gedeeltelijk verhinderd is de bestelling uit te voeren als gevolg van een onvoorziene omstandigheid buiten zijn wil, is er sprake van overmacht.",
+            "In geval van overmacht is de Verkoper gerechtigd de uitvoering van de bestelling geheel of gedeeltelijk op te schorten.",
+            "Hij zal de Klant hiervan onmiddellijk op de hoogte stellen. Indien de overmacht langer dan 90 dagen zonder onderbreking aanhoudt, heeft elk van de partijen het recht om het contract eenzijdig te ontbinden door middel van een schriftelijke kennisgeving."
+          ]
+        },
+        "s12": {
+          "h3": "12. Onafhankelijkheid van de clausules",
+          "text": [
+            "De onwettigheid of de gehele of gedeeltelijke nietigheid van een bepaling van deze AVV heeft geen enkele invloed op de geldigheid en de toepassing van de andere bepalingen.",
+            "De Verkoper behoudt zich het recht voor om de onwettige of nietige bepaling te vervangen door een andere geldige bepaling van gelijke strekking."
+          ]
+        },
+        "s13": {
+          "h3": "13. Toepasselijk recht en bevoegde rechter",
+          "text": [
+            "Deze AVV worden beheerst door het Belgisch recht. In geval van een geschil en bij gebreke aan een minnelijke schikking, zal het geschil worden voorgelegd aan de rechtbanken van het gerechtelijk arrondissement van de maatschappelijke zetel van de Verkoper."
+          ]
+        }
+      }
+    }
   }
+
 }

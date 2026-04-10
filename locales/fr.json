@@ -264,5 +264,233 @@
     "privacy_link": "politique de confidentialité",
     "accept": "Accepter",
     "refuse": "Refuser"
+  },
+  "terms": {
+    "h1": "CONDITIONS GÉNÉRALES D'UTILISATION ET DE VENTE",
+    "dialog_aria": "Modal des conditions générales d'utilisation et de vente",
+    "close": "Fermer les conditions générales",
+   
+    "cgu": {
+      "h2": "I. CONDITIONS GÉNÉRALES D'UTILISATION (CGU)",
+      "sections": {
+        "s1": {
+          "h3": "1. Champ d'application",
+          "text": [
+            "Les présentes conditions générales d'utilisation (ci-après les \"CGU\") s'appliquent à toute visite ou utilisation de la Plateforme et de ses informations par un internaute (ci-après \"Utilisateur\").",
+            "En visitant ou utilisant la Plateforme, l'Utilisateur reconnaît avoir pris connaissance des présentes CGU et accepte expressément les droits et obligations qui y sont mentionnés.",
+            "Nous nous réservons le droit de modifier nos CGU à tout moment, sans notification préalable, en appliquant les dispositions en vigueur au moment de l'utilisation."
+          ]
+        },
+        "s2": {
+          "h3": "2. Plateforme",
+          "text": [
+            "a. Accès et navigation Nous prenons toutes les mesures raisonnables pour assurer le bon fonctionnement, la sécurité et l'accessibilité de notre Plateforme. Toutefois, notre responsabilité est limitée à une obligation de moyen; nous ne pouvons offrir de garantie d'opérabilité absolue. Toute utilisation se fait aux propres risques de l'Utilisateur.",
+            "b. Contenu Nous prenons grand soin des informations présentes sur la Plateforme pour qu'elles soient aussi complètes et précises que possible. Toutefois, il est possible que certaines informations ne soient pas toujours complètes ou à jour. L'Éditeur ne pourra être tenu responsable des dommages, directs ou indirects, résultant de l'information présente ou de téléchargements effectués via la Plateforme."
+          ]
+        },
+        "s3": {
+          "h3": "3. Services réservés aux Utilisateurs inscrits",
+          "text": [
+            "1) Inscription L'accès aux services de mise en relation est conditionné par l'inscription de l'Utilisateur. L'inscription est réservée exclusivement :"
+          ],
+          "list": [
+            "Aux personnes physiques capables juridiquement.",
+            "Spécificité métier: Aux professionnels de santé disposant d'un numéro INAMI valide."
+          ],
+          "text_suite": [
+            "L'Utilisateur s'engage à fournir des informations exactes et sincères. Une vérification automatique du numéro INAMI est effectuée lors de l'inscription pour confirmer l'identité professionnelle de l'Utilisateur.",
+            "Cette vérification ne dégage pas l'Utilisateur de sa responsabilité quant à la véracité des données fournies.",
+            "L'Utilisateur doit impérativement fournir une adresse e-mail valide pour recevoir la confirmation d'inscription.",
+            "Une seule inscription est admise par personne physique. L'identifiant et le mot de passe choisis sont strictement personnels et confidentiels."
+          ],
+          "text_fin": [
+            "2) Désinscription L'Utilisateur régulièrement inscrit pourra à tout moment demander sa désinscription en se rendant sur la page dédiée dans son Espace personnel.",
+            "Toute désinscription de la Plateforme sera effective dans les plus brefs délais après que l'Utilisateur ait rempli le formulaire prévu à cet effet."
+          ]
+        },
+        "s4": {
+          "h3": "4. Liens vers d'autres sites internet",
+          "text": [
+            "La Plateforme pourrait contenir des liens ou hyperliens renvoyant vers des sites internet externes. De tels liens ne signifient pas de manière automatique qu'il existe une relation entre l'Éditeur et le site externe.",
+            "L'Éditeur n'exerce aucun contrôle sur les sites internet externes et n'est pas responsable du fonctionnement sûr et correct des hyperliens et de leur destination finale.",
+            "Dès l'instant où l'Utilisateur clique sur un hyperlien, il quitte la Plateforme et l'Éditeur ne peut être tenu responsable en cas de dommage ultérieur."
+          ]
+        },
+        "s5": {
+          "h3": "5. Propriété intellectuelle",
+          "text": [
+            "La structuration de la Plateforme, mais aussi les textes, graphiques, images, bases de données et applications informatiques qui la composent sont la propriété de l'Éditeur.",
+            "Toute reproduction, adaptation ou exploitation partielle ou totale des contenus et services proposés par la Plateforme, sans l'autorisation préalable, expresse et écrite de l'Éditeur, est strictement interdite.",
+            "L'Utilisateur se voit octroyer un droit limité d'accès et d'utilisation à titre non exclusif et non transférable, uniquement pour un usage personnel et professionnel lié à l'activité d'infirmier.",
+            "Il est interdit à l'Utilisateur d'introduire des données sur la Plateforme qui modifieraient ou seraient susceptibles d'en modifier le contenu ou l'apparence."
+          ]
+        },
+        "s6": {
+          "h3": "6. Protection des données personnelles et de santé (Point spécifique)",
+          "text": [
+            "Les données personnelles fournies par l'Utilisateur sont collectées et traitées exclusivement à des fins internes pour assurer le service de remplacement.",
+            "L'Éditeur s'engage à respecter la législation applicable, notamment le Règlement européen du 27 avril 2016 (RGPD) et la législation belge relative à la protection de la vie privée.",
+            "Spécificité \"Données de Santé\" :"
+          ],
+          "list": [
+            "Nature des données: L'Utilisateur est informé et accepte que l'utilisation de l'application implique le traitement de données sensibles, notamment les noms des patients, les plannings de soins, les rapports médicaux et les notes de transmission entre infirmiers.",
+            "Secret Professionnel: L'utilisation de la Plateforme ne délie en aucun cas l'infirmier de ses obligations déontologiques. L'Utilisateur reste seul responsable du contenu qu'il partage et du respect du secret professionnel médical vis-à-vis de ses patients.",
+            "Finalité: Le traitement de ces données est strictement limité à l'organisation des remplacements et à la continuité des soins entre les Utilisateurs concernés."
+          ]
+        },
+        "s7": {
+          "h3": "7. Sanctions et Dispositions générales",
+          "text": [
+            "L'Éditeur se réserve la possibilité de modifier, étendre, supprimer ou interrompre la Plateforme et les services associés à tout moment, sans notification préalable.",
+            "En cas de violation des CGU par l'Utilisateur, l'Éditeur se réserve le droit de prendre des mesures de sanction et de réparation adaptées. Ces mesures peuvent inclure :"
+          ],
+          "list": [
+            "La suspension temporaire ou définitive de l'accès aux services.",
+            "La demande d'indemnisation pour les préjudices subis."
+          ],
+          "text_suite": [
+            "Ces actions peuvent être prises sans indication de motif et sans préavis, sans engager la responsabilité de l'Éditeur.",
+            "L'illégalité ou la nullité d'une disposition des présentes n'impacte pas la validité des autres clauses."
+          ]
+        },
+        "s8": {
+          "h3": "8. Responsabilité professionnelle et Éthique (Point spécifique)",
+          "text": [
+            "La Plateforme agit exclusivement comme un intermédiaire technique facilitant la mise en relation entre professionnels de santé."
+          ],
+          "list": [
+            "Absence de responsabilité en cas de \"No-Show\": L'Éditeur ne peut être tenu responsable en cas d'absence, de retard ou de défection d'une infirmière remplaçante lors d'une prestation convenue via l'application. La responsabilité de l'Éditeur est strictement limitée à une obligation de moyen concernant la mise en relation.",
+            "Détournement de patientèle: L'Utilisateur s'engage à une loyauté stricte. Tout détournement de patientèle par un infirmier remplaçant au détriment d'un titulaire rencontré via la Plateforme constitue une violation grave de l'éthique professionnelle et des présentes CGU."
+          ],
+          "text_suite": [
+            "Un tel comportement pourra justifier l'exclusion immédiate et définitive de l'Utilisateur fautif, sans préjudice d'actions judiciaires entre les parties."
+          ]
+        }
+      }
+    },
+    "cgv": {
+      "h2": "II. CONDITIONS GÉNÉRALES DE VENTE (CGV)",
+      "sections": {
+        "s1": {
+          "h3": "1. Champ d'application",
+          "text": [
+            "Les présentes conditions générales de vente (ci-après les \"CGV\") définissent les droits et obligations réciproques en cas d'achat de services sur la Plateforme par un Utilisateur (ci-après \"Client\").",
+            "Le Client est réputé accepter les CGV sans réserve, faute de quoi sa commande ne sera pas validée.",
+            "L'Éditeur se réserve le droit de modifier ponctuellement les CGV; les modifications seront applicables dès leur mise en ligne pour tout achat postérieur."
+          ]
+        },
+        "s2": {
+          "h3": "2. Services en ligne",
+          "text": [
+            "Par l'intermédiaire de la Plateforme, le Vendeur fournit au Client un accès à ses services de mise en relation.",
+            "Les services sont décrits et présentés avec la plus grande exactitude possible.",
+            "Toutefois, en cas d'erreurs ou d'omissions dans la présentation, la responsabilité du Vendeur ne pourra être engagée de ce fait.",
+            "Les services sont proposés dans la limite de leur disponibilité."
+          ]
+        },
+        "s3": {
+          "h3": "3. Prix",
+          "text": [
+            "Le Vendeur se réserve le droit de modifier ses prix à tout moment en les publiant en ligne.",
+            "Seuls s'appliqueront les tarifs indiqués et les taxes en vigueur au moment de la commande, sous réserve de disponibilité à cette date."
+          ],
+          "list": [
+            "Tarif: Le prix de l'abonnement au service est fixé à 15 € par mois (TTC).",
+            "Devise: Les prix sont indiqués en euros.",
+            "Transparence: Le montant total de la commande, toutes taxes comprises, est indiqué avant la validation finale du bon de commande."
+          ]
+        },
+        "s4": {
+          "h3": "4. Commande en ligne",
+          "text": [
+            "Le Client a la possibilité de remplir un bon de commande en ligne, au moyen d'un formulaire électronique.",
+            "En remplissant ce formulaire, le Client accepte le prix et la description des services fournis."
+          ],
+          "list": [
+            "Validation: Pour que sa commande soit validée, le Client doit accepter les présentes CGV en cliquant à l'endroit indiqué.",
+            "Informations: Le Client doit fournir une adresse de courrier électronique et ses coordonnées de facturation valides.",
+            "Communication: Tout échange avec le Vendeur pourra intervenir au moyen de cette adresse de courrier électronique."
+          ]
+        },
+        "s5": {
+          "h3": "5. Paiement, Renouvellement et Résiliation",
+          "text": [
+            "Le Client effectue le paiement au moment de la validation finale de la commande en utilisant le mode de paiement choisi.",
+            "Cette validation tient lieu de signature entre les parties."
+          ],
+          "list": [
+            "Modes de paiement: Le paiement s'effectue exclusivement via les systèmes d'achat intégrés (In-App Purchases) d'Apple (App Store) ou de Google (Play Store). La gestion technique des abonnements est assurée par l'intermédiaire Adapty.",
+            "Renouvellement: L'abonnement est conclu pour une durée d'un mois et se renouvelle automatiquement et tacitement à chaque échéance mensuelle via le store utilisé par le Client.",
+            "Résiliation: Le Client peut résilier son abonnement à n'importe quel moment via les réglages de son compte Apple ou Google. La résiliation prendra effet à l'issue de la période mensuelle en cours.",
+            "Phase de test: Les premiers mois suivant le lancement de la Plateforme constituent une phase de test gratuite sans frais pour le Client.",
+            "Sécurité: En cas de refus d'autorisation de paiement par les organismes accrédités ou de non-paiement, le Vendeur se réserve le droit de suspendre ou d'annuler la commande et l'accès au service."
+          ]
+        },
+        "s6": {
+          "h3": "6. Preuve",
+          "text": [
+            "Les communications, commandes et paiements intervenus entre le Client et le Vendeur pourront être prouvés grâce aux registres informatisés, conservés dans les systèmes informatiques du Vendeur dans des conditions raisonnables de sécurité.",
+            "Les bons de commandes et factures sont archivés sur un support fiable et durable considéré comme un moyen de preuve."
+          ]
+        },
+        "s7": {
+          "h3": "7. Livraison du service",
+          "text": [
+            "La \"livraison\" dans le cadre de la Plateforme s'entend par l'activation de l'accès aux services d'abonnement après confirmation du paiement par l'organisme bancaire (Apple ou Google)."
+          ],
+          "list": [
+            "Délai: L'accès au service est immédiat dès la validation de la transaction In-App.",
+            "Vérification: À l'activation du service, le Client est invité à vérifier la conformité de l'accès à son Espace personnel. Toute anomalie ou erreur d'accès doit être signalée au Vendeur dans les meilleurs délais via l'adresse e-mail de contact."
+          ]
+        },
+        "s8": {
+          "h3": "8. Garanties",
+          "text": [
+            "Le Vendeur est garant de la conformité des services au contrat conformément à la loi en vigueur au moment de la conclusion de celui-ci."
+          ],
+          "list": [
+            "Garantie de conformité: Si le Client est un consommateur, il dispose d'un délai de deux ans à compter de la délivrance du service pour mettre en œuvre la garantie légale de conformité.",
+            "Signalement: Tout défaut de conformité doit être signalé au Vendeur dans les meilleurs délais après sa constatation. Cette garantie couvre les défauts d'accès ou les bugs majeurs empêchant l'utilisation normale de l'application conformément à sa description."
+          ]
+        },
+        "s9": {
+          "h3": "9. Droit de rétractation",
+          "text": [
+            "Si le Client est un consommateur, il dispose normalement d'un délai de 14 jours pour faire valoir son droit de rétractation légal suivant la conclusion du contrat de service."
+          ],
+          "list": [
+            "Exception pour contenu numérique: Toutefois, l'abonnement consistant en un contenu numérique non fourni sur un support matériel, le Client accepte expressément, lors de sa commande, de renoncer à son droit de rétractation afin de pouvoir accéder au service immédiatement."
+          ]
+        },
+        "s10": {
+          "h3": "10. Limitation de responsabilité et Service Client (Point spécifique)",
+          "list": [
+            "Limitation de responsabilité: La responsabilité globale du Vendeur pour tout dommage lié à l'utilisation des services de la Plateforme est strictement limitée au montant des sommes effectivement payées par le Client au cours des douze (12) derniers mois précédant l'événement générateur du dommage. En aucun cas le Vendeur ne pourra être tenu responsable des dommages indirects, tels que la perte de patientèle, la perte de revenus ou les conséquences médicales d'un remplacement non assuré.",
+            "Service Client: Pour toute question, réclamation ou assistance technique, le Client peut contacter le service client par e-mail à l'adresse suivante : [EMAIL_A_COMPLETER]."
+          ]
+        },
+        "s11": {
+          "h3": "11. Force majeure",
+          "text": [
+            "Si le Vendeur se voit empêché, en tout ou en partie, d'exécuter la commande en raison d'une circonstance imprévue indépendante de sa volonté, il est alors question de force majeure.",
+            "En cas de force majeure, le Vendeur est autorisé à suspendre l'exécution de la commande, en tout ou en partie.",
+            "Il en avertira immédiatement le Client. Si la force majeure perdure plus de 90 jours sans interruption, chacune des parties aura le droit de résilier le contrat unilatéralement par notification écrite."
+          ]
+        },
+        "s12": {
+          "h3": "12. Indépendance des clauses",
+          "text": [
+            "L'illégalité ou la nullité totale ou partielle d'une disposition des présentes CGV n'aura aucun impact sur la validité et l'application des autres dispositions.",
+            "Le Vendeur se réserve le droit de remplacer la disposition illégale ou nulle par une autre disposition valable et de portée similaire."
+          ]
+        },
+        "s13": {
+          "h3": "13. Loi applicable et juridiction compétente",
+          "text": [
+            "Les présentes CGV sont régies par le droit belge. En cas de différend et à défaut d'accord amiable, le litige sera porté devant les tribunaux de l'arrondissement judiciaire du siège social du Vendeur."
+          ]
+        }
+      }
+    }
   }
 }
