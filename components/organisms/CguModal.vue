@@ -4,10 +4,11 @@ const { t, tm, te, rt, locale } = useI18n()
 
 const dialogRef = ref(null)
 const closeButtonRef = ref(null)
+const scrollRef = ref(null)
+const activeTab = ref('cgu')
 
 const cguSectionIds = ['s1', 's2', 's3', 's4', 's5', 's6', 's7', 's8']
 const cgvSectionIds = ['s1', 's2', 's3', 's4', 's5', 's6', 's7', 's8', 's9', 's10', 's11', 's12', 's13']
-const placeholderPattern = /\[[A-Z0-9_]+\]/
 
 let previousBodyOverflow = ''
 
@@ -15,11 +16,28 @@ function normalizeArray(value) {
   if (!Array.isArray(value)) return []
 
   return value
-    .map(item => {
-      if (typeof item === 'string') return item
-      return rt(item)
-    })
-    .filter(item => item.trim() && !placeholderPattern.test(item))
+    .map(item => typeof item === 'string' ? item : rt(item))
+    .filter(item => item.trim())
+}
+
+// Extrait l'acronyme entre parenthèses : "I. CONDITIONS GÉNÉRALES (CGU)" → "CGU"
+function extractAcronym(h2) {
+  const match = h2.match(/\(([^)]+)\)/)
+  return match ? match[1] : h2
+}
+
+// "3. Titre de la section" → { num: '03', text: 'Titre de la section' }
+function parseTitle(title) {
+  const match = title.match(/^(\d+)\.\s*(.+)$/)
+  if (match) return { num: String(match[1]).padStart(2, '0'), text: match[2] }
+  return { num: null, text: title }
+}
+
+function switchTab(tab) {
+  activeTab.value = tab
+  nextTick(() => {
+    if (scrollRef.value) scrollRef.value.scrollTop = 0
+  })
 }
 
 function getOptionalString(path) {
@@ -60,6 +78,10 @@ const cgvSections = computed(() => {
   locale.value
   return cgvSectionIds.map(id => buildSection(`terms.cgv.sections.${id}`, id))
 })
+
+const activeSections = computed(() =>
+  activeTab.value === 'cgu' ? cguSections.value : cgvSections.value
+)
 
 function getFocusableElements() {
   if (!dialogRef.value) return []
@@ -108,6 +130,7 @@ watch(isOpen, async (open) => {
   if (open) {
     previousBodyOverflow = document.body.style.overflow
     document.body.style.overflow = 'hidden'
+    activeTab.value = 'cgu'
     await nextTick()
     closeButtonRef.value?.focus()
     return
@@ -139,8 +162,8 @@ onUnmounted(() => {
       >
         <div
           v-if="isOpen"
-          class="fixed inset-0 z-[9999] flex items-center justify-center p-3 sm:p-4"
-          style="background: rgba(24, 28, 29, 0.5); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px)"
+          class="fixed inset-0 z-[9999] flex items-end justify-center sm:items-center sm:p-4"
+          style="background: rgba(24, 28, 29, 0.6); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px)"
           @click.self="close"
         >
           <div
@@ -150,133 +173,122 @@ onUnmounted(() => {
             aria-modal="true"
             aria-labelledby="terms-modal-title"
             :aria-label="t('terms.dialog_aria')"
-            class="flex h-[90vh] w-[95vw] max-w-4xl flex-col overflow-hidden rounded-3xl bg-white shadow-2xl"
+            class="flex h-[92vh] w-full flex-col overflow-hidden rounded-t-3xl bg-surface shadow-2xl sm:h-[88vh] sm:max-w-3xl sm:rounded-3xl"
             @click.stop
           >
-            <!-- En-tête -->
-            <div class="flex items-start justify-between gap-4 border-b border-secondary/20 bg-white px-6 py-5 sm:px-8">
-              <div class="space-y-2">
-                <span class="inline-block rounded-full bg-secondary/40 px-3 py-1 font-jakarta text-xs font-semibold uppercase tracking-widest text-primary">
-                  Nursy
-                </span>
-                <h1 id="terms-modal-title" class="font-manrope text-xl font-extrabold leading-tight text-text-main sm:text-2xl">
-                  {{ t('terms.h1') }}
-                </h1>
+            <!-- ── En-tête ── -->
+            <div class="shrink-0 border-b border-secondary/30 bg-white px-5 pb-0 pt-5 sm:px-8 sm:pt-6">
+              <div class="mb-4 flex items-start justify-between gap-4">
+                <div>
+                  <div class="mb-1.5 flex items-center gap-2">
+                    <span class="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-0.5 font-jakarta text-[11px] font-semibold uppercase tracking-widest text-primary">
+                      <span class="h-1.5 w-1.5 rounded-full bg-primary" aria-hidden="true" />
+                      Nursy
+                    </span>
+                  </div>
+                  <h1 id="terms-modal-title" class="font-manrope text-lg font-extrabold leading-tight text-text-main sm:text-xl">
+                    {{ t('terms.h1') }}
+                  </h1>
+                </div>
+
+                <button
+                  ref="closeButtonRef"
+                  type="button"
+                  class="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-info transition-colors duration-150 hover:bg-surface hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+                  :aria-label="t('terms.close')"
+                  @click="close"
+                >
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
               </div>
 
-              <button
-                ref="closeButtonRef"
-                type="button"
-                class="mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-info transition-colors duration-150 hover:bg-surface hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30"
-                :aria-label="t('terms.close')"
-                @click="close"
-              >
-                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
+              <!-- Onglets -->
+              <div class="flex gap-1" role="tablist">
+                <button
+                  v-for="tab in ['cgu', 'cgv']"
+                  :key="tab"
+                  role="tab"
+                  type="button"
+                  :aria-selected="activeTab === tab"
+                  :aria-controls="`terms-tab-${tab}`"
+                  class="relative px-4 py-2.5 font-jakarta text-sm font-semibold uppercase tracking-wide transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-1"
+                  :class="
+                    activeTab === tab
+                      ? 'text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:rounded-t-full after:bg-primary'
+                      : 'text-info hover:text-primary'
+                  "
+                  @click="switchTab(tab)"
+                >
+                  {{ extractAcronym(t(`terms.${tab}.h2`)) }}
+                </button>
+              </div>
             </div>
 
-            <!-- Contenu défilable -->
-            <div class="flex-1 overflow-y-auto bg-surface px-5 py-6 sm:px-8 sm:py-8">
-              <div class="space-y-10">
-
-                <!-- CGU -->
-                <section class="space-y-4" aria-labelledby="terms-cgu-title">
-                  <div class="flex items-center gap-3">
-                    <div class="h-px flex-1 bg-secondary/50" aria-hidden="true" />
-                    <h2 id="terms-cgu-title" class="font-jakarta text-xs font-semibold uppercase tracking-widest text-primary">
-                      {{ t('terms.cgu.h2') }}
-                    </h2>
-                    <div class="h-px flex-1 bg-secondary/50" aria-hidden="true" />
-                  </div>
-
-                  <div class="space-y-3">
-                    <article
-                      v-for="section in cguSections"
-                      :key="section.id"
-                      class="rounded-2xl bg-white p-5 shadow-sm sm:p-6"
-                    >
-                      <h3 class="border-l-2 border-primary pl-3 font-manrope text-base font-bold text-text-main sm:text-[17px]">
-                        {{ section.title }}
+            <!-- ── Contenu défilable ── -->
+            <div
+              :id="`terms-tab-${activeTab}`"
+              ref="scrollRef"
+              role="tabpanel"
+              class="flex-1 overflow-y-auto px-4 py-6 sm:px-8 sm:py-8"
+            >
+              <div class="space-y-3">
+                <article
+                  v-for="section in activeSections"
+                  :key="section.id"
+                  class="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-secondary/20"
+                >
+                  <!-- Titre section avec badge numéro -->
+                  <div class="flex items-start gap-3 border-b border-secondary/15 px-5 py-4 sm:px-6">
+                    <template v-if="parseTitle(section.title).num">
+                      <span
+                        class="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary/10 font-manrope text-xs font-extrabold text-primary"
+                        aria-hidden="true"
+                      >
+                        {{ parseTitle(section.title).num }}
+                      </span>
+                      <h3 class="font-manrope text-[15px] font-bold leading-snug text-text-main sm:text-base">
+                        {{ parseTitle(section.title).text }}
                       </h3>
+                    </template>
+                    <h3 v-else class="font-manrope text-[15px] font-bold leading-snug text-text-main sm:text-base">
+                      {{ section.title }}
+                    </h3>
+                  </div>
 
-                      <div class="mt-4 space-y-3 font-ptsans text-sm leading-7 sm:text-[15px]">
-                        <template v-for="(block, blockIndex) in section.blocks" :key="`${section.id}-${block.type}-${blockIndex}`">
-                          <div v-if="block.type === 'paragraphs'" class="space-y-3 text-text-main/80">
-                            <p v-for="(paragraph, paragraphIndex) in block.items" :key="`${section.id}-paragraph-${blockIndex}-${paragraphIndex}`">
-                              {{ paragraph }}
-                            </p>
-                          </div>
-
-                          <ul v-else-if="block.type === 'list'" class="space-y-2.5">
-                            <li
-                              v-for="(item, itemIndex) in block.items"
-                              :key="`${section.id}-item-${blockIndex}-${itemIndex}`"
-                              class="flex items-start gap-2.5 text-text-main/80"
-                            >
-                              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" aria-hidden="true" />
-                              <span>{{ item }}</span>
-                            </li>
-                          </ul>
-
-                          <h4 v-else-if="block.type === 'subheading'" class="inline-block rounded-full bg-secondary/30 px-3 py-1 font-jakarta text-xs font-semibold uppercase tracking-widest text-primary">
-                            {{ block.value }}
-                          </h4>
-                        </template>
+                  <!-- Blocs de contenu -->
+                  <div class="space-y-4 px-5 py-4 sm:px-6">
+                    <template v-for="(block, blockIndex) in section.blocks" :key="`${section.id}-${block.type}-${blockIndex}`">
+                      <div v-if="block.type === 'paragraphs'" class="space-y-2.5">
+                        <p
+                          v-for="(paragraph, paragraphIndex) in block.items"
+                          :key="`${section.id}-p-${blockIndex}-${paragraphIndex}`"
+                          class="font-ptsans text-sm leading-7 text-text-main/75 sm:text-[14.5px]"
+                        >
+                          {{ paragraph }}
+                        </p>
                       </div>
-                    </article>
-                  </div>
-                </section>
 
-                <!-- CGV -->
-                <section class="space-y-4" aria-labelledby="terms-cgv-title">
-                  <div class="flex items-center gap-3">
-                    <div class="h-px flex-1 bg-secondary/50" aria-hidden="true" />
-                    <h2 id="terms-cgv-title" class="font-jakarta text-xs font-semibold uppercase tracking-widest text-primary">
-                      {{ t('terms.cgv.h2') }}
-                    </h2>
-                    <div class="h-px flex-1 bg-secondary/50" aria-hidden="true" />
-                  </div>
+                      <ul v-else-if="block.type === 'list'" class="space-y-2">
+                        <li
+                          v-for="(item, itemIndex) in block.items"
+                          :key="`${section.id}-li-${blockIndex}-${itemIndex}`"
+                          class="flex items-start gap-3 rounded-xl bg-surface px-3 py-2.5"
+                        >
+                          <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" aria-hidden="true" />
+                          <span class="font-ptsans text-sm leading-6 text-text-main/75 sm:text-[14.5px]">{{ item }}</span>
+                        </li>
+                      </ul>
 
-                  <div class="space-y-3">
-                    <article
-                      v-for="section in cgvSections"
-                      :key="section.id"
-                      class="rounded-2xl bg-white p-5 shadow-sm sm:p-6"
-                    >
-                      <h3 class="border-l-2 border-primary pl-3 font-manrope text-base font-bold text-text-main sm:text-[17px]">
-                        {{ section.title }}
-                      </h3>
-
-                      <div class="mt-4 space-y-3 font-ptsans text-sm leading-7 sm:text-[15px]">
-                        <template v-for="(block, blockIndex) in section.blocks" :key="`${section.id}-${block.type}-${blockIndex}`">
-                          <div v-if="block.type === 'paragraphs'" class="space-y-3 text-text-main/80">
-                            <p v-for="(paragraph, paragraphIndex) in block.items" :key="`${section.id}-paragraph-${blockIndex}-${paragraphIndex}`">
-                              {{ paragraph }}
-                            </p>
-                          </div>
-
-                          <ul v-else-if="block.type === 'list'" class="space-y-2.5">
-                            <li
-                              v-for="(item, itemIndex) in block.items"
-                              :key="`${section.id}-item-${blockIndex}-${itemIndex}`"
-                              class="flex items-start gap-2.5 text-text-main/80"
-                            >
-                              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" aria-hidden="true" />
-                              <span>{{ item }}</span>
-                            </li>
-                          </ul>
-
-                          <h4 v-else-if="block.type === 'subheading'" class="inline-block rounded-full bg-secondary/30 px-3 py-1 font-jakarta text-xs font-semibold uppercase tracking-widest text-primary">
-                            {{ block.value }}
-                          </h4>
-                        </template>
+                      <div v-else-if="block.type === 'subheading'" class="pt-1">
+                        <span class="inline-block rounded-full bg-secondary/30 px-3 py-1 font-jakarta text-[11px] font-semibold uppercase tracking-widest text-primary">
+                          {{ block.value }}
+                        </span>
                       </div>
-                    </article>
+                    </template>
                   </div>
-                </section>
-
+                </article>
               </div>
             </div>
           </div>
