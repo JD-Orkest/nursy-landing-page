@@ -2,12 +2,13 @@
 const { t, locale } = useI18n()
 
 // ── Déclencheur URL : ?modal=terms ────────────────────────────────────────
-// Ouvre le modal CGU/CGV directement depuis un lien (ex : app mobile).
-// Client-only → aucun impact SSG/SEO.
+// Le plugin modal-from-url.client.ts capture le param avant le redirect i18n
+// et le stocke dans un useState global. On le lit ici après montage.
 const { open: openCguModal } = useCguModal()
+const pendingModal = useState<string | null>('pending-modal', () => null)
 onMounted(() => {
-  const url = new URL(window.location.href)
-  if (url.searchParams.get('modal') === 'terms') {
+  if (pendingModal.value === 'terms') {
+    pendingModal.value = null
     openCguModal()
   }
 })
