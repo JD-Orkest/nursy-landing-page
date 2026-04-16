@@ -1,6 +1,17 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
 
+// ── Déclencheur URL : ?modal=terms ────────────────────────────────────────
+// Ouvre le modal CGU/CGV directement depuis un lien (ex : app mobile).
+// Client-only → aucun impact SSG/SEO.
+const { open: openCguModal } = useCguModal()
+onMounted(() => {
+  const url = new URL(window.location.href)
+  if (url.searchParams.get('modal') === 'terms') {
+    openCguModal()
+  }
+})
+
 // ── SEO Meta réactif par langue ────────────────────────────────────────────
 const seoData = computed(() => {
   const isFr = locale.value === 'fr'
