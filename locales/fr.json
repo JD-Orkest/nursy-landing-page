@@ -171,52 +171,55 @@
     }
   },
   "pricing": {
-    "eyebrow": "TARIFS",
-    "title": "Un prix transparent, sans surprise.",
-    "subtitle": "Prix abonnement infirmier Belgique clair et déductible fiscalement. Choisissez la formule adaptée à votre situation.",
-    "plan_test": {
-      "badge": "PHASE DE LANCEMENT",
-      "name": "Accès Test",
-      "price": "Gratuit",
-      "duration": "",
-      "description": "Accès complet à toutes les fonctionnalités pendant la durée du lancement. Sans engagement, sans carte bancaire.",
-      "cta": "Commencer gratuitement",
-      "features": [
-        "Toutes les fonctionnalités débloquées",
-        "Sans engagement ni carte bancaire",
-        "Communauté & support inclus"
-      ]
+    "eyebrow": "TARIFS FLEXIBLES",
+    "title": "Un prix transparent. Une sérénité absolue.",
+    "subtitle": "Votre abonnement Nursy est 100 % déductible de vos frais professionnels. Choisissez la durée qui correspond à votre rythme, avec un accès complet à l'application dans tous les cas.",
+    "tax_note": "100 % déductible fiscalement",
+    "shared_features_title": "Inclus dans tous nos abonnements :",
+    "shared_features": [
+      "Publication de tournées illimitée",
+      "Réponses aux annonces illimitées",
+      "Modularité totale — panier de soins",
+      "Échelle de Katz automatique",
+      "Messagerie sécurisée RGPD",
+      "Modèles de tournées réutilisables",
+      "Navigation Waze & Google Maps",
+      "Support prioritaire"
+    ],
+    "plan_weekly": {
+      "badge": "SANS ATTACHE",
+      "name": "Dépannage & Urgence",
+      "price": "4,99 €",
+      "duration": "/ semaine",
+      "description": "Idéal pour un besoin ponctuel, des vacances de courte durée ou un remplacement d'urgence."
     },
-    "plan_indie": {
-      "badge": "LE PLUS POPULAIRE",
-      "name": "Infirmière Indépendante",
-      "price": "15 €",
+    "plan_monthly": {
+      "badge": "LE STANDARD",
+      "name": "Gestion Régulière",
+      "price": "12,99 €",
       "duration": "/ mois",
-      "description": "L'offre idéale pour les infirmiers indépendants belges — logiciel gestion tournée infirmière déductible fiscalement.",
-      "cta": "Commencer maintenant",
-      "tax_note": "100 % déductible fiscalement pour les indépendants belges",
-      "features": [
-        "Publication de tournées illimitée",
-        "Modularité totale — panier de soins",
-        "Échelle de Katz automatique (A, B, C, T2, T7)",
-        "Modèles de tournées réutilisables",
-        "Messagerie sécurisée RGPD",
-        "Navigation intégrée Waze & Google Maps"
-      ]
+      "description": "L'équilibre parfait pour gérer vos remplacements sereinement au quotidien, sans engagement à long terme."
+    },
+    "plan_yearly": {
+      "badge": "LE PLUS RENTABLE (-23%)",
+      "name": "Sérénité Totale",
+      "price": "119,99 €",
+      "duration": "/ an",
+      "equivalent": "Équivaut à 9,99 € / mois",
+      "description": "L'esprit libre toute l'année. Simplifiez votre comptabilité avec une seule facture annuelle et profitez de l'application sans interruption."
     },
     "plan_group": {
-      "badge": "GROUPEMENTS & BUREAUX",
-      "name": "Solution Sur Mesure",
+      "badge": "POUR LES ÉQUIPES",
+      "name": "Groupement Infirmiers",
       "price": "Sur devis",
       "duration": "",
-      "description": "Logiciel groupement infirmier et gestion d'équipe soins à domicile : une solution sur mesure pour vos besoins spécifiques.",
-      "cta": "Nous contacter",
+      "description": "Une interface centralisée pour le gestionnaire d'équipe. Supervisez vos collaborateurs et organisez les tournées en toute simplicité.",
+      "cta": "Demander une démo",
       "features": [
-        "Interface Administrateur dédiée",
-        "Gestion centralisée de l'équipe — remplacements en un clic",
-        "Accès aux profils et disponibilités de chaque membre",
-        "Support prioritaire & onboarding personnalisé",
-        "Configuration sur mesure"
+        "Espace Gestionnaire d'équipe dédié",
+        "Ajout et suppression de collaborateurs",
+        "Connexion déléguée : agissez au nom d'un membre (répondre aux offres, messages...)",
+        "Gestion centralisée de la patientèle et des plannings"
       ]
     }
   },

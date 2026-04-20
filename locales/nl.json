@@ -171,52 +171,51 @@
     }
   },
   "pricing": {
-    "eyebrow": "TARIEVEN",
-    "title": "Een transparante prijs, zonder verrassingen.",
-    "subtitle": "Prijs abonnement verpleegkundige België duidelijk en fiscaal aftrekbaar. Kies de formule die bij uw situatie past.",
-    "plan_test": {
-      "badge": "LANCERINGSFASE",
-      "name": "Testtoegang",
-      "price": "Gratis",
-      "duration": "",
-      "description": "Volledige toegang tot alle functies tijdens de lanceringsperiode. Zonder engagement, zonder bankkaart.",
-      "cta": "Gratis starten",
-      "features": [
-        "Alle functies ontgrendeld",
-        "Zonder engagement of bankkaart",
-        "Community & support inbegrepen"
-      ]
+    "eyebrow": "FLEXIBELE TARIEVEN",
+    "title": "Een transparante prijs. Absolute sereniteit.",
+    "subtitle": "Uw Nursy-abonnement is 100% fiscaal aftrekbaar als beroepskost. Kies de duur die bij uw ritme past, met volledige toegang tot de app in elk geval.",
+    "tax_note": "100% fiscaal aftrekbaar",
+    "shared_features_title": "Inbegrepen in alle abonnementen:",
+    "shared_features": [
+      "Onbeperkt rondes en vervangingen publiceren",
+      "Volledige modulariteit met de zorgmand",
+      "Automatische berekening van de Katz-schaal",
+      "Beveiligde berichten & GPS-integratie (Waze/Maps)"
+    ],
+    "plan_weekly": {
+      "badge": "ZONDER VERPLICHTING",
+      "name": "Spoedoplossing",
+      "price": "4,99 €",
+      "duration": "/ week",
+      "description": "Ideaal voor een eenmalige nood, korte vakantie of dringende vervanging."
     },
-    "plan_indie": {
-      "badge": "MEEST POPULAIR",
-      "name": "Zelfstandige Verpleegkundige",
-      "price": "15 €",
+    "plan_monthly": {
+      "badge": "DE STANDAARD",
+      "name": "Regelmatig Beheer",
+      "price": "12,99 €",
       "duration": "/ maand",
-      "description": "De ideale formule voor zelfstandige Belgische verpleegkundigen — software rondebeheer verpleegkundige, fiscaal aftrekbaar.",
-      "cta": "Nu starten",
-      "tax_note": "100% fiscaal aftrekbaar als beroepskost voor Belgische zelfstandigen",
-      "features": [
-        "Onbeperkt rondes publiceren",
-        "Volledige modulariteit — zorgmand",
-        "Automatische Katz-schaal (A, B, C, T2, T7)",
-        "Herbruikbare rondemodellen",
-        "Beveiligde berichten GDPR",
-        "Geïntegreerde navigatie Waze & Google Maps"
-      ]
+      "description": "Het perfecte evenwicht voor dagelijks rustig beheer van uw vervangingen, zonder langetermijnverplichting."
+    },
+    "plan_yearly": {
+      "badge": "MEEST VOORDELIG (-23%)",
+      "name": "Totale Sereniteit",
+      "price": "119,99 €",
+      "duration": "/ jaar",
+      "equivalent": "Komt neer op 9,99 € / maand",
+      "description": "Het hele jaar onbezorgd. Vereenvoudig uw boekhouding met één jaarlijkse factuur en geniet van de app zonder onderbreking."
     },
     "plan_group": {
-      "badge": "GROEPEN & BUREAUS",
-      "name": "Oplossing Op Maat",
+      "badge": "VOOR TEAMS",
+      "name": "Verpleeggroep",
       "price": "Op aanvraag",
       "duration": "",
-      "description": "Software verpleegkundige groep en team thuiszorgbeheer: een oplossing op maat voor uw specifieke behoeften.",
-      "cta": "Contacteer ons",
+      "description": "Een gecentraliseerde interface voor de teammanager. Begeleid uw medewerkers en organiseer de rondes met gemak.",
+      "cta": "Demo aanvragen",
       "features": [
-        "Toegewijde beheerdersinterface",
-        "Gecentraliseerd teambeheer — vervangingen in één klik",
-        "Toegang tot profielen en beschikbaarheden van elk teamlid",
-        "Prioritaire support & gepersonaliseerde onboarding",
-        "Configuratie op maat"
+        "Toegewijde teammanagerruimte",
+        "Medewerkers toevoegen en verwijderen",
+        "Gedelegeerde toegang: handel namens een lid (reageren op aanbiedingen, berichten...)",
+        "Gecentraliseerd beheer van patiënten en planningen"
       ]
     }
   },
