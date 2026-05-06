@@ -133,7 +133,7 @@ export default defineNuxtConfig({
   // ── Runtime Config (variables publiques) ─────────────────────────────────
   runtimeConfig: {
     public: {
-      apiUrl: process.env.NUXT_PUBLIC_API_URL ?? 'https://apocrine-actionably-shelley.ngrok-free.dev/api/web-contact',
+      apiUrl: process.env.NUXT_PUBLIC_API_URL ?? 'https://nursy-app-904176536964.europe-west1.run.app/api/web-contact',
     },
   },
 
