@@ -1,6 +1,8 @@
 <script setup>
 const { t, locale } = useI18n()
 const { gtag } = useGtag()
+const { open: openContactModal } = useContactModal()
+const { open: openWaitlistModal } = useWaitlistModal()
 
 const illustrationSrc = computed(() =>
   locale.value === 'nl' ? '/illustration-nl.png' : '/illustration-fr.png'
@@ -37,7 +39,8 @@ const illustrationSrc = computed(() =>
             {{ t('hero.subtext') }}
           </p>
 
-          <!-- Boutons stores -->
+          <!-- Boutons stores (commentés — app en phase de test, non disponible publiquement) -->
+          <!--
           <div class="flex flex-col sm:flex-row gap-3 sm:gap-4" role="group">
             <a
               href="#"
@@ -70,6 +73,25 @@ const illustrationSrc = computed(() =>
                 <span>{{ t('hero.cta_playstore') }}</span>
               </span>
             </a>
+          </div>
+          -->
+
+          <!-- Bouton file d'attente (phase de test) -->
+          <div>
+            <button
+              type="button"
+              class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-primary-dark text-white font-manrope font-semibold rounded-xl min-h-[52px] px-7 text-sm md:text-base shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+              @click="() => { openWaitlistModal(); gtag('event', 'click_waitlist') }"
+            >
+              <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              {{ t('hero.cta_waitlist') }}
+            </button>
+            <p class="mt-2 font-jakarta text-xs text-info">{{ t('hero.cta_waitlist_note') }}</p>
           </div>
 
           <!-- Preuve sociale -->

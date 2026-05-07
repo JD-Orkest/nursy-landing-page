@@ -20,6 +20,8 @@
     "cta_appstore_aria": "Télécharger Nursy sur l'App Store (iOS) — remplacement infirmier domicile Belgique",
     "cta_playstore": "Google Play",
     "cta_playstore_aria": "Télécharger Nursy sur Google Play (Android) — soins à domicile Belgique",
+    "cta_waitlist": "S'inscrire à la liste d'attente",
+    "cta_waitlist_note": "Phase de test en cours — soyez parmi les premiers à découvrir l'app.",
     "social_proof": "+2 500 infirmiers nous font confiance",
     "mockup_alt": "Aperçu de l'application Nursy sur iPhone — gestion de tournée infirmière en Belgique",
     "badge_status": "TOURNÉE PARTAGÉE",
@@ -223,11 +225,19 @@
       ]
     }
   },
+  "waitlist": {
+    "modal_title": "Rejoindre la liste d'attente",
+    "modal_subtitle": "Soyez parmi les premiers à découvrir Nursy.",
+    "close": "Fermer",
+    "loading": "Chargement du formulaire…"
+  },
   "cta": {
     "title": "Prêt à retrouver la sérénité ?",
     "subtitle": "Rejoignez Nursy dès aujourd'hui. Déléguez sereinement, soignez librement et prenez enfin du temps pour vous.",
     "button": "Démarrer gratuitement",
-    "platforms": "Disponible sur iOS 15+ et Android 10+"
+    "platforms": "Disponible sur iOS 15+ et Android 10+",
+    "button_waitlist": "S'inscrire à la liste d'attente",
+    "waitlist_note": "Phase de test en cours — soyez parmi les premiers à découvrir l'app."
   },
   "footer": {
     "nav_aria": "Liens du pied de page",

@@ -20,6 +20,8 @@
     "cta_appstore_aria": "Nursy downloaden in de App Store (iOS) — thuisverpleging vervanging België",
     "cta_playstore": "Google Play",
     "cta_playstore_aria": "Nursy downloaden in Google Play (Android) — thuiszorg België",
+    "cta_waitlist": "Inschrijven op de wachtlijst",
+    "cta_waitlist_note": "Testfase bezig — wees een van de eersten die de app ontdekt.",
     "social_proof": "+2 500 verpleegkundigen vertrouwen ons",
     "mockup_alt": "Voorbeeld van de Nursy-app op iPhone — planning verpleegkundige thuiszorg België",
     "badge_status": "RONDE GEDEELD",
@@ -219,11 +221,19 @@
       ]
     }
   },
+  "waitlist": {
+    "modal_title": "Inschrijven op de wachtlijst",
+    "modal_subtitle": "Wees een van de eersten die Nursy ontdekt.",
+    "close": "Sluiten",
+    "loading": "Formulier laden…"
+  },
   "cta": {
     "title": "Klaar om opnieuw te ademen?",
     "subtitle": "Word vandaag lid van Nursy. Delegeer met sereniteit, verzorg met vrijheid en neem eindelijk tijd voor uzelf.",
     "button": "Gratis starten",
-    "platforms": "Beschikbaar op iOS 15+ en Android 10+"
+    "platforms": "Beschikbaar op iOS 15+ en Android 10+",
+    "button_waitlist": "Inschrijven op de wachtlijst",
+    "waitlist_note": "Testfase bezig — wees een van de eersten die de app ontdekt."
   },
   "footer": {
     "nav_aria": "Paginavoet-navigatie",

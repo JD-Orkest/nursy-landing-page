@@ -12,6 +12,7 @@ useHead(head)
     <TheFooter />
     <CguModal />
     <ContactModal />
+    <WaitlistModal />
     <AppToast />
     <CookieBanner />
   </div>
