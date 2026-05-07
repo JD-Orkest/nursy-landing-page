@@ -12,17 +12,17 @@
   },
   "hero": {
     "headline_start": "La plateforme qui connecte les",
-    "headline_highlight": "infirmiers à domicile",
+    "headline_highlight": "infirmiers/ères à domicile",
     "headline_end": "de Belgique.",
     "tagline": "Soignez, partagez, respirez.",
-    "subtext": "Nursy est la première plateforme de remplacement modulaire pour infirmiers indépendants. Déléguez votre tournée en toute sérénité, développez votre activité à votre rythme et retrouvez l'équilibre entre vie professionnelle et personnelle.",
+    "subtext": "Nursy est la première plateforme de remplacement modulaire pour le personnel infirmier indépendant. Déléguez votre tournée en toute sérénité, développez votre activité à votre rythme et retrouvez l'équilibre entre vie professionnelle et personnelle.",
     "cta_appstore": "App Store",
     "cta_appstore_aria": "Télécharger Nursy sur l'App Store (iOS) — remplacement infirmier domicile Belgique",
     "cta_playstore": "Google Play",
     "cta_playstore_aria": "Télécharger Nursy sur Google Play (Android) — soins à domicile Belgique",
     "cta_waitlist": "S'inscrire à la liste d'attente",
     "cta_waitlist_note": "Phase de test en cours — soyez parmi les premiers à découvrir l'app.",
-    "social_proof": "+2 500 infirmiers nous font confiance",
+    "social_proof": "+2 500 infirmiers/ères nous font confiance",
     "mockup_alt": "Aperçu de l'application Nursy sur iPhone — gestion de tournée infirmière en Belgique",
     "badge_status": "TOURNÉE PARTAGÉE",
     "badge_label": "3 patients repris"
@@ -32,7 +32,7 @@
     "title": "Conçu pour vous, quel que soit votre statut.",
     "subtitle": "Que vous souhaitiez déléguer votre tournée ou développer votre activité, Nursy s'adapte à votre réalité professionnelle.",
     "titulaire": {
-      "badge": "INFIRMIÈRE TITULAIRE",
+      "badge": "INFIRMIER/ÈRE TITULAIRE",
       "title": "Déléguez en toute sérénité",
       "text": "Planifiez vos absences, partagez votre tournée patient par patient et choisissez vos remplaçants parmi des profils vérifiés. Vous choisissez à qui vous déléguez.",
       "cta": "Je veux déléguer",
@@ -44,7 +44,7 @@
       ]
     },
     "replacant": {
-      "badge": "REMPLAÇANTE",
+      "badge": "REMPLAÇANT/E",
       "title": "Complétez vos tournées",
       "text": "Trouvez des missions adaptées à vos disponibilités, développez votre expertise clinique et construisez votre réputation au sein d'une communauté professionnelle bienveillante.",
       "cta": "Je cherche des missions",
@@ -68,7 +68,7 @@
     "step2": {
       "number": "02",
       "title": "Validez les profils",
-      "text": "Dès qu’une infirmière répond, échangez via la messagerie sécurisée. Gardez systématiquement le dernier mot avant de lui confier vos patients."
+      "text": "Dès qu'un/une infirmier/ère répond, échangez via la messagerie sécurisée. Gardez systématiquement le dernier mot avant de lui confier vos patients."
     },
     "step3": {
       "number": "03",
@@ -80,7 +80,7 @@
   "features": {
     "eyebrow": "EXPERTISE CLINIQUE",
     "title": "Les outils qu'il vous faut, enfin réunis.",
-    "subtitle": "Chaque fonctionnalité a été co-conçue avec des infirmiers indépendants belges pour répondre aux exigences concrètes de la pratique à domicile.",
+    "subtitle": "Chaque fonctionnalité a été co-conçue avec le personnel infirmier indépendant belge pour répondre aux exigences concrètes de la pratique à domicile.",
     "market": {
       "title": "Marketplace vérifiée",
       "text": "Publiez ou consultez des annonces de remplacement au sein d'une communauté où chaque profil est validé via la base de données officielle de l'INAMI."
@@ -99,7 +99,7 @@
     }
   },
   "replacement": {
-    "eyebrow": "POUR LES INFIRMIÈRES REMPLAÇANTES",
+    "eyebrow": "POUR LES INFIRMIERS/ÈRES REMPLAÇANT/ES",
     "title": "L'indépendance, le réseau en plus.",
     "subtitle": "Complétez votre planning selon vos disponibilités et accédez à des prestations infirmières vérifiées en Belgique sans aucune démarche de prospection.",
     "items": {
@@ -154,14 +154,14 @@
   "faq": {
     "eyebrow": "QUESTIONS FRÉQUENTES",
     "title": "Tout ce que vous devez savoir sur Nursy",
-    "subtitle": "Des réponses transparentes aux questions essentielles des infirmiers à domicile en Belgique.",
+    "subtitle": "Des réponses transparentes aux questions essentielles du personnel infirmier à domicile en Belgique.",
     "q1": {
       "question": "Comment Nursy garantit-elle la sécurité des données patients ?",
       "answer": "Les données de santé sont chiffrées et nos serveurs respectent les normes ISO 27001, la biométrie (FaceID ou empreinte digitale) protège l'accès à l'application et l'accès au dossier d'un patient est strictement limité à la durée du remplacement."
     },
     "q2": {
-      "question": "Que faire si la proposition d'une remplaçante ne me convient pas ?",
-      "answer": "Nursy favorise le dialogue : l’offre reste modifiable d’un commun accord jusqu’à la validation finale. Via la messagerie, vous pouvez demander à une remplaçante d'ajouter ou de retirer certaines visites de sa sélection pour que l’organisation corresponde parfaitement à vos attentes."
+      "question": "Que faire si la proposition d'un/une remplaçant/e ne me convient pas ?",
+      "answer": "Nursy favorise le dialogue : l’offre reste modifiable d’un commun accord jusqu’à la validation finale. Via la messagerie, vous pouvez demander à un/une remplaçant/e d'ajouter ou de retirer certaines visites de sa sélection pour que l’organisation corresponde parfaitement à vos attentes."
     },
     "q3": {
       "question": "Comment démarrer sur Nursy ?",
@@ -169,7 +169,7 @@
     },
     "q4": {
       "question": "Puis-je partager seulement une partie de ma tournée ?",
-      "answer": "Oui, c'est précisément l'innovation de Nursy. Grâce au système de « panier de soins », vous choisissez exactement quels patients ou quelles visites vous souhaitez déléguer. L'infirmière A peut reprendre 2 visites, l'infirmière B en reprend 3. Vous définissez les règles, visite par visite, à tout moment."
+      "answer": "Oui, c'est précisément l'innovation de Nursy. Grâce au système de « panier de soins », vous choisissez exactement quels patients ou quelles visites vous souhaitez déléguer. L'infirmier/ère A peut reprendre 2 visites, l'infirmier/ère B en reprend 3. Vous définissez les règles, visite par visite, à tout moment."
     }
   },
   "pricing": {
@@ -247,7 +247,7 @@
     "support": "Support",
     "tiktok_aria": "Nursy sur TikTok (ouverture dans un nouvel onglet)",
     "instagram_aria": "Nursy sur Instagram (ouverture dans un nouvel onglet)",
-    "copyright": "© 2026 Nursy. La plateforme de remplacement modulaire pour infirmiers à domicile en Belgique."
+    "copyright": "© 2026 Nursy. La plateforme de remplacement modulaire pour le personnel infirmier à domicile en Belgique."
   },
   "contact": {
     "title": "Nous contacter",
