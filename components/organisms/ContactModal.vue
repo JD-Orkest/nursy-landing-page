@@ -56,12 +56,11 @@ async function submit() {
       .execute(RECAPTCHA_SITE_KEY, { action: 'submit' })
       .then(async (token) => {
         try {
-          console.log('Token reCAPTCHA v3:', token)
           await $fetch(config.public.apiUrl, {
             method: 'POST',
             body: {
               message: messageText,
-              // recaptcha_token: token,
+              recaptcha_token: token,
             },
           })
           form.firstname = form.lastname = form.phone = form.email = form.message = ''
