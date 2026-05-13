@@ -194,16 +194,16 @@
     "plan_monthly": {
       "badge": "DE STANDAARD",
       "name": "Regelmatig Beheer",
-      "price": "12,99 €",
+      "price": "14,99 €",
       "duration": "/ maand",
       "description": "Het perfecte evenwicht voor dagelijks rustig beheer van uw vervangingen, zonder langetermijnverplichting."
     },
     "plan_yearly": {
-      "badge": "MEEST VOORDELIG (-20%)",
+      "badge": "MEEST VOORDELIG (-17%)",
       "name": "Totale Sereniteit",
-      "price": "124,99 €",
+      "price": "149,99 €",
       "duration": "/ jaar",
-      "equivalent": "Komt neer op 10,42 € / maand",
+      "equivalent": "Komt neer op 12,49 € / maand",
       "description": "Het hele jaar onbezorgd. Vereenvoudig uw boekhouding met één jaarlijkse factuur en geniet van de app zonder onderbreking."
     },
     "plan_group": {
