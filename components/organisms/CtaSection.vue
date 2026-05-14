@@ -1,7 +1,6 @@
 <script setup>
 const { t } = useI18n()
 const { open: openWaitlistModal } = useWaitlistModal()
-const { gtag } = useGtag()
 </script>
 
 <template>
@@ -54,7 +53,7 @@ const { gtag } = useGtag()
                    transition-all duration-200
                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white
                    focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
-            @click="() => { openWaitlistModal(); gtag('event', 'click_waitlist_cta') }"
+            @click="() => openWaitlistModal('cta')"
           >
             <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />

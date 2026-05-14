@@ -13,18 +13,26 @@ const isVisible = computed(() => consent.value === null || consent.value === und
 
 function accept() {
   consent.value = true
-  // Charge GTM immédiatement après acceptation sans attendre une interaction
-  if (typeof window !== 'undefined') {
-    window.dataLayer = window.dataLayer || []
-    const script = document.createElement('script')
-    script.async = true
-    script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-NW6JXRS3'
-    document.head.appendChild(script)
+  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+    window.gtag('consent', 'update', {
+      analytics_storage: 'granted',
+      ad_storage: 'granted',
+      ad_user_data: 'granted',
+      ad_personalization: 'granted',
+    })
   }
 }
 
 function refuse() {
   consent.value = false
+  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+    window.gtag('consent', 'update', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+    })
+  }
 }
 </script>
 

@@ -1,7 +1,7 @@
 <script setup>
 const { t, tm, rt } = useI18n()
 const { open: openContactModal } = useContactModal()
-const { gtag } = useGtag()
+const { track } = useAnalytics()
 
 const sharedFeatures = computed(() => tm('pricing.shared_features'))
 const groupFeatures  = computed(() => tm('pricing.plan_group.features'))
@@ -151,7 +151,7 @@ const groupFeatures  = computed(() => tm('pricing.plan_group.features'))
             <button
               type="button"
               class="inline-flex items-center justify-center border-2 border-primary text-primary font-manrope font-semibold rounded-xl min-h-[48px] px-6 text-sm hover:bg-primary hover:text-white transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-              @click="() => { openContactModal(); gtag('event', 'pricing_cta_click', { plan: 'group' }) }"
+              @click="() => { openContactModal('pricing'); track('pricing_cta_click', { plan: 'group' }) }"
             >
               {{ t('pricing.plan_group.cta') }}
             </button>

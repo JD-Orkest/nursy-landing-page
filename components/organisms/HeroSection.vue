@@ -1,6 +1,6 @@
 <script setup>
 const { t, locale } = useI18n()
-const { gtag } = useGtag()
+const { track } = useAnalytics()
 const { open: openContactModal } = useContactModal()
 const { open: openWaitlistModal } = useWaitlistModal()
 
@@ -81,7 +81,7 @@ const illustrationSrc = computed(() =>
             <button
               type="button"
               class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-primary-dark text-white font-manrope font-semibold rounded-xl min-h-[52px] px-7 text-sm md:text-base shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-              @click="() => { openWaitlistModal(); gtag('event', 'click_waitlist') }"
+              @click="() => { openWaitlistModal('hero') }"
             >
               <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />

@@ -1,11 +1,11 @@
 export const useWaitlistModal = () => {
   const isOpen = useState('waitlist-modal-open', () => false)
-  const { gtag } = useGtag()
+  const { track } = useAnalytics()
   return {
     isOpen,
-    open: () => {
+    open: (source = 'unknown') => {
       isOpen.value = true
-      gtag('event', 'waitlist_modal_open')
+      track('waitlist_open', { source })
     },
     close: () => { isOpen.value = false },
   }

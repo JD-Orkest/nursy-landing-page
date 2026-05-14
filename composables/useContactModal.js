@@ -1,11 +1,11 @@
 export const useContactModal = () => {
   const isOpen = useState('contact-modal-open', () => false)
-  const { gtag } = useGtag()
+  const { track } = useAnalytics()
   return {
     isOpen,
-    open: () => {
+    open: (source = 'unknown') => {
       isOpen.value = true
-      gtag('event', 'contact_modal_open')
+      track('contact_open', { source })
     },
     close: () => { isOpen.value = false },
   }
