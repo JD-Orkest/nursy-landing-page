@@ -7,7 +7,6 @@ const localePath = useLocalePath()
 const router = useRouter()
 const route = useRoute()
 const isMenuOpen = ref(false)
-const { track } = useAnalytics()
 
 // Cookie de langue — doit correspondre au cookieKey déclaré dans nuxt.config.ts
 const langCookie = useCookie('nursy_lang', { maxAge: 60 * 60 * 24 * 365, path: '/' })
@@ -42,7 +41,6 @@ function goHome() {
 
 // Supprime le hash de l'URL et scroll en haut lors du changement de langue
 function switchLang(lang) {
-  track('language_switch', { language: lang })
   // Met à jour le cookie AVANT la navigation pour que detectBrowserLanguage
   // ne redirige pas vers l'ancienne locale lors du chargement de la page cible
   langCookie.value = lang

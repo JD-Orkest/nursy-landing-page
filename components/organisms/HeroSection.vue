@@ -1,6 +1,5 @@
 <script setup>
 const { t, locale } = useI18n()
-const { track } = useAnalytics()
 const { open: openContactModal } = useContactModal()
 const { open: openWaitlistModal } = useWaitlistModal()
 
