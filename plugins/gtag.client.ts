@@ -33,11 +33,13 @@ export default defineNuxtPlugin(() => {
   }
 
   // 4. Charger gtag.js en différé
-  const loadGtag = () => {
+ const loadGtag = () => {
     if (document.querySelector(`script[src*="${GA4_ID}"]`)) return
     const script = document.createElement('script')
     script.async = true
     script.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`
+    // ✅ Envoyer la config (page_view) une fois le script injecté
+    script.onload = () => gtag('config', GA4_ID)
     document.head.appendChild(script)
   }
 
