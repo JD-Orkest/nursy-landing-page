@@ -2,6 +2,7 @@
 const { isOpen, close } = useContactModal()
 const { showToast } = useToast()
 const { t } = useI18n()
+const { track } = useAnalytics()
 const config = useRuntimeConfig()
 
 const RECAPTCHA_SITE_KEY = '6LdjdKMsAAAAAI8_G6M5hNa34wx839RYEI-r_aJ5'
@@ -65,6 +66,7 @@ async function submit() {
           form.firstname = form.lastname = form.phone = form.email = form.message = ''
           clearErrors()
           close()
+          track('contact_form_success')
           showToast(t('contact.toast_success'))
           window.scrollTo({ top: 0, behavior: 'smooth' })
         } catch {
