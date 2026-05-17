@@ -16,7 +16,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/sitemap',
-    '@nuxt/image',
     ['@nuxtjs/google-fonts', {
       families: {
         Manrope: [400, 600, 700, 800],
