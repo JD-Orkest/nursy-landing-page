@@ -94,9 +94,12 @@ function switchLang(lang) {
       <div class="hidden md:flex items-center gap-4">
         <button
           type="button"
-          class="font-jakarta text-sm font-medium text-text-main hover:text-primary transition-colors duration-150 rounded py-1 px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+          class="inline-flex items-center gap-1.5 font-jakarta text-sm font-semibold text-primary border border-primary/50 rounded-xl px-4 min-h-[38px] hover:bg-primary hover:text-white hover:border-primary transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
           @click="openContactModal"
         >
+          <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
           {{ t('footer.contact') }}
         </button>
         <div
@@ -208,9 +211,12 @@ function switchLang(lang) {
 
         <button
             type="button"
-            class="font-jakarta text-base font-medium text-text-main hover:text-primary min-h-[48px] flex items-center px-3 rounded-xl hover:bg-secondary/20 transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            class="inline-flex items-center gap-2 font-jakarta text-base font-semibold text-primary min-h-[48px] px-3 rounded-xl border border-primary/40 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             @click="() => { openContactModal(); closeMenu() }"
           >
+            <svg class="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
             {{ t('footer.contact') }}
           </button>
         </div>
