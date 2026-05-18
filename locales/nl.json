@@ -225,7 +225,10 @@
     "modal_title": "Inschrijven op de wachtlijst",
     "modal_subtitle": "Wees een van de eersten die Nursy ontdekt.",
     "close": "Sluiten",
-    "loading": "Formulier laden…"
+    "loading": "Formulier laden…",
+    "submitted_title": "Uw inschrijving is geregistreerd!",
+    "submitted_body": "Een bevestigingsmail wordt u binnen 24 uur toegestuurd. Vergeet uw ongewenste e-mails niet te controleren.",
+    "submitted_close": "Sluiten"
   },
   "cta": {
     "title": "Klaar om opnieuw te ademen?",

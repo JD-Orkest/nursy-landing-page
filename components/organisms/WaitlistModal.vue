@@ -9,11 +9,29 @@ const formUrl = computed(() =>
 )
 
 const iframeLoaded = ref(false)
+const formSubmitted = ref(false)
+let loadCount = 0
+
+// Détecte la soumission du formulaire Google Forms :
+// - 1er événement load = formulaire chargé
+// - 2e événement load = page de confirmation (après envoi)
+function onIframeLoad() {
+  loadCount++
+  if (loadCount === 1) {
+    iframeLoaded.value = true
+  } else if (loadCount >= 2) {
+    formSubmitted.value = true
+  }
+}
 
 // Réinitialise l'état de chargement à chaque ouverture
 watch(isOpen, (val) => {
   document.body.style.overflow = val ? 'hidden' : ''
-  if (!val) iframeLoaded.value = false
+  if (!val) {
+    iframeLoaded.value = false
+    formSubmitted.value = false
+    loadCount = 0
+  }
 })
 
 // Echap ferme le modal
@@ -91,6 +109,40 @@ onUnmounted(() => window.removeEventListener('keydown', keydownHandler))
                 <p class="font-jakarta text-sm text-info">{{ t('waitlist.loading') }}</p>
               </div>
 
+              <!-- Message de confirmation post-soumission -->
+              <Transition
+                enter-active-class="transition duration-300 ease-out"
+                enter-from-class="opacity-0 translate-y-2"
+                enter-to-class="opacity-100 translate-y-0"
+              >
+                <div
+                  v-if="formSubmitted"
+                  class="absolute inset-0 z-10 flex flex-col items-center justify-center gap-5 bg-white px-8 text-center"
+                >
+                  <!-- Icône coche -->
+                  <div class="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                    <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div class="space-y-2">
+                    <h3 class="font-manrope font-extrabold text-lg text-text-main">
+                      {{ t('waitlist.submitted_title') }}
+                    </h3>
+                    <p class="font-jakarta text-sm text-info leading-relaxed max-w-xs">
+                      {{ t('waitlist.submitted_body') }}
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    class="mt-2 rounded-lg bg-primary px-6 py-2.5 font-jakarta text-sm font-semibold text-white hover:bg-primary/90 transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30"
+                    @click="close"
+                  >
+                    {{ t('waitlist.submitted_close') }}
+                  </button>
+                </div>
+              </Transition>
+
               <iframe
                 :src="formUrl"
                 :title="t('waitlist.modal_title')"
@@ -98,7 +150,7 @@ onUnmounted(() => window.removeEventListener('keydown', keydownHandler))
                 style="min-height: 520px; height: 100%; display: block"
                 loading="lazy"
                 sandbox="allow-scripts allow-forms allow-same-origin allow-popups"
-                @load="iframeLoaded = true"
+                @load="onIframeLoad"
               />
             </div>
           </div>

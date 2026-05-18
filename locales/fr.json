@@ -229,7 +229,10 @@
     "modal_title": "Rejoindre la liste d'attente",
     "modal_subtitle": "Soyez parmi les premiers à découvrir Nursy.",
     "close": "Fermer",
-    "loading": "Chargement du formulaire…"
+    "loading": "Chargement du formulaire…",
+    "submitted_title": "Votre inscription est enregistrée !",
+    "submitted_body": "Un e-mail de confirmation vous sera envoyé dans les 24 h. Pensez à vérifier vos courriers indésirables.",
+    "submitted_close": "Fermer"
   },
   "cta": {
     "title": "Prêt à retrouver la sérénité ?",
