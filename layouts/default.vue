@@ -14,6 +14,6 @@ useHead(head)
     <ContactModal />
     <WaitlistModal />
     <AppToast />
-    <CookieBanner />
+    <ClientOnly><CookieBanner /></ClientOnly>
   </div>
 </template>
