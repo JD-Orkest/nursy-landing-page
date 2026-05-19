@@ -12,7 +12,7 @@ const groupFeatures  = computed(() => tm('pricing.plan_group.features'))
     <div class="max-w-7xl mx-auto px-4 md:px-8">
 
       <!-- ─── En-tête ─── -->
-      <div class="text-center mb-12 md:mb-16">
+      <!-- <div class="text-center mb-12 md:mb-16">
         <p class="font-manrope font-bold text-xs tracking-widest uppercase text-primary mb-3">
           {{ t('pricing.eyebrow') }}
         </p>
@@ -25,7 +25,7 @@ const groupFeatures  = computed(() => tm('pricing.plan_group.features'))
         <p class="font-jakarta text-base md:text-lg text-info max-w-2xl mx-auto">
           {{ t('pricing.subtitle') }}
         </p>
-      </div>
+      </div> -->
 
       <!-- ─── Bloc « bientôt » ─── -->
       <div class="flex flex-col items-center text-center gap-8 py-8 md:py-12">

@@ -1,7 +1,7 @@
 const GA4_ID = 'G-DRRMVY0SF0'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  // 1. Init dataLayer
+ 
   // 1. Init dataLayer
   window.dataLayer = window.dataLayer || []
   
