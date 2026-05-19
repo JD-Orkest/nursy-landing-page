@@ -2,8 +2,15 @@ const GA4_ID = 'G-DRRMVY0SF0'
 
 export default defineNuxtPlugin((nuxtApp) => {
   // 1. Init dataLayer
+  // 1. Init dataLayer
   window.dataLayer = window.dataLayer || []
-  function gtag(...args: unknown[]) { window.dataLayer.push(args) }
+  
+  // ✅ CORRECTION : Utilisation de l'objet natif 'arguments'
+  function gtag(..._args: any[]) { 
+    // eslint-disable-next-line prefer-rest-params
+    window.dataLayer.push(arguments) 
+  }
+  
   window.gtag = gtag as typeof window.gtag
 
   // 2. Consent Mode v2 — tout denied par défaut
