@@ -175,6 +175,10 @@
   "pricing": {
     "eyebrow": "TARIFS FLEXIBLES",
     "coming_soon": "À venir",
+    "teaser_title": "Nos tarifs arrivent bientôt",
+    "teaser_body": "Nous finalisons notre grille tarifaire. Inscrivez-vous à la liste d’attente pour être informé en avant-première et bénéficier d’une offre de lancement exclusive.",
+    "teaser_cta": "M’avertir à l’ouverture",
+    "teaser_note": "Abonnement 100 % déductible de vos frais professionnels.",
     "title": "Un prix transparent. Une sérénité absolue.",
     "subtitle": "Votre abonnement Nursy est 100 % déductible de vos frais professionnels. Choisissez la durée qui correspond à votre rythme, avec un accès complet à l'application dans tous les cas.",
     "tax_note": "100 % déductible fiscalement",
