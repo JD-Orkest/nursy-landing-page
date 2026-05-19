@@ -30,76 +30,115 @@ const groupFeatures  = computed(() => tm('pricing.plan_group.features'))
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
 
         <!-- ── Plan Hebdomadaire ── -->
-        <div class="bg-surface rounded-2xl border border-secondary/40 p-7 flex flex-col gap-5">
-          <span class="inline-flex items-center self-start bg-secondary/30 text-primary-dark text-xs font-bold font-manrope tracking-wider uppercase rounded-full px-3 py-1">
-            {{ t('pricing.plan_weekly.badge') }}
-          </span>
+        <div class="relative bg-surface rounded-2xl border border-secondary/40 overflow-hidden">
+          <!-- Contenu flou -->
+          <div class="p-7 flex flex-col gap-5 blur-xl opacity-40 pointer-events-none select-none">
+            <span class="inline-flex items-center self-start bg-secondary/30 text-primary-dark text-xs font-bold font-manrope tracking-wider uppercase rounded-full px-3 py-1">
+              {{ t('pricing.plan_weekly.badge') }}
+            </span>
 
-          <div class="flex items-end gap-1">
-            <p class="font-manrope font-extrabold text-4xl text-text-main leading-none">
-              {{ t('pricing.plan_weekly.price') }}
-            </p>
-            <span class="font-jakarta text-sm text-info mb-0.5">{{ t('pricing.plan_weekly.duration') }}</span>
+            <div class="flex items-end gap-1">
+              <p class="font-manrope font-extrabold text-4xl text-text-main leading-none">
+                <!-- {{ t('pricing.plan_weekly.price') }} -->
+                bientôt
+              </p>
+              <span class="font-jakarta text-sm text-info mb-0.5"><!-- {{ t('pricing.plan_weekly.duration') }} --></span>
+            </div>
+
+            <div>
+              <h3 class="font-manrope font-bold text-lg text-text-main mb-1.5">
+                {{ t('pricing.plan_weekly.name') }}
+              </h3>
+              <p class="font-jakarta text-sm text-info leading-relaxed">
+                {{ t('pricing.plan_weekly.description') }}
+              </p>
+            </div>
           </div>
-
-          <div>
-            <h3 class="font-manrope font-bold text-lg text-text-main mb-1.5">
-              {{ t('pricing.plan_weekly.name') }}
-            </h3>
-            <p class="font-jakarta text-sm text-info leading-relaxed">
-              {{ t('pricing.plan_weekly.description') }}
-            </p>
+          <!-- Overlay à venir -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="inline-flex flex-col items-center gap-2 bg-white/80 backdrop-blur-sm border border-secondary/60 rounded-2xl px-6 py-4 shadow-md">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l3.5 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span class="font-manrope font-bold text-sm text-text-main tracking-widest uppercase">{{ t('pricing.coming_soon') }}</span>
+            </div>
           </div>
         </div>
 
         <!-- ── Plan Mensuel ── -->
-        <div class="bg-surface rounded-2xl border border-secondary/40 p-7 flex flex-col gap-5">
-          <span class="inline-flex items-center self-start bg-secondary/30 text-primary-dark text-xs font-bold font-manrope tracking-wider uppercase rounded-full px-3 py-1">
-            {{ t('pricing.plan_monthly.badge') }}
-          </span>
+        <div class="relative bg-surface rounded-2xl border border-secondary/40 overflow-hidden">
+          <!-- Contenu flou -->
+          <div class="p-7 flex flex-col gap-5 blur-xl opacity-40 pointer-events-none select-none">
+            <span class="inline-flex items-center self-start bg-secondary/30 text-primary-dark text-xs font-bold font-manrope tracking-wider uppercase rounded-full px-3 py-1">
+              {{ t('pricing.plan_monthly.badge') }}
+            </span>
 
-          <div class="flex items-end gap-1">
-            <p class="font-manrope font-extrabold text-4xl text-text-main leading-none">
-              {{ t('pricing.plan_monthly.price') }}
-            </p>
-            <span class="font-jakarta text-sm text-info mb-0.5">{{ t('pricing.plan_monthly.duration') }}</span>
+            <div class="flex items-end gap-1">
+              <p class="font-manrope font-extrabold text-4xl text-text-main leading-none">
+                <!-- {{ t('pricing.plan_monthly.price') }} -->
+                bientôt
+              </p>
+              <span class="font-jakarta text-sm text-info mb-0.5"><!-- {{ t('pricing.plan_monthly.duration') }} --></span>
+            </div>
+
+            <div>
+              <h3 class="font-manrope font-bold text-lg text-text-main mb-1.5">
+                {{ t('pricing.plan_monthly.name') }}
+              </h3>
+              <p class="font-jakarta text-sm text-info leading-relaxed">
+                {{ t('pricing.plan_monthly.description') }}
+              </p>
+            </div>
           </div>
-
-          <div>
-            <h3 class="font-manrope font-bold text-lg text-text-main mb-1.5">
-              {{ t('pricing.plan_monthly.name') }}
-            </h3>
-            <p class="font-jakarta text-sm text-info leading-relaxed">
-              {{ t('pricing.plan_monthly.description') }}
-            </p>
+          <!-- Overlay à venir -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="inline-flex flex-col items-center gap-2 bg-white/80 backdrop-blur-sm border border-secondary/60 rounded-2xl px-6 py-4 shadow-md">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l3.5 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span class="font-manrope font-bold text-sm text-text-main tracking-widest uppercase">{{ t('pricing.coming_soon') }}</span>
+            </div>
           </div>
         </div>
 
         <!-- ── Plan Annuel (mis en avant) ── -->
-        <div class="relative bg-surface rounded-2xl border-2 border-primary ring-4 ring-primary/20 p-7 flex flex-col gap-5 shadow-xl shadow-primary/10">
-          <span class="inline-flex items-center self-start bg-primary text-white text-xs font-bold font-manrope tracking-wider uppercase rounded-full px-3 py-1">
-            {{ t('pricing.plan_yearly.badge') }}
-          </span>
+        <div class="relative bg-surface rounded-2xl border-2 border-primary ring-4 ring-primary/20 overflow-hidden shadow-xl shadow-primary/10">
+          <!-- Contenu flou -->
+          <div class="p-7 flex flex-col gap-5 blur-xl opacity-40 pointer-events-none select-none">
+            <span class="inline-flex items-center self-start bg-primary text-white text-xs font-bold font-manrope tracking-wider uppercase rounded-full px-3 py-1">
+              {{ t('pricing.plan_yearly.badge') }}
+            </span>
 
-          <div>
-            <div class="flex items-end gap-1">
-              <p class="font-manrope font-extrabold text-5xl text-primary leading-none">
-                {{ t('pricing.plan_yearly.price') }}
+            <div>
+              <div class="flex items-end gap-1">
+                <p class="font-manrope font-extrabold text-5xl text-primary leading-none">
+                  <!-- {{ t('pricing.plan_yearly.price') }} -->
+                  bientôt
+                </p>
+                <span class="font-jakarta text-sm text-info mb-0.5"><!-- {{ t('pricing.plan_yearly.duration') }} --></span>
+              </div>
+              <p class="mt-1.5 font-jakarta text-sm font-semibold text-primary/70">
+                <!-- {{ t('pricing.plan_yearly.equivalent') }} -->
               </p>
-              <span class="font-jakarta text-sm text-info mb-0.5">{{ t('pricing.plan_yearly.duration') }}</span>
             </div>
-            <p class="mt-1.5 font-jakarta text-sm font-semibold text-primary/70">
-              {{ t('pricing.plan_yearly.equivalent') }}
-            </p>
-          </div>
 
-          <div>
-            <h3 class="font-manrope font-bold text-lg text-text-main mb-1.5">
-              {{ t('pricing.plan_yearly.name') }}
-            </h3>
-            <p class="font-jakarta text-sm text-info leading-relaxed">
-              {{ t('pricing.plan_yearly.description') }}
-            </p>
+            <div>
+              <h3 class="font-manrope font-bold text-lg text-text-main mb-1.5">
+                {{ t('pricing.plan_yearly.name') }}
+              </h3>
+              <p class="font-jakarta text-sm text-info leading-relaxed">
+                {{ t('pricing.plan_yearly.description') }}
+              </p>
+            </div>
+          </div>
+          <!-- Overlay à venir -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="inline-flex flex-col items-center gap-2 bg-white/85 backdrop-blur-sm border border-primary/30 rounded-2xl px-6 py-4 shadow-lg">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l3.5 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span class="font-manrope font-bold text-sm text-primary tracking-widest uppercase">{{ t('pricing.coming_soon') }}</span>
+            </div>
           </div>
         </div>
 
@@ -109,8 +148,10 @@ const groupFeatures  = computed(() => tm('pricing.plan_group.features'))
      
 
       <!-- ─── Carte Bureaux Infirmiers (pleine largeur) ─── -->
-      <div class="mt-6 lg:mt-8 rounded-2xl border border-secondary/40 bg-surface p-7 lg:p-10">
-        <div class="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-16">
+      <div class="relative mt-6 lg:mt-8 rounded-2xl border border-secondary/40 bg-surface overflow-hidden">
+        <!-- Contenu flou -->
+        <div class="p-7 lg:p-10 blur-xl opacity-40 pointer-events-none select-none">
+          <div class="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-16">
 
           <!-- Gauche : texte + prix -->
           <div class="flex-1 flex flex-col gap-4">
@@ -128,7 +169,8 @@ const groupFeatures  = computed(() => tm('pricing.plan_group.features'))
             </div>
 
             <p class="font-manrope font-extrabold text-3xl text-text-main">
-              {{ t('pricing.plan_group.price') }}
+              <!-- {{ t('pricing.plan_group.price') }} -->
+              bientôt
             </p>
           </div>
 
@@ -156,6 +198,16 @@ const groupFeatures  = computed(() => tm('pricing.plan_group.features'))
             </button>
           </div>
 
+        </div>
+      </div>
+        <!-- Overlay à venir -->
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="inline-flex flex-col items-center gap-2 bg-white/80 backdrop-blur-sm border border-secondary/60 rounded-2xl px-8 py-5 shadow-md">
+            <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l3.5 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span class="font-manrope font-bold text-sm text-text-main tracking-widest uppercase">{{ t('pricing.coming_soon') }}</span>
+          </div>
         </div>
       </div>
 
