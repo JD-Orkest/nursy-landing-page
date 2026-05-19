@@ -13,11 +13,17 @@ const isVisible = computed(() => consent.value === null || consent.value === und
 
 function accept() {
   consent.value = true
+  
   window.gtag?.('consent', 'update', {
     analytics_storage: 'granted',
     ad_storage: 'granted',
     ad_user_data: 'granted',
     ad_personalization: 'granted',
+  })
+
+  window.gtag?.('event', 'page_view', {
+    page_location: window.location.href,
+    page_path: window.location.pathname
   })
 }
 
