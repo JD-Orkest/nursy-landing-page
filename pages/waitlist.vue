@@ -3,17 +3,22 @@
 //   nursy.be/waitlist       (FR, défaut)
 //   nursy.be/nl/waitlist    (NL, préfixe i18n)
 //
-// Ouvre immédiatement la modale d'inscription puis redirige vers l'accueil.
+// Ouvre immédiatement la modale ; dès que l'utilisateur la ferme,
+// redirige vers l'accueil (sans laisser /waitlist dans l'URL).
 
-const { open: openWaitlistModal } = useWaitlistModal()
+const { open: openWaitlistModal, isOpen } = useWaitlistModal()
 const localePath = useLocalePath()
 
 // Pas d'indexation : page de redirection utilitaire
 useSeoMeta({ robots: 'noindex, nofollow' })
 
-onMounted(async () => {
+onMounted(() => {
   openWaitlistModal('social_link')
-  await navigateTo(localePath('/'))
+})
+
+// Dès que la modale se ferme, retour à l'accueil
+watch(isOpen, (val) => {
+  if (!val) navigateTo(localePath('/'))
 })
 </script>
 
