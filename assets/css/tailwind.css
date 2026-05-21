@@ -5,6 +5,8 @@
 @layer base {
   body {
     @apply font-jakarta text-text-main bg-surface antialiased;
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
   h1,
   h2,
@@ -13,5 +15,7 @@
   h5,
   h6 {
     @apply font-manrope;
+    hyphens: auto;
+    overflow-wrap: break-word;
   }
 }

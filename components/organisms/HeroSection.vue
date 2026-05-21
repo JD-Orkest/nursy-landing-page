@@ -2,6 +2,7 @@
 const { t, locale } = useI18n()
 const { open: openContactModal } = useContactModal()
 const { open: openWaitlistModal } = useWaitlistModal()
+const { open: openDemoModal } = useDemoModal()
 
 const illustrationSrc = computed(() =>
   locale.value === 'nl' ? '/illustration-nl.png' : '/illustration-fr.png'
@@ -76,21 +77,36 @@ const illustrationSrc = computed(() =>
           -->
 
           <!-- Bouton file d'attente (phase de test) -->
-          <div>
-            <button
-              type="button"
-              class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-primary-dark text-white font-manrope font-semibold rounded-xl min-h-[52px] px-7 text-sm md:text-base shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-              @click="() => { openWaitlistModal('hero') }"
-            >
-              <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-              </svg>
-              {{ t('hero.cta_waitlist') }}
-            </button>
-            <p class="mt-2 font-jakarta text-xs text-info">{{ t('hero.cta_waitlist_note') }}</p>
+          <div class="flex flex-col gap-3">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+              <button
+                type="button"
+                class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-primary-dark text-white font-manrope font-semibold rounded-xl min-h-[52px] px-7 text-sm md:text-base shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                @click="() => { openWaitlistModal('hero') }"
+              >
+                <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+                {{ t('hero.cta_waitlist') }}
+              </button>
+
+              <!-- Bouton démo — uniquement en français -->
+              <button
+                v-if="locale === 'fr'"
+                type="button"
+                class="inline-flex items-center justify-center gap-2 border-2 border-primary/60 text-primary font-manrope font-semibold rounded-xl min-h-[52px] px-6 text-sm md:text-base hover:border-primary hover:bg-primary/5 active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                @click="openDemoModal('hero')"
+              >
+                <svg class="w-5 h-5 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 5v14l11-7L8 5z" />
+                </svg>
+                {{ t('hero.cta_demo') }}
+              </button>
+            </div>
+            <p class="font-jakarta text-xs text-info">{{ t('hero.cta_waitlist_note') }}</p>
           </div>
 
           <!-- Preuve sociale -->
@@ -126,6 +142,24 @@ const illustrationSrc = computed(() =>
               fetchpriority="high"
             />
 
+            <!-- Bouton play superposé sur l'illustration — uniquement en français -->
+            <button
+              v-if="locale === 'fr'"
+              type="button"
+              class="absolute inset-0 flex items-center justify-center group focus-visible:outline-none"
+              :aria-label="t('hero.cta_demo')"
+              @click="openDemoModal('hero_illustration')"
+            >
+              <span
+                class="play-pulse flex items-center justify-center w-16 h-16 rounded-full bg-white/90 group-hover:scale-110 group-hover:bg-white group-active:scale-95 transition-transform duration-200"
+                style="box-shadow: 0 0 0 8px rgba(21,145,155,0.25), 0 0 24px 6px rgba(21,145,155,0.35)"
+              >
+                <svg class="w-7 h-7 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 5v14l11-7L8 5z" />
+                </svg>
+              </span>
+            </button>
+
             <div class="absolute -bottom-4 -left-2 sm:-left-6 hidden sm:block">
               <GlassBadge
                 :status="t('hero.badge_status')"
@@ -139,3 +173,23 @@ const illustrationSrc = computed(() =>
     </div>
   </section>
 </template>
+
+<style scoped>
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  15%       { transform: scale(1.1); }
+  30%       { transform: scale(1); }
+  45%       { transform: scale(1.06); }
+  60%       { transform: scale(1); }
+}
+
+.play-pulse {
+  animation: heartbeat 3.2s ease-in-out infinite;
+}
+
+/* Suspend l'animation au hover pour ne pas interférer avec la transition scale */
+.group:hover .play-pulse,
+.group:active .play-pulse {
+  animation-play-state: paused;
+}
+</style>

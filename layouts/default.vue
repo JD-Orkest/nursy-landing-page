@@ -13,6 +13,7 @@ useHead(head)
     <CguModal />
     <ContactModal />
     <WaitlistModal />
+    <DemoModal />
     <AppToast />
     <ClientOnly><CookieBanner /></ClientOnly>
   </div>

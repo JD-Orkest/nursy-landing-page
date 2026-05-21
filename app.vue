@@ -1,4 +1,6 @@
 <script setup>
+import { useI18n } from '#imports'
+
 // Attribut lang dynamique sur <html> selon la locale active (fr / nl)
 const { locale } = useI18n()
 useHead(computed(() => ({
