@@ -78,7 +78,7 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: 'nursy_lang',
       redirectOn: 'root',
-      alwaysRedirect: true,
+      alwaysRedirect: false,
     },
     // Les balises hreflang sont gérées via useLocaleHead() dans layouts/default.vue
     baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://nursy.be',
