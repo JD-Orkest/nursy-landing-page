@@ -3,7 +3,7 @@ const { t, locale } = useI18n()
 const { open: openContactModal } = useContactModal()
 const { open: openWaitlistModal } = useWaitlistModal()
 const { open: openDemoModal } = useDemoModal()
-
+console.log('Current locale:', locale.value) 
 const illustrationSrc = computed(() =>
   locale.value === 'nl' ? '/illustration-nl.png' : '/illustration-fr.png'
 )
