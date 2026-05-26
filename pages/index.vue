@@ -146,16 +146,7 @@ useHead(
           ],
         }),
       },
-      {
-        type: 'application/ld+json',
-        key: 'schema-website',
-        innerHTML: JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'WebSite',
-          name: 'Nursy',
-          url: 'https://nursy.be',
-        }),
-      },
+
     ],
   })),
 )
