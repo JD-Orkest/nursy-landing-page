@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const nuxtApp = useNuxtApp()
 
 // Cookie stocké 1 an (max-age en secondes)
 const consent = useCookie<boolean | null>('nursy_cookie_consent', {
@@ -25,6 +26,9 @@ function accept() {
     page_location: window.location.href,
     page_path: window.location.pathname
   })
+
+  // Charger le Meta Pixel au moment du consentement
+  ;(nuxtApp.$loadMetaPixel as (() => void) | undefined)?.()
 }
 
 function refuse() {
