@@ -74,12 +74,9 @@ export default defineNuxtConfig({
     // restructureDir: false → langDir résolu depuis la racine du projet (compat v8)
     restructureDir: false,
     langDir: 'locales/',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'nursy_lang',
-      redirectOn: 'root',
-      alwaysRedirect: false,
-    },
+    // detectBrowserLanguage désactivé : la locale est portée par le préfixe URL (/nl/)
+    // L'activer en SSG crée un hydration mismatch (locale cookie ≠ locale URL)
+    detectBrowserLanguage: false,
     // Les balises hreflang sont gérées via useLocaleHead() dans layouts/default.vue
     baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://nursy.be',
     bundle: {
