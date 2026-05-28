@@ -19,8 +19,13 @@ function onIframeLoad() {
   loadCount++
   if (loadCount === 1) {
     iframeLoaded.value = true
-  } else if (loadCount >= 2) {
+  } else if (loadCount === 2) {
     formSubmitted.value = true
+
+    // Envoie l'evenement Lead quand la confirmation s'affiche.
+    if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+      window.fbq('track', 'Lead')
+    }
   }
 }
 
