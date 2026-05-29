@@ -3,9 +3,13 @@
 // donc on persiste la valeur dans un useState global pour la récupérer
 // dans le onMounted de la page cible.
 export default defineNuxtPlugin(() => {
-  const modalParam = new URL(window.location.href).searchParams.get('modal')
-  if (modalParam) {
-    const pendingModal = useState<string | null>('pending-modal', () => null)
-    pendingModal.value = modalParam
+  try {
+    const modalParam = new URLSearchParams(window.location.search).get('modal')
+    if (modalParam) {
+      const pendingModal = useState<string | null>('pending-modal', () => null)
+      pendingModal.value = modalParam
+    }
+  } catch {
+    // Ignore malformed querystrings: app must still render.
   }
 })
