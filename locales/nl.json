@@ -34,13 +34,13 @@
     "titulaire": {
       "badge": "VASTE VERPLEEGKUNDIGE",
       "title": "Delegeer in alle sereniteit",
-      "text": "Plan uw afwezigheden, deel uw ronde patiënt per patiënt en kies uw vervangers uit geverifieerde profielen. U kiest zelf aan wie u delegeert.",
+      "text": "Plan uw afwezigheden, deel uw ronde patiënt per patiënt en selecteer zelf uw vervangers uit geverifieerde profielen. U kiest zelf aan wie u delegeert.",
       "cta": "Ik wil delegeren",
       "items": [
         "Publiceer uw ronde in één klik",
         "Kies uw vervangers uit een geverifieerde community",
         "Werk samen en deel informatie op een veilige manier",
-        "Neem uw patiënten rustig terug bij uw terugkomst"
+        "Neem uw patiënten rustig terug over bij uw terugkomst"
       ]
     },
     "replacant": {
@@ -50,8 +50,8 @@
       "cta": "Ik zoek opdrachten",
       "items": [
         "Bekijk beschikbare rondes in uw regio",
-        "Ontvang beveiligde patiëntendossiers vóór elke opdracht",
-        "Navigeer eenvoudig met geïntegreerde adressen (Waze / Maps)",
+        "Ontvang beveiligde patiëntendossiers voor elke opdracht",
+        "Navigeer eenvoudig met geïntegreerde adressen (Waze / Google Maps)",
         "Breid uw netwerk uit"
       ]
     }
@@ -59,7 +59,7 @@
   "modularity": {
     "eyebrow": "UNIEKE MODULARITEIT",
     "title": "Uw ronde, uw regels.",
-    "subtitle": "Nursy heruitvindt de vervanging met het eerste 'zorgmandje' in België. Stel een vervanging op maat samen door zelf de patiënten te kiezen die u delegeert, terwijl u de controle over uw organisatie behoudt.",
+    "subtitle": "Nursy revolutioneert de vervanging met het eerste zorgmandje in België. Stel een vervanging op maat samen door zelf de patiënten te kiezen die u delegeert, terwijl u de controle over uw organisatie behoudt.",
   "step1": {
     "number": "01",
     "title": "Plaats uw advertentie",
@@ -73,7 +73,7 @@
   "step3": {
     "number": "03",
     "title": "Delegeer en geniet",
-    "text": "Bezoeken gevalideerd, rondes bijgewerkt, beveiligde en tijdelijke toegang tot patiëntgegevens. Geniet van uw vrije tijd en beoordeel de opdracht na afloop."
+    "text": "Bezoeken gevalideerd, rondes bijgewerkt, beveiligde en tijdelijke toegang tot patiëntengegevens. Geniet van uw vrije tijd en beoordeel de opdracht na afloop."
   },
     "caption": "Flexibel delen van rondes: kies zelf welke bezoeken u delegeert, een primeur in België."
   },
@@ -87,7 +87,7 @@
     },
     "score": {
       "title": "Slimme advertenties",
-      "text": "De meest relevante opportuniteiten op basis van uw sector en data verschijnen prioritair. Filter, vind en valideer: uw volgende opdracht ligt al bovenaan de stapel."
+      "text": "De meest relevante opportuniteiten op basis van uw sector en gegevens verschijnen prioritair. Filter, vind en valideer: uw volgende opdracht ligt al bovenaan de stapel."
     },
     "katz": {
       "title": "Katz-schaal",
@@ -95,21 +95,21 @@
     },
     "models": {
       "title": "Rondemodellen",
-      "text": "Stel uw ronde één keer samen — patiënten, zorgen, tijdstippen. Sla deze op: in de toekomst selecteert u gewoon uw sjabloon en publiceert u deze met één klik."
+      "text": "Stel uw ronde één keer samen — patiënten, zorgen, tijdstippen — en sla het op als sjabloon. Voortaan publiceert u uw ronde met één klik."
     }
   },
   "replacement": {
     "eyebrow": "VOOR VERVANGENDE VERPLEEGKUNDIGEN",
     "title": "Onafhankelijkheid met een sterk netwerk.",
-    "subtitle": "Vul uw planning aan op basis van uw beschikbaarheid en krijg toegang tot geverifieerde verpleegkundige verstrekkingen in België zonder prospectie-inspanning.",
+    "subtitle": "Vul uw planning aan op basis van uw beschikbaarheid en krijg toegang tot geverifieerde verpleegkundige verstrekkingen in België zonder prospectie.",
     "items": {
       "select": {
         "title": "Selecteer uw bezoeken",
-        "text": "Vind gesoleerde zorgverstrekkingen of deelrondes die passen in uw agenda. Reageer op advertenties in uw geografische regio."
+        "text": "Vind losse zorgverstrekkingen of deelrondes die passen in uw agenda. Reageer op advertenties in uw geografische regio."
       },
       "agenda": {
         "title": "Beheer uw agenda",
-        "text": "Geen exclusiviteit of langetermijnverbintenis. Zelfstandige verpleegkundige vervanging: u aanvaardt alleen een verstrekking wanneer u echt beschikbaar bent."
+        "text": "Geen exclusiviteit of langetermijnverbintenis. Zelfstandige verpleegkundige vervanging: u aanvaardt alleen opdrachten wanneer u echt beschikbaar bent."
       },
       "data": {
         "title": "Raadpleeg de zorggegevens",
@@ -119,7 +119,7 @@
     "card": {
       "title": "Zonder beperkingen",
       "badge1": "Geen verbintenis of exclusiviteit",
-      "badge2": "Voorkeurstoeg per sector",
+      "badge2": "Voorkeurstoegang per sector",
       "badge3": "Beveiligde klinische fiches",
       "note": "nursy verifieert elk profiel via het RIZIV"
     }
@@ -176,7 +176,7 @@
     "eyebrow": "FLEXIBELE TARIEVEN",
     "coming_soon": "Binnenkort",
     "teaser_title": "Onze tarieven komen eraan",
-    "teaser_body": "We zijn onze tariefstructuur aan het finaliseren. Schrijf je in op de wachtlijst om als eerste op de hoogte te zijn en te profiteren van een exclusieve lanceringsprijs.",
+    "teaser_body": "We zijn onze tariefstructuur aan het finaliseren. Schrijf u in op de wachtlijst om als eerste op de hoogte te zijn en te profiteren van een exclusieve lanceringsprijs.",
     "teaser_cta": "Breng mij op de hoogte",
     "teaser_note": "Abonnement 100 % fiscaal aftrekbaar als beroepskost.",
     "title": "Een transparante prijs. Absolute sereniteit.",
@@ -187,7 +187,7 @@
       "Onbeperkt rondes en vervangingen publiceren",
       "Volledige modulariteit met de zorgmand",
       "Automatische berekening van de Katz-schaal",
-      "Beveiligde berichten & GPS-integratie (Waze/Maps)"
+      "Beveiligde berichten & GPS-integratie (Waze / Google Maps)"
     ],
     "plan_weekly": {
       "badge": "ZONDER VERPLICHTING",
