@@ -60,21 +60,21 @@
     "eyebrow": "UNIEKE MODULARITEIT",
     "title": "Uw ronde, uw regels.",
     "subtitle": "Nursy revolutioneert de vervanging met het eerste zorgmandje in België. Stel een vervanging op maat samen door zelf de patiënten te kiezen die u delegeert, terwijl u de controle over uw organisatie behoudt.",
-  "step1": {
-    "number": "01",
-    "title": "Plaats uw advertentie",
-    "text": "Kies uw patiënten. Stel uw regels in voor elk bezoek en sla deze op als herbruikbare sjablonen om tijd te winnen."
-  },
-  "step2": {
-    "number": "02",
-    "title": "Valideer de profielen",
-    "text": "Zodra een verpleegkundige reageert, kunt u overleggen via de beveiligde chat. U behoudt altijd het laatste woord voordat u uw patiënten toevertrouwt."
-  },
-  "step3": {
-    "number": "03",
-    "title": "Delegeer en geniet",
-    "text": "Bezoeken gevalideerd, rondes bijgewerkt, beveiligde en tijdelijke toegang tot patiëntengegevens. Geniet van uw vrije tijd en beoordeel de opdracht na afloop."
-  },
+    "step1": {
+      "number": "01",
+      "title": "Plaats uw advertentie",
+      "text": "Kies uw patiënten. Stel uw regels in voor elk bezoek en sla deze op als herbruikbare sjablonen om tijd te winnen."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Valideer de profielen",
+      "text": "Zodra een verpleegkundige reageert, kunt u overleggen via de beveiligde chat. U behoudt altijd het laatste woord voordat u uw patiënten toevertrouwt."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Delegeer en geniet",
+      "text": "Bezoeken gevalideerd, rondes bijgewerkt, beveiligde en tijdelijke toegang tot patiëntengegevens. Geniet van uw vrije tijd en beoordeel de opdracht na afloop."
+    },
     "caption": "Flexibel delen van rondes: kies zelf welke bezoeken u delegeert, een primeur in België."
   },
   "features": {
@@ -173,56 +173,53 @@
     }
   },
   "pricing": {
-    "eyebrow": "FLEXIBELE TARIEVEN",
-    "coming_soon": "Binnenkort",
-    "teaser_title": "Onze tarieven komen eraan",
-    "teaser_body": "We zijn onze tariefstructuur aan het finaliseren. Schrijf u in op de wachtlijst om als eerste op de hoogte te zijn en te profiteren van een exclusieve lanceringsprijs.",
-    "teaser_cta": "Breng mij op de hoogte",
-    "teaser_note": "Abonnement 100 % fiscaal aftrekbaar als beroepskost.",
-    "title": "Een transparante prijs. Absolute sereniteit.",
-    "subtitle": "Uw Nursy-abonnement is 100% fiscaal aftrekbaar als beroepskost. Kies de duur die bij uw ritme past, met volledige toegang tot de app in elk geval.",
-    "tax_note": "100% fiscaal aftrekbaar",
-    "shared_features_title": "Inbegrepen in alle abonnementen:",
-    "shared_features": [
-      "Onbeperkt rondes en vervangingen publiceren",
-      "Volledige modulariteit met de zorgmand",
-      "Automatische berekening van de Katz-schaal",
-      "Beveiligde berichten & GPS-integratie (Waze / Google Maps)"
-    ],
-    "plan_weekly": {
-      "badge": "ZONDER VERPLICHTING",
-      "name": "Spoedoplossing",
-      "price": "4,99 €",
-      "duration": "/ week",
-      "description": "Ideaal voor een eenmalige nood, korte vakantie of dringende vervanging."
+    "eyebrow": "TRANSPARANTE TARIEVEN",
+    "title": "Eenvoudig, eerlijk en transparant.",
+    "subtitle": "Toegang tot de Nursy-app is volledig gratis. Een abonnement is alleen vereist wanneer een vervangende verpleegkundige bezoeken wil overnemen van een verpleegkundige die vervanging zoekt.",
+    "free_access_note": "De toegang tot de applicatie blijft gratis voor alle verpleegkundigen.",
+    "plan_replaced": {
+      "badge": "VASTE VERPLEEGKUNDIGE",
+      "name": "Ik zoek een vervanger",
+      "price": "0 €",
+      "price_note": "Altijd gratis",
+      "description": "Publiceer uw rondes, kies uw vervangers uit geverifieerde profielen en vind rust. Geen kosten, geen verrassingen.",
+      "features": [
+        "Onbeperkt rondes publiceren",
+        "Volledige modulariteit",
+        "Beveiligde berichten conform AVG",
+        "Herbruikbare ronde-sjablonen",
+        "Automatische Katz-schaalberekening",
+      ],
+      "cta": "Gratis beginnen"
     },
-    "plan_monthly": {
-      "badge": "DE STANDAARD",
-      "name": "Regelmatig Beheer",
+    "plan_replacing": {
+      "badge": "VERVANGENDE VERPLEEGKUNDIGE",
+      "name": "Ik zoek om te vervangen",
       "price": "14,99 €",
       "duration": "/ maand",
-      "description": "Het perfecte evenwicht voor dagelijks rustig beheer van uw vervangingen, zonder langetermijnverplichting."
-    },
-    "plan_yearly": {
-      "badge": "MEEST VOORDELIG (-17%)",
-      "name": "Totale Sereniteit",
-      "price": "149,99 €",
-      "duration": "/ jaar",
-      "equivalent": "Komt neer op 12,49 € / maand",
-      "description": "Het hele jaar onbezorgd. Vereenvoudig uw boekhouding met één jaarlijkse factuur en geniet van de app zonder onderbreking."
+      "visits_included": "Tot 35 overgenomen bezoeken inbegrepen",
+      "description": "Het abonnement is alleen vereist wanneer de vervangende verpleegkundige de bezoeken heeft gekozen die haar passen en ze deze wil overnemen van een andere verpleegkundige.",
+      "extra_visits_note": "Boven de 35 overgenomen bezoeken: 0,15 € per extra bezoek (1 enkel extra bezoek: minimum 0,29 €).",
+      "features": [
+        "Overname van maximaal 35 bezoeken inbegrepen",
+        "Toegang tot beschikbare rondes in uw sector",
+        "Beveiligde patiëntendossiers",
+        "Versleutelde professionele berichten",
+        "Abonnement 100% fiscaal aftrekbaar"
+      ],
+      "cta": "Inschrijven op de wachtlijst"
     },
     "plan_group": {
       "badge": "VOOR TEAMS",
       "name": "Verpleeggroep",
-      "price": "Op aanvraag",
-      "duration": "",
-      "description": "Een gecentraliseerde interface voor de teammanager. Begeleid uw medewerkers en organiseer de rondes met gemak.",
-      "cta": "Demo aanvragen",
+      "price": "Neem contact op",
+      "description": "Vervangingen van bezoeken tussen leden van hetzelfde team zijn onbeperkt, zonder extra kosten. Werk als team, maak advertenties die alleen zichtbaar zijn voor uw team en werk samen met collega's op volledig legale wijze.",
+      "cta": "Neem contact op",
       "features": [
-        "Toegewijde teammanagerruimte",
-        "Medewerkers toevoegen en verwijderen",
-        "Gedelegeerde toegang: handel namens een lid (reageren op aanbiedingen, berichten...)",
-        "Gecentraliseerd beheer van patiënten en planningen"
+        "Onbeperkte vervangingen binnen het team",
+        "Legale en veilige samenwerking tussen leden",
+        "Advertenties enkel zichtbaar voor het team",
+        "Teambeheer door een beheerder"
       ]
     }
   },
@@ -261,9 +258,9 @@
     "phone": "Telefoonnummer",
     "email": "E-mailadres",
     "message": "Uw bericht",
-    "placeholder_message": "Beschrijf uw project of stel uw vraag\u2026",
+    "placeholder_message": "Beschrijf uw project of stel uw vraag…",
     "submit": "Bericht versturen",
-    "sending": "Verzenden\u2026",
+    "sending": "Verzenden…",
     "close": "Formulier sluiten",
     "toast_success": "Bericht verzonden! We nemen snel contact met u op.",
     "field_required": "Dit veld is verplicht",
@@ -282,7 +279,6 @@
     "accept": "Accepteren",
     "refuse": "Weigeren"
   },
-  
   "terms": {
     "h1": "ALGEMENE GEBRUIKS- EN VERKOOPVOORWAARDEN",
     "dialog_aria": "Dialoogvenster met algemene gebruiks- en verkoopvoorwaarden",
@@ -320,7 +316,6 @@
             "De Gebruiker moet verplicht een geldig e-mailadres opgeven om de registratiebevestiging te ontvangen.",
             "Er is slechts één registratie toegestaan per natuurlijke persoon. De gekozen gebruikersnaam en het wachtwoord zijn strikt persoonlijk en vertrouwelijk."
           ],
-         
           "text_fin": [
             "2) Uitschrijving De correct geregistreerde Gebruiker kan op elk moment zijn uitschrijving aanvragen door naar de daarvoor bestemde pagina in zijn Persoonlijke ruimte te gaan.",
             "Elke uitschrijving van het Platform wordt zo snel mogelijk effectief nadat de Gebruiker het hiervoor voorziene formulier heeft ingevuld."
@@ -511,5 +506,4 @@
       }
     }
   }
-
 }

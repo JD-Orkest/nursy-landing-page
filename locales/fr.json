@@ -64,7 +64,7 @@
     "step1": {
       "number": "01",
       "title": "Publiez votre annonce",
-       "text": "Choisissez vos patients. Définissez vos règles pour chaque visite et enregistrez-les comme modèles réutilisables pour gagner du temps."
+      "text": "Choisissez vos patients. Définissez vos règles pour chaque visite et enregistrez-les comme modèles réutilisables pour gagner du temps."
     },
     "step2": {
       "number": "02",
@@ -174,60 +174,53 @@
     }
   },
   "pricing": {
-    "eyebrow": "TARIFS FLEXIBLES",
-    "coming_soon": "À venir",
-    "teaser_title": "Nos tarifs arrivent bientôt",
-    "teaser_body": "Nous finalisons notre grille tarifaire. Inscrivez-vous à la liste d’attente pour être informé en avant-première et bénéficier d’une offre de lancement exclusive.",
-    "teaser_cta": "M’avertir à l’ouverture",
-    "teaser_note": "Abonnement 100 % déductible de vos frais professionnels.",
-    "title": "Un prix transparent. Une sérénité absolue.",
-    "subtitle": "Votre abonnement Nursy est 100 % déductible de vos frais professionnels. Choisissez la durée qui correspond à votre rythme, avec un accès complet à l'application dans tous les cas.",
-    "tax_note": "100 % déductible fiscalement",
-    "shared_features_title": "Inclus dans tous nos abonnements :",
-    "shared_features": [
-      "Publication de tournées illimitée",
-      "Réponses aux annonces illimitées",
-      "Modularité totale — panier de soins",
-      "Échelle de Katz automatique",
-      "Messagerie sécurisée RGPD",
-      "Modèles de tournées réutilisables",
-      "Navigation Waze & Google Maps",
-      "Support prioritaire"
-    ],
-    "plan_weekly": {
-      "badge": "SANS ATTACHE",
-      "name": "Dépannage & Urgence",
-      "price": "4,99 €",
-      "duration": "/ semaine",
-      "description": "Idéal pour un besoin ponctuel, des vacances de courte durée ou un remplacement d'urgence."
+    "eyebrow": "TARIFS TRANSPARENTS",
+    "title": "Simple, juste et transparent.",
+    "subtitle": "L'accès à l'application Nursy est entièrement gratuit. L'abonnement n'est requis que lorsqu'une infirmière remplaçante souhaite reprendre les visites d'une infirmière qui cherche à se faire remplacer.",
+    "free_access_note": "L'accès à l'application reste gratuit pour toutes les infirmières.",
+    "plan_replaced": {
+      "badge": "INFIRMIÈRE TITULAIRE",
+      "name": "Je cherche à me faire remplacer",
+      "price": "0 €",
+      "price_note": "Toujours gratuit",
+      "description": "Publiez vos tournées, choisissez vos remplaçantes parmi des profils vérifiés et retrouvez la sérénité. Aucun frais, aucune surprise.",
+      "features": [
+        "Publication de tournées illimitée",
+        "Modularité totale",
+        "Messagerie sécurisée RGPD",
+        "Modèles de tournées réutilisables",
+        "Échelle de Katz automatique",
+      ],
+      "cta": "Commencer gratuitement"
     },
-    "plan_monthly": {
-      "badge": "LE STANDARD",
-      "name": "Gestion Régulière",
+    "plan_replacing": {
+      "badge": "INFIRMIÈRE REMPLAÇANTE",
+      "name": "Je cherche à remplacer",
       "price": "14,99 €",
       "duration": "/ mois",
-      "description": "L'équilibre parfait pour gérer vos remplacements sereinement au quotidien, sans engagement à long terme."
-    },
-    "plan_yearly": {
-      "badge": "LE PLUS RENTABLE (-17%)",
-      "name": "Sérénité Totale",
-      "price": "149,99 €",
-      "duration": "/ an",
-      "equivalent": "Équivaut à 12,49 € / mois",
-      "description": "L'esprit libre toute l'année. Simplifiez votre comptabilité avec une seule facture annuelle et profitez de l'application sans interruption."
+      "visits_included": "Jusqu'à 35 visites reprises incluses",
+      "description": "L'abonnement est uniquement requis lorsque l'infirmière remplaçante a choisi les visites qui lui convenaient et qu'elle souhaite les reprendre à une autre infirmière.",
+      "extra_visits_note": "Au-delà de 35 visites reprises : 0,15 € par visite supplémentaire (1 seule visite supplémentaire : minimum 0,29 €).",
+      "features": [
+        "Reprise jusqu'à 35 visites incluses par mois",
+        "Accès aux tournées",
+        "Fiches patients sécurisées",
+        "Messagerie professionnelle chiffrée",
+        "Abonnement 100 % déductible fiscalement"
+      ],
+      "cta": "S'inscrire à la liste d'attente"
     },
     "plan_group": {
       "badge": "POUR LES ÉQUIPES",
       "name": "Groupement Infirmiers",
-      "price": "Sur devis",
-      "duration": "",
-      "description": "Une interface centralisée pour le gestionnaire d'équipe. Supervisez vos collaborateurs et organisez les tournées en toute simplicité.",
-      "cta": "Demander une démo",
+      "price": "Nous contacter",
+      "description": "Les remplacements de visites entre membres d’une même équipe sont illimités, aucun frais supplémentaire. Créez des annonces uniquement visibles par votre équipe et collaborez entre collègues en toute légalité.",
+      "cta": "Nous contacter",
       "features": [
-        "Espace Gestionnaire d'équipe dédié",
-        "Ajout et suppression de collaborateurs",
-        "Connexion déléguée : agissez au nom d'un membre (répondre aux offres, messages...)",
-        "Gestion centralisée de la patientèle et des plannings"
+        "Remplacements au sein de l'équipe illimités",
+        "Collaboration légale et sécurisée entre membres",
+        "Annonces visibles uniquement par l'équipe",
+        "Gestion de l'équipe par un administrateur"
       ]
     }
   },
@@ -260,17 +253,17 @@
   },
   "contact": {
     "title": "Nous contacter",
-    "subtitle": "Une question\u00a0? Notre équipe vous répond rapidement.",
+    "subtitle": "Une question ? Notre équipe vous répond rapidement.",
     "first_name": "Prénom",
     "last_name": "Nom",
     "phone": "Téléphone",
     "email": "Adresse e-mail",
     "message": "Votre message",
-    "placeholder_message": "Décrivez votre projet ou posez votre question\u2026",
+    "placeholder_message": "Décrivez votre projet ou posez votre question…",
     "submit": "Envoyer le message",
-    "sending": "Envoi en cours\u2026",
+    "sending": "Envoi en cours…",
     "close": "Fermer le formulaire",
-    "toast_success": "Message envoyé\u00a0! Nous vous recontacterons très vite.",
+    "toast_success": "Message envoyé ! Nous vous recontacterons très vite.",
     "field_required": "Ce champ est requis",
     "invalid_email": "Adresse e-mail invalide",
     "send_error": "Une erreur est survenue. Veuillez réessayer."
@@ -291,7 +284,6 @@
     "h1": "CONDITIONS GÉNÉRALES D'UTILISATION ET DE VENTE",
     "dialog_aria": "Modal des conditions générales d'utilisation et de vente",
     "close": "Fermer les conditions générales",
-   
     "cgu": {
       "h2": "I. CONDITIONS GÉNÉRALES D'UTILISATION (CGU)",
       "sections": {
